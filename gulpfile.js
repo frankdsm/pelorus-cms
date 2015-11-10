@@ -31,10 +31,32 @@ gulp.task('nodemon', function() {
         });
 });
 
+// Create docs based on apidoc
+gulp.task('apidoc',function(done) {
+    plugins.apidoc({
+        src: 'app/',
+        dest: 'docs/',
+        includeFilters: [ '.*\\.js$' ]
+    }, done);
+});
+
+// Open docs in default browser
+gulp.task('openDocs',function() {
+    gulp.src('./docs/index.html')
+        .pipe(plugins.open());
+});
+
 gulp.task('default', function() {
     runSequence(
         'npm',
         'lint',
         'nodemon'
+    );
+});
+
+gulp.task('docs', function(cb) {
+    runSequence(
+        'apidoc',
+        'openDocs'
     );
 });

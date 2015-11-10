@@ -4,6 +4,7 @@
   "description": "Open source node + angular cms",
   "main": "app.js",
   "scripts": {
+        "start": "gulp",
         "test": "./node_modules/.bin/istanbul cover --dir ./coverage ./node_modules/.bin/_mocha -- -R spec -t 15000 --recursive --slow 2"
     },
   "repository": {

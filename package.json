@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Open source node + angular cms",
   "main": "app.js",
-  "scripts": {},
+  "scripts": {
+        "test": "./node_modules/.bin/istanbul cover --dir ./coverage ./node_modules/.bin/_mocha -- -R spec -t 15000 --recursive --slow 2"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hvperdrive/pelorus-cms.git"
@@ -37,6 +39,7 @@
     "swig": "^1.4.2"
   },
   "devDependencies": {
+    "chai": "^3.4.1",
     "gulp": "^3.9.0",
     "gulp-apidoc": "^0.2.0",
     "gulp-concat": "^2.6.0",
@@ -47,7 +50,13 @@
     "gulp-open": "^1.0.0",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
+    "istanbul": "^0.4.0",
     "jshint-stylish": "^2.0.1",
-    "run-sequence": "^1.1.4"
+    "karma": "^0.13.15",
+    "karma-mocha": "^0.2.0",
+    "mocha": "^2.3.3",
+    "nock": "^2.17.0",
+    "run-sequence": "^1.1.4",
+    "supertest": "^1.1.0"
   }
 }

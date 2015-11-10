@@ -8,14 +8,14 @@ var _ = require('lodash'),
 
 module.exports = function(app) {
     // Load all routes
-    var routes = glob('./library/routes/**/*.js', {
+    var routes = glob('./app/routes/**/*.js', {
         sync: true
     });
 
     // Require each route
     _.forEach(routes, function(route) {
         if(path.basename(route) !== 'index.js') {
-            require('./' + path.basename(route))(app);
+            require('app/routes/'+path.basename(route))(app);
         }
     });
 

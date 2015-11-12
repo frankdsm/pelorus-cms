@@ -1,0 +1,13 @@
+//
+//  Plugins: UI-Select
+//  ---
+//  Override styling of the UI-Select component
+//
+
+.select2-container {
+    width: 100%
+}
+
+.ui-select-highlight {
+    vertical-align: bottom;
+}

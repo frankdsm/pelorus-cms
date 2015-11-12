@@ -1,0 +1,33 @@
+.c-breadcrumb {
+    list-style: none;
+
+    @include text-dimensions($ms-1, 1);
+    color: palette(color-neutral);
+
+    li {
+        display: inline-block;
+        //margin-right: 15px;
+
+        i {
+            padding-top: 4px;
+        }
+
+        &.active {
+            font-weight: 500;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            &::after {
+                content: none;
+                @include margin-lr(0.5, 0);
+            }
+        }
+
+        &::after {
+            content: "/";
+            @include margin-lr(0.5, 0.5);
+        }
+    }
+}

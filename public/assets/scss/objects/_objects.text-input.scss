@@ -1,0 +1,22 @@
+/** DELETE AFTER CLEANUP **/
+
+.text-input {
+    min-width: 100px;
+
+    @include padding-tb(0.5, 0.5);
+}
+
+.text-input--wrapper {
+    padding-top: 25px;
+    position: relative;
+    overflow: visible;
+
+    label {
+        box-sizing: border-box;
+        position: absolute;
+        padding: 0;
+        left: 0;
+        top: 0;
+        pointer-events: auto;
+    }
+}

@@ -1,0 +1,254 @@
+.bynder-loading {
+    position: fixed;
+    z-index: 1001;
+    width: 300px;
+    margin-left: -150px;
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    top: 250px;
+    left: 50%;
+    min-height: 230px;
+}
+
+#bynder-browser {
+    $content-bg-color: #F3F2F3;
+    $filter-bg-color: #EDEDED;
+    $selected-color: #1A9CEE;
+    $border-color: #D5D5D5;
+    $input-border-color: #979797;
+    $text-color: #555555;
+    $white: #FFFFFF;
+    $image-bg-color: $white;
+    $border-radius: 3px;
+    position: fixed;
+    z-index: 1001;
+    width: 1180px;
+    top: 50px;
+    left: 50%;
+    margin-left: -590px;
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, .5);
+        box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+    .bynder-header {
+        position: relative;
+        padding: 20px 40px 15px 40px;
+        background: #FFFFFF url('/assets/images/bynder-logo.svg') center right 40px no-repeat;
+        box-shadow: 0px 1px 0px 0px #DDDDDD, 0px 2px 4px 0px rgba(212, 212, 212, 0.50);
+        i.fa-search {
+            position: absolute;
+            top: 26px;
+            left: 50px;
+        }
+        input {
+            font-size: 12px;
+            width: 200px;
+            float: left;
+            border: 1px solid $input-border-color;
+            border-radius: $border-radius;
+            padding: 7px 5px 5px 35px;
+        }
+        p {
+            font-size: 13px;
+            float: left;
+            margin-left: 15px;
+            color: $text-color;
+            margin-top: 5px;
+        }
+    }
+    .bynder-filters {
+        background: $filter-bg-color;
+        padding: 10px 40px;
+    }
+    .bynder-content {
+        background: $content-bg-color;
+        padding: 40px;
+        max-height: 55vh;
+        overflow-y: scroll;
+        >div {
+            min-height: 130px;
+        }
+        ul {
+            list-style: none;
+        }
+        ul.bynder-images {
+            margin-left: -20px;
+        }
+        .empty {
+            text-align: center;
+            i {
+                font-size: 72px;
+                display: block;
+                color: $border-color;
+            }
+            p {
+                margin-top: 20px;
+                font-size: 16px;
+                color: $text-color;
+            }
+        }
+        .bynder-col {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            &:nth-child(4n + 1) {
+                clear: both;
+            }
+        }
+        .bynder-image {
+            border: 1px solid $border-color;
+            border-radius: 3px;
+            background: $image-bg-color;
+            transition: all .25s;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            .bynder-image-wrapper {
+                padding: 15px;
+                transition: all .25s;
+                border: 1px solid transparent;
+                position: relative;
+                .bynder-image-container {
+                    height: 130px;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    overflow: hidden;
+                    background-color: $black;
+                }
+                p {
+                    float: left;
+                    width: 80%;
+                    word-wrap: break-word;
+                }
+                .bynder-image-info {
+                    float: right;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    color: $border-color;
+                    position: relative;
+                    .info-bubble {
+                        position: absolute;
+                        background: $white;
+                        bottom: 40px;
+                        width: 200px;
+                        right: -25px;
+                        padding: 10px;
+                        z-index: 1200;
+                        border-radius: 3px;
+                        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+                        .bynder-image-description {
+                            p {
+                                font-size: 12px;
+                                font-style: italic;
+                            }
+                        }
+                        // Triangle power
+                        &:before {
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            position: absolute;
+                            bottom: -6px;
+                            right: 26px;
+                            margin-left: -3px;
+                            border-left: 6px solid transparent;
+                            border-right: 6px solid transparent;
+                            border-top: 6px solid $white;
+                        }
+                    }
+                }
+            }
+            p {
+                color: $text-color;
+                margin: 10px 0 0 0;
+            }
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            }
+            &.selected {
+                border: 1px solid $selected-color;
+                box-shadow: 0 0 2px opacify($selected-color, 0.9);
+                .bynder-image-wrapper {
+                    border: 1px solid $selected-color;
+                }
+            }
+        }
+    }
+    .bynder-actions {
+        position: relative;
+        padding: 10px 40px;
+        height: 60px;
+        transition: all .25s;
+        border-top: 1px solid $border-color;
+        background: $white;
+        a.button {
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            padding: 13px 15px 11px 15px;
+            color: $white;
+            background: $selected-color;
+            border-radius: $border-radius;
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    }
+    .pager-wrapper {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        .pager {
+            display: inline-block;
+            margin-top: 7px;
+            li {
+                a {
+                    padding: 2px 9px 3px 9px;
+                    border: 1px solid $border-color;
+                    transition: all .25s;
+                    &:hover {
+                        color: $selected-color;
+                    }
+                }
+                &.active {
+                    a {
+                        color: $white;
+                        background: $selected-color;
+                        border: 1px solid $selected-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .image-actions {
+        position: relative;
+        padding: 10px 40px;
+        height: 60px;
+        transition: all .25s;
+        border-top: 1px solid $border-color;
+        background: $white;
+        .button-group {
+            float: right;
+        }
+    }
+}
+
+html.overlay-active {
+    &:before {
+        content: '';
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        width: 100vw;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    height: 100%;
+    overflow: hidden;
+}

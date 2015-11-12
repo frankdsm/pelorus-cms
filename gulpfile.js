@@ -16,6 +16,17 @@ gulp.task('lint', function() {
         .pipe(plugins.jshint.reporter(stylish));
 });
 
+gulp.task('sass', function () {
+    gulp.src(publicRoot+'/assets/scss/**/*.scss')
+        .pipe(plugins.sourcemaps.init())
+        .pipe(plugins.sass({outputStyle: 'compressed'}))
+        .pipe(plugins.autoprefixer({
+            browsers: ['last 3 versions']
+        }))
+        .pipe(plugins.sourcemaps.write())
+        .pipe(gulp.dest(publicRoot+'/assets/css'));
+});
+
 // Start the node-server with nodemon
 gulp.task('nodemon', function() {
     return plugins.nodemon({
@@ -60,9 +71,6 @@ gulp.task('openDocs',function() {
 });
 
 gulp.task('server', function() {
-    /*
-        TODO: auto-start mongo + redis
-    */
     runSequence(
         'lint',
         'nodemon'
@@ -71,29 +79,37 @@ gulp.task('server', function() {
 
 // Bower integration
 gulp.task('wiredep', function () {
-  gulp.src(publicRoot+'/index.html')
-    .pipe(wiredep({
-        directory: publicRoot+'/app/bower_components',
-        fileTypes: {
-            html: {
-              block: /(([ \t]*)<!--\s*bower:*(\S*)\s*-->)(\n|\r|.)*?(<!--\s*endbower\s*-->)/gi,
-              detect: {
-                js: /<script.*src=['"]([^'"]+)/gi,
-                css: /<link.*href=['"]([^'"]+)/gi
-              },
-              replace: {
-                js: '<script src="{{filePath}}"></script>',
-                css: '<link rel="stylesheet" href="/{{filePath}}" />'
-              }
+    gulp.src(publicRoot+'/index.html')
+        .pipe(wiredep({
+            directory: publicRoot+'/app/bower_components',
+            fileTypes: {
+                html: {
+                block: /(([ \t]*)<!--\s*bower:*(\S*)\s*-->)(\n|\r|.)*?(<!--\s*endbower\s*-->)/gi,
+                detect: {
+                    js: /<script.*src=['"]([^'"]+)/gi,
+                    css: /<link.*href=['"]([^'"]+)/gi
+                },
+                replace: {
+                    js: '<script src="{{filePath}}"></script>',
+                    css: '<link rel="stylesheet" href="/{{filePath}}" />'
+                }
             },
         }
     }))
     .pipe(gulp.dest(publicRoot));
 });
 
+// Script injection
+gulp.task('inject', function () {
+    var target = gulp.src(publicRoot+'/index.html'),
+        sources = gulp.src([publicRoot+'/app/**/*.js', publicRoot+'/assets/css/**/*.css', '!'+publicRoot+'/app/bower_components/**/*'], {read: false});
+    return target.pipe(plugins.inject(sources)).pipe(gulp.dest(publicRoot));
+});
+
 gulp.task('frontend', function() {
     runSequence(
         'wiredep',
+        'inject',
         'webserver'
     );
 });

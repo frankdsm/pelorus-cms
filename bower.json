@@ -25,5 +25,8 @@
     "font-awesome": "~4.4.0",
     "normalize-css": "normalize.css#~3.0.3"
   },
-  "overrides": {}
+  "overrides": {},
+  "devDependencies": {
+    "susy": "~2.2.6"
+  }
 }

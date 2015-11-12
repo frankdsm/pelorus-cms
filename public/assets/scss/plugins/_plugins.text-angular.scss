@@ -1,0 +1,138 @@
+//
+//  Plugins: Text Angular
+//  ---
+//  Styling of the NgNotify component
+//
+//  scss-lint:disable ColorVariable, SelectorFormat, QualifyingElement
+//
+
+.ta-editor,
+.white-box {
+    padding: 10px;
+
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+.ta-toolbar {
+    margin: 0;
+    padding: 10px 10px 5px;
+
+    background-color: #f0f0f0;
+    border: 1px solid #eee;
+
+
+	.btn {
+		display: inline-block;
+
+		padding: 6px 12px;
+
+		margin-bottom: 0;
+
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.428571429;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		cursor: pointer;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+
+	.btn-default[disabled] {
+		background-color: #fff;
+		border-color: #ccc;
+	}
+
+	.btn[disabled] {
+		pointer-events: none;
+		cursor: not-allowed;
+		opacity: .65;
+		filter: alpha(opacity=65);
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	.btn.active {
+		background-image: none;
+		outline: 0;
+		-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+		box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+	}
+
+	.btn-default {
+		color: #333;
+		border-color: #adadad;
+	}
+
+	.btn-default.active {
+		color: #333;
+		background-color: #ebebeb;
+		border-color: #adadad;
+	}
+
+
+	.btn-toolbar {
+		@include clearfix;
+
+		.btn-group {
+			float: left;
+		}
+	}
+
+	.btn-group {
+		display: inline-block;
+        position: relative;
+
+        margin-bottom: 5px;
+
+        vertical-align: middle;
+
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+
+		>.btn {
+			position: relative;
+			float: left;
+
+			&:not(:first-child):not(:last-child) {
+				border-radius: 0;
+			}
+
+			&:first-child:not(:last-child):not(.dropdown-toggle) {
+	            border-top-right-radius: 0;
+	            border-bottom-right-radius: 0;
+	        }
+
+			&:last-child:not(:first-child):not(.dropdown-toggle) {
+	            border-top-left-radius: 0;
+	            border-bottom-left-radius: 0;
+	        }
+
+	        &:first-child {
+	            margin-left: 0;
+	        }
+		}
+	}
+
+    .btn-toolbar {
+        .btn-group {
+            float: left;
+        }
+
+        >.btn-group+.btn-group {
+            margin-left: 5px;
+        }
+    }
+}
+textarea.ta-bind {
+    width: 100%;
+}

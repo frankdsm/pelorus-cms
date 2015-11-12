@@ -1,0 +1,37 @@
+.c-actionBar {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+
+    width: calc(100% - 250px);
+    height: 60px;
+
+    background: $gray;
+    color: $white;
+
+    transform: translateY(100%);
+    animation: fadeUpBig $animation-duration $animation-easing;
+    animation-delay: 750ms;
+    animation-fill-mode: forwards;
+
+    .c-actionBar_inner {
+        @include clearfix;
+        @include margin-lr(2, 2);
+        @include vertical-center;
+
+        .c-buttonGroup {
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .c-switchLanguage {
+        float: left;
+
+        >button {
+            @include margin-lr(0, 1);
+        }
+    }
+}

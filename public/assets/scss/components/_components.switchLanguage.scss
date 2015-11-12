@@ -1,0 +1,66 @@
+.c-switchLanguage {
+
+    .fa-globe {
+        position: relative;
+        top: -2px;
+        left: -5px;
+    }
+
+    .c-switchLanguage_list {
+        position: absolute;
+        bottom: 60px;
+        width: 100px;
+
+        background: palette(color-neutral, dark);
+
+        animation: fadeUp $animation-duration $animation-easing;
+
+        &:after {
+            $triange-width: 7px;
+            content: "";
+            width: 0;
+        	height: 0;
+        	border-left: $triange-width solid transparent;
+        	border-right: $triange-width solid transparent;
+
+        	border-top: $triange-width solid palette(color-neutral, dark);
+
+            position: absolute;
+            left: 10px;
+        }
+    }
+
+    .c-switchLanguage_item {
+        @include text-dimensions($ms-2, 1);
+        border-bottom: 1px solid palette(color-neutral, dark);
+        color: palette(color-neutral, x-light);
+        width: 100%;
+        transition-duration: 250ms;
+        position: relative;
+
+        padding: 10px 15px 10px 10px;
+
+        i {
+            position: relative;
+            top: 5px;
+            left: -5px;
+            color: palette(color-neutral, x-light);
+        }
+
+        &:hover{
+            cursor: pointer;
+            background: palette(color-alpha);
+            color: palette(color-neutral, x-light);
+        }
+
+        &:last-child{
+            border-bottom: none;
+        }
+
+        &.is-active{
+            border-bottom: none;
+            background: palette(color-alpha);
+            color: palette(color-neutral, x-light);
+        }
+    }
+}

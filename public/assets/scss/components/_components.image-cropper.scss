@@ -1,0 +1,76 @@
+#image-cropper {
+    $content-bg-color: #F3F2F3;
+    $filter-bg-color: #EDEDED;
+    $selected-color: #1A9CEE;
+    $border-color: #D5D5D5;
+    $input-border-color: #979797;
+    $text-color: #555555;
+    $white: #FFFFFF;
+    $image-bg-color: $white;
+    $border-radius: 3px;
+    position: fixed;
+    z-index: 1001;
+    width: 1180px;
+    top: 50px;
+    left: 50%;
+    margin-left: -590px;
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, .5);
+        box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+    .image-header {
+        position: relative;
+        padding: 20px 40px 15px 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 0px 0px #DDDDDD, 0px 2px 4px 0px rgba(212, 212, 212, 0.50);
+    }
+    .image-content {
+        background: $content-bg-color;
+        padding: 40px;
+        max-height: 65vh;
+        overflow-y: scroll;
+        .crops {
+            margin: -1%;
+            margin-bottom: 5px;
+            .crop-container {
+                width: 31.33%;
+                margin: 1%;
+                float: left;
+                overflow: hidden;
+                border: 1px solid $border-color;
+                span {
+                    background: #FFFFFF;
+                    padding: 5px 12px;
+                    width: 100%;
+                    display: block;
+                }
+            }
+            .single-crop-container {
+                width: 98%;
+                margin: 1%;
+                overflow: hidden;
+            }
+        }
+    }
+    .image-actions {
+        position: relative;
+        padding: 10px 40px;
+        height: 60px;
+        transition: all .25s;
+        border-top: 1px solid $border-color;
+        background: $white;
+        .button-group {
+            float: right;
+        }
+    }
+}
+
+.jcrop-selection {
+    background-color:transparent;
+}
+

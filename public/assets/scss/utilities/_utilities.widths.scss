@@ -1,0 +1,36 @@
+/*
+    Utilities: Widths
+    ---
+    Width utility classes
+*/
+
+.u-width-1-6 {
+    width: span(1 of 6);
+    padding-left: gutter(6);
+    padding-right: gutter(6);
+}
+.u-width-2-6 {
+    width: span(2 of 6);
+    padding-left: gutter(6);
+    padding-right: gutter(6);
+}
+.u-width-3-6 {
+    width: span(3 of 6);
+    padding-left: gutter(6);
+    padding-right: gutter(6);
+}
+.u-width-4-6 {
+    width: span(4 of 6);
+    padding-left: gutter(6);
+    padding-right: gutter(6);
+}
+.u-width-5-6 {
+    width: span(5 of 6);
+    padding-left: gutter(6);
+    padding-right: gutter(6);
+}
+.u-width-6-6 {
+    width: span(6 of 6);
+    padding-left: gutter(6);
+    padding-right: gutter(6);
+}

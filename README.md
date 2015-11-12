@@ -14,9 +14,7 @@ Open source Node.js + Angular CMS
 
 #### Start required services
 
-Make sure mongo and redis are running on your server. If these services are not running, execute `mongod` and `redis-server` in separate terminal windows.
-
-> Note: we will automate this process in the future.
+Make sure mongo is running on your server. If this service is not running, execute `mongod` in a separate terminal window.
 
 #### Install development & production dependencies
 

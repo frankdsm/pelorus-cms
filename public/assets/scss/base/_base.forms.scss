@@ -1,0 +1,75 @@
+/*
+    Base: Forms
+    ---
+    Default markup for the form elements
+*/
+
+fieldset {
+    border: 0;
+    //@include margin-bottom(1);
+}
+
+legend,
+label[for] {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    //@include text-dimensions($alpha-font-size,1,0,0,.25);
+}
+
+label {
+    &.required {
+        &::after {
+            content: "*";
+            margin-left: 5px;
+            color: red;
+
+        }
+    }
+}
+
+input {
+
+}
+
+
+textarea {
+    height: auto;
+    resize: none;
+}
+
+// Placeholders
+
+::-webkit-input-placeholder {
+    font-family: $beta-font-family;
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    font-family: $beta-font-family;
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    font-family: $beta-font-family;
+    font-style: italic;
+}
+
+// Firefox inner border fix
+
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+// Input field disabled state
+input:disabled,
+textarea:disabled {
+    opacity: 0.6;
+}
+
+input::focus {
+    outline: 0;
+}

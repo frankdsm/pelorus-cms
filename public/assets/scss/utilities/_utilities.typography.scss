@@ -1,0 +1,44 @@
+/*
+    Utilities: Typography
+    ---
+    Semantic helper classes for typography
+*/
+
+.u-text-uppercase {
+    text-transform: uppercase;
+}
+
+.u-text-lowercase {
+    text-transform: lowercase;
+}
+
+
+.u-text-thin {
+    font-weight: 100;
+}
+.u-text-light {
+    font-weight: 300;
+}
+.u-text-normal {
+    font-weight: 400;
+}
+.u-text-medium {
+    font-weight: 500;
+}
+.u-text-bold {
+    font-weight: 700;
+}
+.u-text-ultra-bold {
+    font-weight: 900;
+}
+
+
+.u-text-left {
+    text-align: left;
+}
+.u-text-center {
+    text-align: center;
+}
+.u-text-right {
+    text-align: right;
+}

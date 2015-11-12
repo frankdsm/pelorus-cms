@@ -1,0 +1,30 @@
+//
+//  Plugins: Ng Notify
+//  ---
+//  Override styling of the NgNotify component
+//
+
+.ngn {
+    max-width: 350px;
+    left: auto;
+    right: 20px;
+
+    font-size: 14px;
+    text-align: left;
+    padding: 25px 100px 22px 30px;
+
+    border-radius: 3px;
+}
+
+.ngn-dismiss {
+    text-align: center;
+    right: 25px;
+}
+
+.ngn-bottom {
+    bottom: 20px;
+}
+
+.ngn-top {
+    top: 20px;
+}

@@ -1,0 +1,24 @@
+$input-border-color: #bdc4c9;
+
+.text-input-wrapper {
+
+    input[type="text"],
+    input[type="url"],
+    textarea {
+        border: 1px solid $input-border-color;
+        padding: 5px 6px;
+        width: 100%;
+        margin: 2px 0 5px;
+        line-height: normal;
+        border-radius: 3px;
+        -webkit-appearance: none;
+
+        &.ng-touched.ng-invalid {
+            border-color: $red;
+        }
+    }
+}
+
+#croppingdiv div {
+    background-color: transparent;
+}

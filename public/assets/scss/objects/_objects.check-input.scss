@@ -1,0 +1,29 @@
+.check-input {
+    min-width: 100px;
+
+    @include padding-tb(0.5, 0.5);
+}
+
+.check-input--list {
+    .check-input--wrapper {
+        @include padding-top(0.25);
+    }
+}
+
+.check-input--wrapper {
+    padding-top: 25px;
+    position: relative;
+    overflow: visible;
+
+    .c-input-checkbox {
+        margin-top: 5px;
+    }
+
+    label {
+        box-sizing: border-box;
+        pointer-events: auto;
+        display: inline;
+
+        @include padding-lr(0.5);
+    }
+}

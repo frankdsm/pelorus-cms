@@ -1,0 +1,25 @@
+ul.c-draggable-list {
+    list-style: none;
+    @include margin-bottom(2);
+}
+
+.c-draggable-list {
+
+    .c-draggable-list__item {
+        border-bottom: $border-width $border-style palette('color-neutral', 'light');
+        @include padding-tb(0.5, 0.5);
+    }
+
+    .c-draggable-list__handle {
+        cursor: move;
+        cursor: -webkit-grabbing;
+
+        display: inline-block;
+
+        margin-right: 10px;
+    }
+
+    .c-draggeble-list__action {
+
+    }
+}

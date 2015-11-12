@@ -1,0 +1,94 @@
+//
+//  Tools: Mixins
+//  ---
+//  Global mixins
+//
+
+// Calculate text-color based on background-color
+
+@mixin text-color($c1) {
+    // Calculations based on https://vimeo.com/60224584
+    @if (.2126*red($c1) + .7152*green($c1) + .0722*blue($c1))/255 <= .5 {
+        color: mix(#FFF, $c1, 95%);
+    } @else {
+        color: mix(#000, $c1, 70%);
+    }
+}
+
+// Vertically center any object within its container. Works in IE9 and up.
+// @include vertical-center;
+
+@mixin vertical-center($position: relative) {
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+//
+// Media Query mixin (old version)
+// @include mq(#point, #query1, #query2);
+//
+@mixin mq($point, $query1: min, $query2: width) {
+    @media (#{$query1}-#{$query2}: $point) {
+        @content;
+    }
+}
+
+// Clearfix.
+// @mixin clearfix
+
+@mixin clearfix {
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        display: table;
+        content: '';
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+// Prevent Long URL’s From Breaking Out of Container.
+// http://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container
+
+@mixin word-break {
+    word-break: break-all;
+    hyphens: auto;
+}
+
+@mixin hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+// Transition
+// @mixin transition(transition)
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+// Size
+// @mixin size(size)
+@mixin size($s) {
+    width: $s;
+    height: $s;
+}
+
+
+// Material Design Shadow helper
+@mixin shadow($level: 1) {
+  @if $level == 1 {box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+  @else if $level == 2 {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+  @else if $level == 3 {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+  @else if $level == 4 {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+  @else if $level == 5 {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
+}

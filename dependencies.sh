@@ -8,16 +8,16 @@ NC='\033[0m' # No Color
 
 echo "${g}"
 echo "           +---------------------------------------------------------------+"
-echo "           |                  ${lg}Installing NPM dependencies${g}                  |"
+echo "           |                  ${lga}Installing NPM dependencies${g}                  |"
 echo "           +---------------------------------------------------------------+"
 npm install
 echo "${g}"
 echo "           +---------------------------------------------------------------+"
-echo "           |                  ${lg}Installing Bower Components${g}                  |"
+echo "           |                  ${lga}Installing Bower Components${g}                  |"
 echo "           +---------------------------------------------------------------+"
 bower install
 echo "${g}"
 echo "           +---------------------------------------------------------------+"
-echo "           |                  ${lg}Installing Bundle components${g}                 |"
+echo "           |                  ${lga}Installing Bundle components${g}                 |"
 echo "           +---------------------------------------------------------------+"
 bundle install

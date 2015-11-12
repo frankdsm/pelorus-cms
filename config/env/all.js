@@ -2,7 +2,7 @@
 
 module.exports = {
     api: {
-        prefix: 'api/',
+        prefix: '/api/',
         version: '1.0/'
     },
     twitter: {

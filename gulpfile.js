@@ -71,29 +71,36 @@ gulp.task('server', function() {
 
 // Bower integration
 gulp.task('wiredep', function () {
-  gulp.src(publicRoot+'/index.html')
-    .pipe(wiredep({
-        directory: publicRoot+'/app/bower_components',
-        fileTypes: {
-            html: {
-              block: /(([ \t]*)<!--\s*bower:*(\S*)\s*-->)(\n|\r|.)*?(<!--\s*endbower\s*-->)/gi,
-              detect: {
-                js: /<script.*src=['"]([^'"]+)/gi,
-                css: /<link.*href=['"]([^'"]+)/gi
-              },
-              replace: {
-                js: '<script src="{{filePath}}"></script>',
-                css: '<link rel="stylesheet" href="/{{filePath}}" />'
-              }
+    gulp.src(publicRoot+'/index.html')
+        .pipe(wiredep({
+            directory: publicRoot+'/app/bower_components',
+            fileTypes: {
+                html: {
+                block: /(([ \t]*)<!--\s*bower:*(\S*)\s*-->)(\n|\r|.)*?(<!--\s*endbower\s*-->)/gi,
+                detect: {
+                    js: /<script.*src=['"]([^'"]+)/gi,
+                    css: /<link.*href=['"]([^'"]+)/gi
+                },
+                replace: {
+                    js: '<script src="{{filePath}}"></script>',
+                    css: '<link rel="stylesheet" href="/{{filePath}}" />'
+                }
             },
         }
     }))
     .pipe(gulp.dest(publicRoot));
 });
 
+gulp.task('inject', function () {
+    var target = gulp.src(publicRoot+'/index.html'),
+        sources = gulp.src([publicRoot+'/app/**/*.js', publicRoot+'/assets/css/**/*.css', '!'+publicRoot+'/app/bower_components/**/*'], {read: false});
+    return target.pipe(plugins.inject(sources)).pipe(gulp.dest(publicRoot));
+});
+
 gulp.task('frontend', function() {
     runSequence(
         'wiredep',
+        'inject',
         'webserver'
     );
 });

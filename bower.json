@@ -1,0 +1,21 @@
+{
+  "name": "pelorus-cms",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hvperdrive/pelorus-cms",
+  "authors": [
+    "Hyperdrive <laurens.peeters@district01.be>"
+  ],
+  "description": "Open source node + angular cms",
+  "main": "app/index.html",
+  "moduleType": [],
+  "license": "GPL-2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "development/app/bower_components",
+    "test",
+    "tests"
+  ]
+}

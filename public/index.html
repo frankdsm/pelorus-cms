@@ -14,6 +14,7 @@
 
         <!-- Automatic injection of relevant css files using gulp task "inject" -->
         <!-- inject:css -->
+        <link rel="stylesheet" href="assets/css/styles.css">
         <!-- endinject -->
 
         <!-- Load favicon -->
@@ -24,10 +25,21 @@
         <!-- Base tag, for html5mode -->
         <base href="/">
     </head>
-    <body>
+    <body ng-app="pelorus">
 
-        <h1>This is Pelorus CMS</h1>
-        <p>If you see this message, something is awefully wrong.<br>Please verify that all .js-files load correctly and try again. <br>Still can't figure out what's wrong? Try getting help on <a href="http://stackoverflow.com/questions/tagged/pelorus">stackoverflow</a> or on our <a href="https://github.com/hvperdrive/pelorus-cms/issues">github</a>.</p>
+        <div class="body">
+
+            <div id="container" class="appContainer">
+                <navigation></navigation>
+                <header></header>
+
+                <div class="content" ui-view="">
+                    <h1>This is Pelorus CMS</h1>
+                    <p>If you see this message, something is awefully wrong.<br>Please verify that all .js-files load correctly and try again. <br>Still can't figure out what's wrong? Try getting help on <a href="http://stackoverflow.com/questions/tagged/pelorus">stackoverflow</a> or on our <a href="https://github.com/hvperdrive/pelorus-cms/issues">github</a>.</p>
+                </div>
+
+            </div>
+        </div>
 
         <!-- Automatic injection of bower css files using gulp task "wiredep" -->
         <!-- bower:js -->
@@ -38,7 +50,7 @@
 
         <!-- Automatic injection of relevant js files using gulp task "inject" -->
         <!-- inject:js -->
-        <script src="/public/app/app.module.js"></script>
+        <script src="app/app.module.js"></script>
         <!-- endinject -->
     </body>
 </html>

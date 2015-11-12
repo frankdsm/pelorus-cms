@@ -29,7 +29,27 @@ var LanguageSchema = new Schema({
     }
 });
 
+LanguageSchema.set('toJSON', {});
+
+LanguageSchema.set('toObject', {});
+
 // Set the name of the collection
 LanguageSchema.set('collection', 'languages');
+
+if (!LanguageSchema.options.toObject) {
+    LanguageSchema.options.toObject = {};
+}
+
+LanguageSchema.options.toObject.transform = function (doc, ret) {
+    delete ret.__v;
+};
+
+if (!LanguageSchema.options.toJSON) {
+    LanguageSchema.options.toJSON = {};
+}
+
+LanguageSchema.options.toJSON.transform = function (doc, ret) {
+    delete ret.__v;
+};
 
 module.exports = mongoose.model('Language', LanguageSchema);

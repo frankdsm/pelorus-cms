@@ -14,12 +14,6 @@ gulp.task('lint', function() {
         .pipe(plugins.jshint.reporter(stylish));
 });
 
-// Run "npm i" before running gulp
-gulp.task('npm', function() {
-    return gulp.src(['./package.json', './bower.json'])
-        .pipe(plugins.install());
-});
-
 // Start the server with nodemon
 gulp.task('nodemon', function() {
     return plugins.nodemon({
@@ -48,7 +42,6 @@ gulp.task('openDocs',function() {
 
 gulp.task('default', function() {
     runSequence(
-        'npm',
         'lint',
         'nodemon'
     );

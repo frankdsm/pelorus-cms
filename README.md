@@ -12,7 +12,6 @@ Open source Node.js + Angular.js CMS
 ### Start the server
 
 ```sh
-$ npm i (only necessary the very first time)
 $ gulp
 ```
 ### Start the server in a specific environment

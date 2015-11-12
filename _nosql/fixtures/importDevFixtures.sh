@@ -10,7 +10,8 @@ SERVER=127.0.0.1:27017
 FIXTURES=(
     languages,
     config,
-    taxonomy
+    taxonomy,
+    footer
 )
 
 # Run the mongoImport command n-times

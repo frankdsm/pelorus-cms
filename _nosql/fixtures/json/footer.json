@@ -1,0 +1,87 @@
+[
+  {
+    "_id": {
+      "$oid": "55e029ce4d6f636d32cc0b00"
+    },
+    "address": {
+      "en": {
+        "street": "Van Arteveldestraat",
+        "number": "223a",
+        "postcode": "2000",
+        "city": "Antwerpen"
+      },
+      "nl": {
+        "street": "Van Arteveldestraat",
+        "number": "223a",
+        "postcode": "2000",
+        "city": "Antwerpen"
+      },
+      "fr": {
+        "street": "Van Arteveldestraat",
+        "number": "223a",
+        "postcode": "aaa",
+        "city": "Antwerpen"
+      },
+      "de": {
+        "street": "Van Arteveldestraat",
+        "number": "223a",
+        "postcode": "2000",
+        "city": "Antwerpen"
+      },
+      "multiLanguage": true
+    },
+    "versions": [],
+    "phone": {
+      "de": "032211333",
+      "fr": "032211333",
+      "nl": "032211333",
+      "en": "032211333",
+      "multiLanguage": true
+    },
+    "email": {
+      "de": "info@district.be",
+      "fr": "info@district.be",
+      "nl": "info@district.be",
+      "en": "info@district.be",
+      "multiLanguage": true
+    },
+    "links": {
+      "de": [
+        {
+          "value": {
+            "url": "http://www.antwerpen.be",
+            "description": "Antwerpen.be"
+          }
+        }
+      ],
+      "fr": [
+        {
+          "value": {
+            "url": "http://www.antwerpen.be",
+            "description": "Antwerpen.be"
+          }
+        }
+      ],
+      "nl": [
+        {
+          "value": {
+            "url": "http://www.antwerpen.be",
+            "description": "Antwerpen.be"
+          }
+        }
+      ],
+      "en": [
+        {
+          "value": {
+            "url": "http://www.antwerpen.be",
+            "description": "Antwerpen.be"
+          }
+        }
+      ],
+      "multiLanguage": true
+    },
+    "active": true,
+    "uuid": "915e813b-1d61-4cda-bd5a-06a5cd89a2c8",
+    "__v": 0
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "name": "pelorus-cms",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hvperdrive/pelorus-cms",
+  "authors": [
+    "Hyperdrive <laurens.peeters@district01.be>"
+  ],
+  "description": "Open source node + angular cms",
+  "main": "app/index.html",
+  "moduleType": [],
+  "license": "GPL-2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "lodash": "~3.10.1",
+    "font-awesome": "~4.4.0",
+    "normalize-css": "normalize.css#~3.0.3"
+  },
+  "overrides": {}
+}

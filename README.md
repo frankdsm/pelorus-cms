@@ -1,5 +1,5 @@
 # Pelorus CMS
-Open source Node.js + Angular.js CMS
+Open source Node.js + Angular CMS
 
 ## Setup
 
@@ -8,16 +8,46 @@ Open source Node.js + Angular.js CMS
 * NPM
 * Node.js
 * MongoDB
+* Bower
 
-### Start the server
+### Setting up your local machine
+
+#### Start required services
+
+Make sure mongo and redis are running on your server. If these services are not running, execute `mongod` and `redis-server` in separate terminal windows.
+
+> Note: we will automate this process in the future.
+
+#### Install development & production dependencies
+
+Before starting either one of the servers, make sure you have all dependencies like node and bower packages installed in the project folder.
+To do this automatically, run:
 
 ```sh
-$ gulp
+$ npm start
 ```
-### Start the server in a specific environment
+
+### Start the node server
+
+Starting the node server using default settings goes like this:
 
 ```sh
-$ NODE_ENV=test gulp
+$ gulp server
+```
+
+It's possible to start the server using environment-specific settings. You can edit and create new environments in `/config/evn/`.
+Starting the server using a specific environment goes like this:
+
+```sh
+$ NODE_ENV=test gulp server
+```
+
+If no environment is specified, the default environment `development` will be set.
+
+### Start the static server
+
+```sh
+$ gulp frontend
 ```
 
 ## Docs

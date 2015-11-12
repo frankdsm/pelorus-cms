@@ -1,7 +1,6 @@
 'use strict';
 
 require('rootpath')();
-
 var supertest = require('supertest'),
     expect = require('chai').expect,
     config = require('config/config');

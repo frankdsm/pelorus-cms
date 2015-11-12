@@ -34,6 +34,8 @@
     "lodash": "^3.10.1",
     "mongoose": "^4.2.5",
     "node-uuid": "^1.4.3",
+    "passport": "^0.3.2",
+    "passport-twitter": "^1.0.3",
     "path": "^0.12.7",
     "q": "^1.4.1",
     "request": "^2.65.0",

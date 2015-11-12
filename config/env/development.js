@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = {
+    domain: 'http://localhost:4000/',
     environment: 'development',
     port: 4000,
     mongo: {

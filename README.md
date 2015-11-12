@@ -1,5 +1,4 @@
-<img src="http://district01.be/projects/pelorus-small.svg" alt="Pelorus CMS" style="width: 50px; height: 50px;"/>
-#Pelorus CMS
+# ![Pelorus cms](http://district01.be/projects/pelorus-small.svg =50x) Pelorus CMS
 Open source Node.js + Angular CMS
 
 ## Setup

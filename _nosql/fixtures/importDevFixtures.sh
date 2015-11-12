@@ -9,7 +9,8 @@ SERVER=127.0.0.1:27017
 # The fixtures that will be imported into the database.
 FIXTURES=(
     languages,
-    config
+    config,
+    taxonomy
 )
 
 # Run the mongoImport command n-times

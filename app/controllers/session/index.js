@@ -2,7 +2,7 @@
 
 require('rootpath')();
 var _ = require('lodash'),
-    LanguageController = require('app/controllers/languages');
+    languageController = require('app/controllers/languages');
 
 /**
  * @api {get} /api/session/language/ Get current language
@@ -79,7 +79,7 @@ exports.setLanguage = function(req, res, next) {
     }
 
     // Get active languages
-    LanguageController.activeLanguagesCallback(function(_err, _languages) {
+    languageController.activeLanguagesCallback(function(_err, _languages) {
         if(!_err) {
             activeLanguages = _languages;
         } else {

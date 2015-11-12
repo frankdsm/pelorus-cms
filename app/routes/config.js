@@ -6,6 +6,6 @@ var configController = require('app/controllers/config'),
     baseUrl = config.api.prefix + config.api.version + 'config';
 
 module.exports = function(app) {
-    app.route(baseUrl + '/:stype').get(configController.readOne);
-    app.route(baseUrl + '/:stype').put(configController.update);
+    app.route(baseUrl + '/:type').get(configController.readOne);
+    app.route(baseUrl + '/:type').put(configController.update);
 };

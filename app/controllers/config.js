@@ -20,7 +20,7 @@ var Config = require('app/models/config'),
  *     }
  */
 var readOne = function (req, res, next) {
-    Config.findOne({type: req.params.stype}, {versions: 0})
+    Config.findOne({type: req.params.type}, {versions: 0})
         .populate('data.siteHome')
         .exec(function(err, item) {
             if(!err && item) {
@@ -53,7 +53,7 @@ exports.update = function (req, res, next) {
     delete req.body._id;
     // Update version before save
     versions.add(Config, req.body, function(data) {
-        Config.findOneAndUpdate({type: req.params.stype}, data)
+        Config.findOneAndUpdate({type: req.params.type}, data)
             .then(
                 function onSuccess(oldObject) {
                     // Check if siteHome exists in the req object

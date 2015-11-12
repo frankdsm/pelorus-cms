@@ -1,0 +1,37 @@
+/*
+    Components: Form
+    ---
+    Form styling and structure
+*/
+
+/**
+ *  1. The appearance property defines how elements appear by default.
+ *     By setting the value to none the default appearance can be entirely redefined using other CSS properties.
+ */
+
+ .c-form {
+
+ }
+
+
+// Form Fieldset
+ .c-form__fieldset {
+    @include margin-bottom(2);
+    @include padding-tb(1);
+    border-top: $border-width $border-style palette('color-neutral', 'light');
+    //border-bottom: $border-width $border-style palette('color-neutral', 'light');
+
+    .c-form__fieldset__legend {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: palette('color-neutral', 'light');
+
+        @include padding-top(1);
+        @include span(2 of 6 first);
+    }
+
+    .c-form__fieldset__content {
+        @include span(4 of 6 last);
+
+    }
+ }

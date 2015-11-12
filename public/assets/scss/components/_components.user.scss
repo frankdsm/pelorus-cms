@@ -1,0 +1,15 @@
+/*
+    Components: User
+    ---
+    User displays
+*/
+
+.c-user--table {
+
+    .c-user--table--profile-picture {
+        @include size(40px);
+        border-radius: 80px;
+
+        margin-right: 10px;
+    }
+}

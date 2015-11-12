@@ -1,0 +1,21 @@
+.loader {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    vertical-align: top;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+}
+.loader span {
+    display: block;
+}
+/**
+ * Set icon color
+ */
+
+.loader svg path, .loader svg rect {
+    fill: $red;
+}

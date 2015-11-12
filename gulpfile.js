@@ -16,6 +16,17 @@ gulp.task('lint', function() {
         .pipe(plugins.jshint.reporter(stylish));
 });
 
+gulp.task('sass', function () {
+    gulp.src(publicRoot+'/assets/scss/**/*.scss')
+        .pipe(plugins.sourcemaps.init())
+        .pipe(plugins.sass({outputStyle: 'compressed'}))
+        .pipe(plugins.autoprefixer({
+            browsers: ['last 3 versions']
+        }))
+        .pipe(plugins.sourcemaps.write())
+        .pipe(gulp.dest(publicRoot+'/assets/css'));
+});
+
 // Start the node-server with nodemon
 gulp.task('nodemon', function() {
     return plugins.nodemon({
@@ -60,9 +71,6 @@ gulp.task('openDocs',function() {
 });
 
 gulp.task('server', function() {
-    /*
-        TODO: auto-start mongo + redis
-    */
     runSequence(
         'lint',
         'nodemon'
@@ -91,6 +99,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest(publicRoot));
 });
 
+// Script injection
 gulp.task('inject', function () {
     var target = gulp.src(publicRoot+'/index.html'),
         sources = gulp.src([publicRoot+'/app/**/*.js', publicRoot+'/assets/css/**/*.css', '!'+publicRoot+'/app/bower_components/**/*'], {read: false});

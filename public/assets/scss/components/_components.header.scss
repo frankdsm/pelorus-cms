@@ -1,0 +1,26 @@
+.header {
+    height: 80px;
+    width: calc(100% - 250px);
+    position: absolute;
+    left: 250px;
+    top: 0;
+
+    color: $blueDark;
+    background: $white;
+    border-bottom: 1px solid rgb(215, 215, 215);
+
+    .header-inner {
+        @include clearfix;
+        @include vertical-center;
+
+        padding: 0 20px;
+    }
+
+    .header--info {
+        float: left;
+    }
+
+    .header--user {
+        float: right;
+    }
+}

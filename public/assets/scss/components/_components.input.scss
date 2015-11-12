@@ -1,0 +1,186 @@
+/*
+    Components: Input
+    ---
+    Input styles & sizes.
+*/
+
+/**
+ *  1. The appearance property defines how elements appear by default.
+ *     By setting the value to none the default appearance can be entirely redefined using other CSS properties.
+ *
+ *  2. Controls the application of anti-aliasing when fonts are rendered.
+ *     Both Webkit & Firefox implements.
+ *     Works only on Mac OS X platform.
+ *
+ *  3. Offset the background image from the right
+ */
+
+
+// Input wrapper
+.c-input {
+    @include padding-tb(0.5, 0.5);
+    min-width: 100px;
+}
+
+.c-input_inner {
+    padding-top: 30px;
+    position: relative;
+    overflow: visible;
+
+    .c-label {
+        box-sizing: border-box;
+        position: absolute;
+        padding: 0;
+        left: 0;
+        top: 0;
+        pointer-events: auto;
+    }
+}
+
+
+// Input elements
+.c-input-text {
+    appearance: none; /* [1] */
+    -webkit-font-smoothing: antialiased; /* [2] */
+    -moz-osx-font-smoothing: grayscale; /* [2] */
+    background-color: palette(color-neutral,x-light);
+    border-radius: $radius;
+    border: $border-width $border-style palette(color-neutral);
+    color: palette(color-neutral,dark);
+    font-family: $alpha-font-family;
+    margin: 0;
+    width: 100%;
+    display: block;
+    position: relative;
+    outline: none;
+    line-height: normal;
+
+    transition: all $animation-duration $animation-easing;
+
+    &:focus {
+        color: palette(color-neutral,dark);
+        border-color: palette(color-alpha);
+        box-shadow: 0 0 2px palette(color-alpha,x-light);
+    }
+
+    &.has-error,
+    &.ng-dirty.ng-invalid {
+        border: 1px solid palette(color-error);
+
+        &:focus {
+            border-color: palette(color-error);
+            box-shadow: 0 0 2px palette(color-error,x-light);
+        }
+    }
+}
+
+// Input sizes
+.c-input-text--sm {
+    @include padding-lr(.5,.5);
+    @include input-dimensions($ms-1,1,0,.5,.5);
+}
+
+.c-input-text--md {
+    @include padding-lr(.75,.75);
+    @include input-dimensions($ms-1,1,0,.75,.75);
+}
+
+.c-input-text--lg {
+    @include padding-lr(1,1);
+    @include input-dimensions($alpha-font-size,1,0,1,1);
+}
+
+// Input modifiers
+.c-input-text--prefix {
+    border-radius: $radius 0 0 $radius;
+    border-right: 0;
+}
+
+// Icon
+.c-input-text--icon {
+    & + .fa {
+        @include vertical-center(absolute);
+        transition: color $animation-duration $animation-easing;
+        animation: fadeIn $animation-duration $animation-easing;
+    }
+
+    &:focus + .fa {
+        color: $color-alpha;
+    }
+
+    &.c-input-text--sm + .fa {
+        right: calc(#{gutter(6)} + #{0.5 * 1rem * 2});
+    }
+    &.c-input-text--md + .fa {
+        right: calc(#{gutter(6)} + #{0.75 * 1rem * 2});
+    }
+    &.c-input-text--lg + .fa {
+        right: calc(#{gutter(6)} + #{1 * 1rem * 2});
+    }
+}
+
+// DateTime input
+.c-input-dateTime {
+
+    @include clearfix;
+
+    .c-input-dateTime_date {
+        width: 80%;
+    }
+
+    .c-input-dateTime_time {
+        width: 20%;
+    }
+
+    .c-input-dateTime_date,
+    .c-input-dateTime_time {
+        float: left;
+        @extend .c-input-text;
+        width: auto;
+    }
+}
+
+// Textarea input
+.c-input-textarea {
+    @extend .c-input-text;
+}
+
+.c-input-textarea--sm {
+    @include padding-lr(0.5, 0.5);
+    @include input-dimensions($ms-1, 1, 0, 0.5, 1);
+}
+
+.c-input-textarea--md {
+    @extend .c-input-text--md;
+}
+
+.c-input-textarea--lg {
+    @extend .c-input-text--lg;
+}
+
+// Input option
+.c-input-option {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+// Select option
+.c-input-select {
+    @extend .c-input-text;
+
+    background: url("../img/interface/downarrow_gray.svg") no-repeat #fff;
+    background-position: right 10px center; /* [3] */
+}
+
+.c-input-select--sm {
+    @extend .c-input-text--sm;
+}
+
+.c-input-select--md {
+    @extend .c-input-text--md;
+}
+
+.c-input-select--lg {
+    @extend .c-input-text--lg;
+}

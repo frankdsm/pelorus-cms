@@ -1,0 +1,34 @@
+html {
+}
+
+.main-view {
+    //min-height: 100vh;
+
+    display: block;
+
+    overflow-y: scroll;
+    height: calc(100vh - 80px);
+
+    /*.main-view-inner {
+        padding-top: 40px;
+        margin: 0 auto;
+        width: 90%;
+        display: block;
+    }*/
+}
+
+.main-view-inner {
+
+    @include container;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+    padding: 30px 30px 90px 30px;
+    background: $white;
+}
+
+#container {
+    //@include container();
+    min-height: 100vh;
+}

@@ -1,0 +1,13 @@
+// Components: Settings
+// ---
+// Styling for the settings component of the resource
+//
+
+.c-settings {
+    color: palette(color-neutral, x-light);
+    background-color: palette(color-neutral, dark);
+
+    .c-settings_inner {
+        @include padding-lr(1, 1);
+    }
+}

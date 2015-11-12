@@ -1,0 +1,24 @@
+//
+//  Object: Resource Page
+//  ---
+//  Layout Design pattern for the resource page
+//
+
+.o-resourcePage {
+    position: relative;
+
+    .c-settings {
+        position: fixed;
+        width: 300px;
+        height: calc(100vh - 80px);
+        top: 80px;
+        right: 0;
+        transform: translateX(100%);
+
+        transition: all $animation-duration $animation-easing;
+
+        &.is-active {
+            transform: translateX(0);
+        }
+    }
+}

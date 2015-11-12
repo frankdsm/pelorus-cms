@@ -1,0 +1,50 @@
+//
+//  Utilities: Animations
+//  ---
+//  Animations used throughout the interface
+//
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUpBig {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, inherit, inherit);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, inherit, inherit);
+    }
+}

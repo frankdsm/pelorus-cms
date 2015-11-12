@@ -1,0 +1,36 @@
+/*
+    Components: Brand
+    ---
+    Branding
+*/
+
+.c-brand {
+    background: $primary;
+
+    .c-brand__meta {
+        padding: 20px 20px 0;
+        font-size: 12px;
+
+        .c-brand__meta__version {
+            float: right;
+        }
+    }
+
+    .c-brand__logo {
+        @include text-dimensions($ms2,0,0,1,0.6);
+    }
+
+    .c-brand__site-info {
+        @include text-dimensions($ms-1,0,0,1,1);
+        background: $gray;
+
+        div > i, span a{
+            color: palette(color-neutral, x-light);
+            vertical-align: middle;
+        }
+    }
+
+    .navigation--info {
+        height: 60px;
+    }
+}

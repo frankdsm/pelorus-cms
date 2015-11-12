@@ -1,0 +1,19 @@
+/*
+    Components: Popup
+    ---
+    Popup styles.
+*/
+
+.c-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 400px;
+ 
+    border: $border-width $border-style palette('color-neutral', 'base');
+    border-radius: $radius;
+    z-index: 10000000;
+
+    @include padding-lr(1);
+    @include padding-tb(1);  
+}

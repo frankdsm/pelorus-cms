@@ -1,0 +1,19 @@
+//
+//  Object: Overview page
+//  ---
+//  Layout Design pattern for the overview page
+//
+
+.o-overviewPage {
+    // Empty block
+}
+
+.o-overviewPage {
+    .content--inner {
+        animation: fadeUp 250ms $animation-bezier;
+    }
+}
+
+.o-overviewPage_filters {
+    @include margin-tb(2, 2);
+}

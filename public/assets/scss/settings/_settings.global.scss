@@ -1,0 +1,10 @@
+// Susy grid configuration
+
+$susy: (
+    global-box-sizing: border-box,
+    use-custom: (rem: true),
+    columns: 12,
+    container: 1280px,
+    gutters: 1 / 4.5,
+    gutter-position: inside
+);

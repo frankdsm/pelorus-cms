@@ -1,0 +1,33 @@
+//
+//  Object: Layout
+//  ---
+//  Layout Design patterns
+//
+
+// Two column layout
+.o-two-col {
+    @include clearfix();
+    overflow: auto;
+
+    .o-col-first {
+        @include span(3 of 6 first);
+    }
+
+    .o-col-last {
+        @include span(3 of 6 last);
+    }
+
+    .o-col {
+        @include span(3 of 6);
+    }
+}
+
+// Three column layout
+.o-three-col {
+    @include clearfix();
+    overflow: auto;
+
+    .o-col {
+        @include span(2 of 6);
+    }
+}

@@ -1,0 +1,31 @@
+//
+//  Utilities: Float
+//  ---
+//
+
+.u-overflowHidden {
+    overflow: hidden;
+}
+
+.clr {
+    @include clearfix;
+}
+.u-clear {
+    @include clearfix;
+}
+
+.fl {
+    float: left;
+}
+.u-floatLeft {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.u-floatRight {
+    float: right;
+}
+.fn {
+    float: none;
+}

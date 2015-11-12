@@ -1,0 +1,21 @@
+//
+//  Plugins: Angular Loading Bar
+//  ---
+//  Global functions
+//
+
+$loading-bar-color: $red;
+
+
+#loading-bar .bar {
+    background: $loading-bar-color;
+}
+
+#loading-bar .peg {
+    box-shadow: $loading-bar-color 1px 0 6px 1px;
+}
+
+#loading-bar-spinner .spinner-icon {
+    border-top-color:  $loading-bar-color;
+    border-left-color: $loading-bar-color;
+}

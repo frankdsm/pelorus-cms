@@ -6,6 +6,7 @@ var plugins = require('gulp-load-plugins')({
     gulp = require('gulp'),
     stylish = require('jshint-stylish'),
     runSequence = require('run-sequence'),
+    wiredep = require('wiredep').stream,
     publicRoot = './public';
 
 // Linter for .js files
@@ -68,8 +69,31 @@ gulp.task('server', function() {
     );
 });
 
+// Bower integration
+gulp.task('wiredep', function () {
+  gulp.src(publicRoot+'/index.html')
+    .pipe(wiredep({
+        directory: publicRoot+'/app/bower_components',
+        fileTypes: {
+            html: {
+              block: /(([ \t]*)<!--\s*bower:*(\S*)\s*-->)(\n|\r|.)*?(<!--\s*endbower\s*-->)/gi,
+              detect: {
+                js: /<script.*src=['"]([^'"]+)/gi,
+                css: /<link.*href=['"]([^'"]+)/gi
+              },
+              replace: {
+                js: '<script src="{{filePath}}"></script>',
+                css: '<link rel="stylesheet" href="/{{filePath}}" />'
+              }
+            },
+        }
+    }))
+    .pipe(gulp.dest(publicRoot));
+});
+
 gulp.task('frontend', function() {
     runSequence(
+        'wiredep',
         'webserver'
     );
 });

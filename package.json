@@ -60,6 +60,7 @@
     "mocha": "^2.3.3",
     "nock": "^2.17.0",
     "run-sequence": "^1.1.4",
-    "supertest": "^1.1.0"
+    "supertest": "^1.1.0",
+    "wiredep": "^3.0.0-beta"
   }
 }

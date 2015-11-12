@@ -206,7 +206,7 @@ exports.create = function (req, res, next) {
 
 
 /**
- * @api {get} /:language/api/taxonomy/term/:uuid Create new taxonomy list
+ * @api {get} /:language/api/taxonomy/term/:uuid Get term info
  * @apiGroup Taxonomy
  * @apiVersion 0.0.1
  *

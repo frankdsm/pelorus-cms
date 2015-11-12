@@ -102,8 +102,8 @@ gulp.task('wiredep', function () {
 // Script injection
 gulp.task('inject', function () {
     var target = gulp.src(publicRoot+'/index.html'),
-        sources = gulp.src([publicRoot+'/app/**/*.js', publicRoot+'/assets/css/**/*.css', '!'+publicRoot+'/app/bower_components/**/*'], {read: false});
-    return target.pipe(plugins.inject(sources)).pipe(gulp.dest(publicRoot));
+        sources = gulp.src([publicRoot+'/app/**/*.js', publicRoot+'/assets/css/**/*.css', '!'+publicRoot+'/app/bower_components/**/*']);
+    return target.pipe(plugins.inject(sources, {relative: true})).pipe(gulp.dest(publicRoot));
 });
 
 gulp.task('frontend', function() {

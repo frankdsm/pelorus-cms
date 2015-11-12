@@ -10,8 +10,24 @@ bower_components
 # Optional npm cache directory
 .npm
 
-# Mac files
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editors
+*.sublime*
+nbproject/*
+.idea
+.settings
+
+# Sass /
+**\.sass-cache
+Gemfile.lock
 
 # Docs
 docs/*

@@ -7,6 +7,7 @@ var express = require('express'),
     helmet = require('helmet'),
     swig = require('swig'),
     path = require('path'),
+    passport = require('passport'),
     session = require('express-session'),
     mongoStore = require('connect-mongo')({
         session: session
@@ -18,6 +19,10 @@ module.exports = function(app) {
     app.engine('html', swig.renderFile);
     app.set('view engine', 'html');
 
+    // Load social config
+    require('app/helpers/social/index.js');
+
+    app.use(passport.initialize());
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(cookieParser());

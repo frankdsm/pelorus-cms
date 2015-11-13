@@ -1,0 +1,283 @@
+[
+  {
+    "_id": "text",
+    "label": "Text",
+    "type": "text",
+    "dataType": "string",
+    "isQueryable": false,
+    "isTranslate": true,
+    "isMultiple": false,
+    "operators": [
+      {
+        "value": "equals",
+        "label": "equals"
+      },
+      {
+        "value": "i",
+        "label": "contains"
+      },
+      {
+        "value": "^",
+        "label": "starts with"
+      },
+      {
+        "value": "$",
+        "label": "ends with"
+      }
+    ],
+    "uuid": "3fd103f7-3fba-421e-a049-b11bf0b55454"
+  },
+  {
+    "_id": "textarea",
+    "label": "Textarea",
+    "type": "textarea",
+    "dataType": "string",
+    "isQueryable": false,
+    "isTranslate": true,
+    "isMultiple": false,
+    "operators": [],
+    "uuid": "1cc9b63b-1da3-4783-97a8-afb0b25758e9"
+  },
+  {
+    "_id": "taxonomy",
+    "label": "Taxonomy",
+    "type": "taxonomy",
+    "dataType": "array",
+    "isQueryable": true,
+    "isTranslate": false,
+    "isMultiple": false,
+    "operators": [
+      {
+        "value": "contains all",
+        "label": "Contains all"
+      },
+      {
+        "value": "contains none",
+        "label": "Contains none"
+      }
+    ],
+    "uuid": "f8766b84-307d-4c68-8c9b-56ef4aed9c77"
+  },
+  {
+    "_id": "file",
+    "label": "File",
+    "type": "file",
+    "dataType": "file",
+    "isQueryable": false,
+    "isTranslate": false,
+    "isMultiple": true,
+    "operators": [],
+    "uuid": "3c4be04e-7721-4845-80d4-e3bc2021904e"
+  },
+  {
+    "_id": "image",
+    "label": "Image",
+    "type": "image",
+    "dataType": "file",
+    "isQueryable": false,
+    "isTranslate": false,
+    "isMultiple": true,
+    "operators": [],
+    "uuid": "db0dd755-83f1-4fc1-8bc6-2f2d3f279179"
+  },
+  {
+    "_id": "date",
+    "label": "Date",
+    "type": "date",
+    "dataType": "date",
+    "isQueryable": true,
+    "isTranslate": false,
+    "isMultiple": false,
+    "operators": [
+      {
+        "value": "greater than",
+        "label": "After"
+      },
+      {
+        "value": "greater than or equals",
+        "label": "After or on"
+      },
+      {
+        "value": "lower than",
+        "label": "Before"
+      },
+      {
+        "value": "lower than or equals",
+        "label": "Before or on"
+      },
+      {
+        "value": "equals",
+        "label": "on"
+      }
+    ],
+    "uuid": "d7f8bcee-5216-491e-81d4-2cd40091383b"
+  },
+  {
+    "_id": "datetime",
+    "label": "Date/time",
+    "type": "datetime",
+    "dataType": "date",
+    "isQueryable": true,
+    "isTranslate": false,
+    "isMultiple": false,
+    "operators": [
+      {
+        "value": "greater than",
+        "label": "After"
+      },
+      {
+        "value": "greater than or equals",
+        "label": "After or on"
+      },
+      {
+        "value": "lower than",
+        "label": "Before"
+      },
+      {
+        "value": "lower than or equals",
+        "label": "Before or on"
+      },
+      {
+        "value": "equals",
+        "label": "on"
+      }
+    ],
+    "uuid": "97f06ffc-baef-4ce1-817b-ba47a48a18ec"
+  },
+  {
+    "_id": "select",
+    "label": "Select box",
+    "type": "select",
+    "dataType": "option",
+    "isQueryable": true,
+    "isTranslate": false,
+    "isMultiple": false,
+    "operators": [
+      {
+        "value": "is",
+        "label": "Is"
+      },
+      {
+        "value": "is not",
+        "label": "Is not"
+      }
+    ],
+    "uuid": "a7620b16-b4b4-4ebb-ba95-d43ef954ba2a"
+  },
+  {
+    "_id": "number",
+    "label": "Number",
+    "type": "number",
+    "dataType": "int",
+    "isQueryable": true,
+    "isTranslate": false,
+    "isMultiple": false,
+    "operators": [
+      {
+        "value": "greater than",
+        "label": "Greater than"
+      },
+      {
+        "value": "greater than or equals",
+        "label": "Greater than or equals"
+      },
+      {
+        "value": "lower than",
+        "label": "Smaller than"
+      },
+      {
+        "value": "lower than or equals",
+        "label": "Smaller than or equals"
+      },
+      {
+        "value": "equals",
+        "label": "is"
+      }
+    ],
+    "uuid": "733e3549-1a7d-47fe-a412-255c1646ecfb"
+  },
+  {
+    "_id": "radio",
+    "label": "Radio buttons",
+    "type": "radio",
+    "dataType": "option",
+    "isQueryable": true,
+    "isTranslate": false,
+    "isMultiple": false,
+    "operators": [
+      {
+        "value": "is",
+        "label": "Is"
+      },
+      {
+        "value": "is not",
+        "label": "Is not"
+      }
+    ],
+    "uuid": "ae29c1e0-e71f-4c9e-821d-9da31132fe66"
+  },
+  {
+    "_id": "checkbox",
+    "label": "Checkbox",
+    "type": "checkbox",
+    "dataType": "object",
+    "isQueryable": true,
+    "isTranslate": false,
+    "isMultiple": false,
+    "operators": [
+      {
+        "value": "is",
+        "label": "Is"
+      },
+      {
+        "value": "is not",
+        "label": "Is not"
+      }
+    ],
+    "uuid": "7a2927e2-48bf-47f3-ad0b-19fc1ca09e6b"
+  },
+  {
+    "_id": "richtext",
+    "label": "Rich text",
+    "type": "richtext",
+    "dataType": "string",
+    "isQueryable": false,
+    "isTranslate": true,
+    "isMultiple": false,
+    "operators": [],
+    "uuid": "36723fb7-7792-4d14-bc43-c0623ba630f4"
+  },
+  {
+    "_id": "url",
+    "label": "Url",
+    "type": "url",
+    "dataType": "string",
+    "isQueryable": false,
+    "isTranslate": true,
+    "isMultiple": true,
+    "operators": [],
+    "uuid": "2084ca27-e58e-4a97-b5b6-5eb498f6335e"
+  },
+  {
+    "_id": "email",
+    "label": "Email",
+    "type": "email",
+    "dataType": "string",
+    "isQueryable": false,
+    "isTranslate": true,
+    "isMultiple": true,
+    "operators": [],
+    "uuid": "440b899d-ff69-4840-b2ef-47b10cc654a8"
+  },
+  {
+    "_id": "phone",
+    "label": "Phone",
+    "type": "phone",
+    "dataType": "string",
+    "isQueryable": false,
+    "isTranslate": true,
+    "isMultiple": true,
+    "operators": [],
+    "uuid": "4682dd7c-6e3e-4543-9bc4-00e8caf681c2"
+  }
+]

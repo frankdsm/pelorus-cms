@@ -11,7 +11,8 @@ FIXTURES=(
     languages,
     config,
     taxonomy,
-    footer
+    footer,
+    fieldtypes
 )
 
 # Run the mongoImport command n-times

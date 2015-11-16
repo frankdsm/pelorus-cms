@@ -1,0 +1,807 @@
+[
+    {
+      "_id" : {
+          "$oid": "56262e3d3db82a99c9689fec"
+      },
+      "versions" : [],
+      "solr" : false,
+      "fields" : [
+          {
+              "_id" : "partnerImage",
+              "validation" : {
+                  "required" : false
+              },
+              "type" : "image",
+              "label" : "partnerImage",
+              "minimageheight" : 50,
+              "minimagewidth" : 50,
+              "dataType" : "file",
+              "multiLanguage" : false,
+              "options" : [],
+              "max" : 10,
+              "min" : 1,
+              "uuid" : "6dec27e5-8a90-4d3d-b86d-c1d841ecd8f9"
+          }
+      ],
+      "meta" : {
+          "safeLabel" : "partner",
+          "label" : "Partner",
+          "deleted" : false,
+          "taxonomy" : {
+              "tags" : [],
+              "fieldType" : "taxonomy"
+          },
+          "lastModified" : "2015-10-29T14:39:23.375Z",
+          "created" : "2015-10-29T14:39:23.375Z"
+      },
+      "uuid" : "ad03c1eb-13d2-4321-9ddb-8fab25f494b3",
+      "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "56376f3b5957481c050e6e88"
+    },
+    "versions": [],
+    "solr" : false,
+    "fields" : [
+        {
+            "_id" : "title",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "text",
+            "label" : "Title",
+            "operators" : [
+                {
+                    "label" : "equals",
+                    "value" : "equals"
+                },
+                {
+                    "label" : "contains",
+                    "value" : "i"
+                },
+                {
+                    "label" : "starts with",
+                    "value" : "^"
+                },
+                {
+                    "label" : "ends with",
+                    "value" : "$"
+                }
+            ],
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "8683bf2d-b987-4c70-a2c2-c268fb947b5b"
+        },
+        {
+            "_id" : "image",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "image",
+            "label" : "Image",
+            "minimageheight" : 500,
+            "minimagewidth" : 1920,
+            "dataType" : "file",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "3a4058e1-bcfc-42c4-a41e-7ae4d64c1398"
+        }
+    ],
+    "meta" : {
+        "created" : "2015-11-02T14:12:11.129Z",
+        "taxonomy" : {
+            "fieldType" : "taxonomy",
+            "tags" : []
+        },
+        "deleted" : false,
+        "safeLabel" : "banner",
+        "description" : "Een banner wordt bovenaan op de homepage weergegeven.",
+        "label" : "Banner",
+        "lastModified" : "2015-11-10T13:15:41.460Z"
+    },
+    "uuid" : "bb7f8e09-a6dd-4919-a391-bfa363b40f9d",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "55d1d7e791e146cf53748495"
+    },
+    "versions": [],
+    "solr" : true,
+    "fields" : [
+        {
+            "dataType" : "string",
+            "defaultValue" : "",
+            "_id" : "title",
+            "type" : "text",
+            "label" : "Title",
+            "validation" : {
+                "required" : true
+            },
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "06af9359-c457-4cd4-9fa2-cc7d3920fe0f"
+        },
+        {
+            "dataType" : "string",
+            "_id" : "intro",
+            "type" : "textarea",
+            "label" : "Intro",
+            "validation" : {
+                "required" : false
+            },
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "e5c68b30-48cd-491b-ba22-395817521186"
+        },
+        {
+            "dataType" : "string",
+            "_id" : "body",
+            "type" : "textarea",
+            "label" : "Body",
+            "validation" : {
+                "required" : false
+            },
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "b0ae214a-f823-4408-83a3-1d9ec5baaae0"
+        },
+        {
+            "_id" : "partner",
+            "validation" : {
+                "required" : false
+            },
+            "label" : "Partner",
+            "type" : "taxonomy",
+            "operators" : [
+                {
+                    "value" : "contains all",
+                    "label" : "Contains all"
+                },
+                {
+                    "value" : "contains none",
+                    "label" : "Contains none"
+                }
+            ],
+            "dataType" : "array",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "a36698d9-2bf0-4ae1-946e-d08d2498934c"
+        },
+        {
+            "_id" : "teaserImage",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "image",
+            "label" : "Teaser Image",
+            "minimageheight" : 420,
+            "minimagewidth" : 730,
+            "dataType" : "file",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "da46b961-1e33-427f-afc5-1e8197a325be"
+        },
+        {
+            "_id" : "highlightImageBig",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "image",
+            "label" : "Highlight Image Big",
+            "minimageheight" : 708,
+            "minimagewidth" : 1060,
+            "dataType" : "file",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "5df0c0f0-2d61-41f8-8f37-220c0dabb89b"
+        },
+        {
+            "_id" : "highlightImageSmall",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "image",
+            "label" : "Highlight Image Small",
+            "minimageheight" : 418,
+            "minimagewidth" : 630,
+            "dataType" : "file",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "f833505d-a147-4fac-8a4d-a35eca26878c"
+        }
+    ],
+    "meta" : {
+        "created" : "2015-10-29T14:39:23.373Z",
+        "taxonomy" : {
+            "fieldType" : "taxonomy",
+            "tags" : []
+        },
+        "deleted" : false,
+        "safeLabel" : "news",
+        "label" : "News",
+        "description" : "Nieuwsberichten",
+        "lastModified" : "2015-11-10T13:17:08.311Z"
+    },
+    "uuid" : "49d8d019-cbf4-4b1b-8411-b40efbdecd90",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "5632346c01d4a7b8811984ec"
+    },
+    "versions": [],
+    "solr" : false,
+    "fields" : [
+        {
+            "_id" : "question",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "text",
+            "label" : "Question",
+            "operators" : [
+                {
+                    "value" : "equals",
+                    "label" : "equals"
+                },
+                {
+                    "value" : "i",
+                    "label" : "contains"
+                },
+                {
+                    "value" : "^",
+                    "label" : "starts with"
+                },
+                {
+                    "value" : "$",
+                    "label" : "ends with"
+                }
+            ],
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "45d0cf40-0a8d-429c-9e8b-511f5cfbdddb"
+        },
+        {
+            "_id" : "answer",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "textarea",
+            "label" : "Answer",
+            "operators" : [
+                {
+                    "value" : "equals",
+                    "label" : "equals"
+                },
+                {
+                    "value" : "i",
+                    "label" : "contains"
+                },
+                {
+                    "value" : "^",
+                    "label" : "starts with"
+                },
+                {
+                    "value" : "$",
+                    "label" : "ends with"
+                }
+            ],
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "7537d13c-7df3-4b0a-90d3-4ae6608c0462"
+        }
+    ],
+    "meta" : {
+        "created" : "2015-10-29T14:59:56.433Z",
+        "taxonomy" : {
+            "fieldType" : "taxonomy",
+            "tags" : []
+        },
+        "deleted" : false,
+        "label" : "FAQ",
+        "safeLabel" : "faq",
+        "description" : "Veelgestelde vragen.",
+        "lastModified" : "2015-11-10T13:17:01.138Z"
+    },
+    "uuid" : "cabc07bb-d623-4684-857d-08928445c213",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "564068e717337412260904f7"
+    },
+    "versions": [],
+    "solr" : false,
+    "fields" : [
+        {
+            "_id" : "title",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "text",
+            "label" : "Title",
+            "operators" : [
+                {
+                    "value" : "equals",
+                    "label" : "equals"
+                },
+                {
+                    "value" : "i",
+                    "label" : "contains"
+                },
+                {
+                    "value" : "^",
+                    "label" : "starts with"
+                },
+                {
+                    "value" : "$",
+                    "label" : "ends with"
+                }
+            ],
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "d99e101c-5da9-447a-897b-8e1e228fad44"
+        },
+        {
+            "_id" : "intro",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "textarea",
+            "label" : "Intro",
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "50834715-1fc7-46ad-b217-eeacfeb1a460"
+        },
+        {
+            "_id" : "image",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "image",
+            "label" : "Image",
+            "minimagewidth" : 1000,
+            "minimageheight" : 700,
+            "dataType" : "file",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "92184347-8bf5-4264-93ba-3beb1e64adbd"
+        }
+    ],
+    "meta" : {
+        "created" : "2015-11-09T09:35:35.807Z",
+        "taxonomy" : {
+            "fieldType" : "taxonomy",
+            "tags" : []
+        },
+        "deleted" : false,
+        "label" : "Mobility",
+        "description" : "Mobiliteitstips die gebruikt worden doorheen de website.",
+        "safeLabel" : "mobility",
+        "lastModified" : "2015-11-10T13:16:28.901Z"
+    },
+    "uuid" : "5f8b700c-a816-4d0f-8719-c2d627758857",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563b5b089c0b0657b0b436e1"
+    },
+    "versions": [],
+    "solr" : false,
+    "fields" : [
+        {
+            "_id" : "title",
+            "validation" : {
+                "required" : false
+            },
+            "type" : "text",
+            "label" : "Title",
+            "operators" : [
+                {
+                    "label" : "equals",
+                    "value" : "equals"
+                },
+                {
+                    "label" : "contains",
+                    "value" : "i"
+                },
+                {
+                    "label" : "starts with",
+                    "value" : "^"
+                },
+                {
+                    "label" : "ends with",
+                    "value" : "$"
+                }
+            ],
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "b89de8f6-e189-4634-bfab-e89122c1114d"
+        },
+        {
+            "_id" : "link",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "url",
+            "label" : "Link",
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "5755e293-a481-45f1-bfcc-2c3e65afc832"
+        },
+        {
+            "_id" : "image",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "image",
+            "label" : "Image",
+            "minimageheight" : 450,
+            "minimagewidth" : 790,
+            "dataType" : "file",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "af72f13b-14e2-41e2-b5e3-0c74ff5380b1"
+        }
+    ],
+    "meta" : {
+        "created" : "2015-11-05T13:35:04.726Z",
+        "taxonomy" : {
+            "fieldType" : "taxonomy",
+            "tags" : []
+        },
+        "deleted" : false,
+        "safeLabel" : "call_to_action",
+        "description" : "Blokken die gebruikt worden op detailpagina's.",
+        "label" : "Call To Action",
+        "lastModified" : "2015-11-10T13:16:07.579Z"
+    },
+    "uuid" : "937e9482-ece5-4ccd-b255-d45435938aa3",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563342bc3a157ac91f6994f3"
+    },
+    "versions": [],
+    "solr" : false,
+    "fields" : [
+        {
+            "_id" : "body",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "richtext",
+            "label" : "Body",
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "639ba4ce-626a-460f-8d44-e77a4f34edac"
+        },
+        {
+            "_id" : "lezPage",
+            "validation" : {
+                "required" : false
+            },
+            "type" : "checkbox",
+            "label" : "LEZ Page",
+            "operators" : [
+                {
+                    "value" : "is",
+                    "label" : "Is"
+                },
+                {
+                    "value" : "is not",
+                    "label" : "Is not"
+                }
+            ],
+            "dataType" : "object",
+            "multiLanguage" : false,
+            "options" : [
+                {
+                    "label" : "Lez page",
+                    "_id" : "lezPage"
+                }
+            ],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "9727e364-fdc0-4a3b-85da-5ba21e97ad6d"
+        }
+    ],
+    "meta" : {
+        "created" : "2015-10-30T10:13:16.016Z",
+        "taxonomy" : {
+            "fieldType" : "taxonomy",
+            "tags" : []
+        },
+        "deleted" : false,
+        "label" : "Static Page",
+        "description" : "De content voor het aanmaken van een statische pagina.",
+        "safeLabel" : "static_page",
+        "lastModified" : "2015-11-10T13:16:50.577Z"
+    },
+    "uuid" : "4abf25df-a839-4d19-9091-da2cd6eeb8e8",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "5638d5a0c1b1dd6233b5f50f"
+    },
+    "versions": [],
+    "solr" : false,
+    "fields" : [
+        {
+            "_id" : "title",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "text",
+            "label" : "Title",
+            "operators" : [
+                {
+                    "value" : "equals",
+                    "label" : "equals"
+                },
+                {
+                    "value" : "i",
+                    "label" : "contains"
+                },
+                {
+                    "value" : "^",
+                    "label" : "starts with"
+                },
+                {
+                    "value" : "$",
+                    "label" : "ends with"
+                }
+            ],
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "231c38ff-cca1-4fcd-98da-c256046a38c1"
+        },
+        {
+            "_id" : "situatie",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "text",
+            "label" : "Situatie",
+            "operators" : [
+                {
+                    "label" : "equals",
+                    "value" : "equals"
+                },
+                {
+                    "label" : "contains",
+                    "value" : "i"
+                },
+                {
+                    "label" : "starts with",
+                    "value" : "^"
+                },
+                {
+                    "label" : "ends with",
+                    "value" : "$"
+                }
+            ],
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "8e2debbc-7b54-41d3-8b75-55b7807e92c4"
+        },
+        {
+            "_id" : "type",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "taxonomy",
+            "label" : "Type",
+            "operators" : [
+                {
+                    "label" : "Contains all",
+                    "value" : "contains all"
+                },
+                {
+                    "label" : "Contains none",
+                    "value" : "contains none"
+                }
+            ],
+            "dataType" : "array",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "df544d44-1eea-481f-8493-13287e08b72d"
+        },
+        {
+            "_id" : "intro",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "textarea",
+            "label" : "Intro",
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "24cd2805-2749-4565-ac98-5b42032d9cdd"
+        },
+        {
+            "_id" : "body",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "richtext",
+            "label" : "Body",
+            "dataType" : "string",
+            "multiLanguage" : true,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "4aea7b8d-69f2-4c69-8042-9fa25db2d523"
+        },
+        {
+            "_id" : "impact",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "taxonomy",
+            "label" : "Impact",
+            "operators" : [
+                {
+                    "label" : "Contains all",
+                    "value" : "contains all"
+                },
+                {
+                    "label" : "Contains none",
+                    "value" : "contains none"
+                }
+            ],
+            "dataType" : "array",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "e99f7421-bd2d-4f9f-879c-294a7370ac3c"
+        },
+        {
+            "_id" : "begindatum",
+            "validation" : {
+                "required" : true
+            },
+            "type" : "date",
+            "label" : "Begindatum",
+            "operators" : [
+                {
+                    "label" : "After",
+                    "value" : "greater than"
+                },
+                {
+                    "label" : "After or on",
+                    "value" : "greater than or equals"
+                },
+                {
+                    "label" : "Before",
+                    "value" : "lower than"
+                },
+                {
+                    "label" : "Before or on",
+                    "value" : "lower than or equals"
+                },
+                {
+                    "label" : "on",
+                    "value" : "equals"
+                }
+            ],
+            "dataType" : "date",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "2b655bb7-4886-4d98-a8e3-e18d7fe3bc00"
+        },
+        {
+            "_id" : "einddatum",
+            "validation" : {
+                "required" : false
+            },
+            "label" : "Einddatum",
+            "type" : "date",
+            "operators" : [
+                {
+                    "label" : "After",
+                    "value" : "greater than"
+                },
+                {
+                    "label" : "After or on",
+                    "value" : "greater than or equals"
+                },
+                {
+                    "label" : "Before",
+                    "value" : "lower than"
+                },
+                {
+                    "label" : "Before or on",
+                    "value" : "lower than or equals"
+                },
+                {
+                    "label" : "on",
+                    "value" : "equals"
+                }
+            ],
+            "dataType" : "date",
+            "multiLanguage" : false,
+            "options" : [],
+            "max" : 1,
+            "min" : 1,
+            "uuid" : "bee40204-9c05-49ca-bd87-3d46713588f3"
+        }
+    ],
+    "meta" : {
+        "created" : "2015-11-03T15:41:20.255Z",
+        "taxonomy" : {
+            "fieldType" : "taxonomy",
+            "tags" : []
+        },
+        "deleted" : false,
+        "safeLabel" : "nuisance",
+        "description" : "Alle types hinder (werkzaamheden, ongevallen, etc...)",
+        "label" : "Nuisance",
+        "lastModified" : "2015-11-10T12:32:40.168Z"
+    },
+    "uuid" : "eff0d7a5-0e68-4346-a715-2a7e320c69c5",
+    "__v" : 0
+  }
+]

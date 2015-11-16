@@ -1,0 +1,475 @@
+[
+    {
+        "_id" : {
+            "$oid": "560509c432f7b8c5262100bb"
+        },
+        "versions": [],
+        "meta" : {
+            "label" : "Home",
+            "description" : "The homepage",
+            "createdFromContent" : false,
+            "activeLanguages" : [
+                "en",
+                "nl",
+                "fr",
+                "de"
+            ],
+            "slug" : {
+                "en" : "home",
+                "nl" : "home",
+                "fr" : "home",
+                "de" : "home",
+                "multiLanguage" : true
+            },
+            "deleted" : false,
+            "published" : true,
+            "lastEditor" : "55b73aa72bf14ab82c54eb83",
+            "title" : {
+                "en" : "Homepage",
+                "nl" : "Homepage",
+                "fr" : "Homepage",
+                "de" : "Homepage",
+                "multiLanguage" : true
+            },
+            "lastModified" : "2015-11-10T15:15:56.693Z"
+        },
+        "views" : [
+            {
+                "reference" : "5637700d5957481c050e6e97",
+                "title" : {
+                    "multiLanguage" : true,
+                    "en" : "Banner",
+                    "nl" : "Banner",
+                    "fr" : "Banner",
+                    "de" : "Banner"
+                }
+            },
+            {
+                "title" : {
+                    "multiLanguage" : true,
+                    "en" : "Highlights",
+                    "nl" : "In de kijker",
+                    "fr" : "Dans le spotlight",
+                    "de" : "German highlights"
+                },
+                "reference" : "563744d9e4b21a639d556dc5"
+            },
+            {
+                "reference" : "5627470cb687c54e26d4ef0a",
+                "title" : {
+                    "multiLanguage" : true,
+                    "en" : "Latest News",
+                    "nl" : "Laatste Nieuws",
+                    "fr" : "Derniers Nouveaus",
+                    "de" : "Laste Neue"
+                }
+            },
+            {
+                "reference" : "5628b0fc561dc61317147086",
+                "title" : {
+                    "multiLanguage" : true,
+                    "en" : "Road Works",
+                    "nl" : "Wegenwerken",
+                    "fr" : "Traveaux du route",
+                    "de" : "Stassenarbeit"
+                }
+            },
+            {
+                "reference" : "564079d1d9f6342c330f596a",
+                "title" : {
+                    "multiLanguage" : true,
+                    "en" : "Mobility",
+                    "nl" : "Mobiliteit",
+                    "fr" : "Mobilité",
+                    "de" : "Mobilität"
+                }
+            }
+        ],
+        "uuid" : "bb455f5e-5c2d-4e8d-9282-daf0f8927e40",
+        "__v" : 0
+    },
+    {
+        "_id" : {
+            "$oid": "5641fd54abadd41a2df42326"
+        },
+        "type" : "detail",
+        "contentReference" : "5641fd54abadd41a2df42325",
+        "versions": [],
+        "meta" : {
+            "title" : {
+                "multiLanguage" : true,
+                "nl" : "Slim naar Antwerpen (deel 1): “Mijn werkdag begint ontspannend”"
+            },
+            "deleted" : false,
+            "slug" : {
+                "multiLanguage" : true,
+                "de" : "sna-deel-1",
+                "fr" : "sna-deel-1",
+                "en" : "sna-deel-1",
+                "nl" : "sna-deel-1"
+            },
+            "activeLanguages" : [
+                "nl"
+            ],
+            "createdFromContent" : true,
+            "lastEditor" : "55b73aa72bf14ab82c54eb83",
+            "created" : "2015-11-10T14:21:08.748Z",
+            "published" : true,
+            "label" : "SNA - Deel 1",
+            "lastModified" : "2015-11-10T14:22:24.252Z"
+        },
+        "views" : [],
+        "uuid" : "3f21c57b-ee84-4445-9f78-85e6f3194e7e",
+        "__v" : 0
+    },
+    {
+        "_id" : {
+            "$oid": "5641ec28adf833991f6a2862"
+        },
+        "versions" : [
+            {
+                "_id" : {
+                    "$oid": "5641ec28adf833991f6a2862"
+                },
+                "versions" : [],
+                "meta" : {
+                    "label" : "Nieuws",
+                    "title" : {
+                        "multiLanguage" : true,
+                        "en" : "News"
+                    },
+                    "lastEditor" : "55b73aa72bf14ab82c54eb83",
+                    "lastModified" : "2015-11-10T13:00:22.767Z",
+                    "createdFromContent" : false,
+                    "activeLanguages" : [
+                        "en"
+                    ],
+                    "slug" : {
+                        "en" : "news",
+                        "multiLanguage" : true
+                    },
+                    "deleted" : false
+                },
+                "views" : [],
+                "uuid" : "0805785f-d7b2-4219-854d-e032efcb2a23",
+                "__v" : 0
+            },
+            {
+                "_id" : {
+                    "$oid": "5641ec28adf833991f6a2862"
+                },
+                "versions" : [],
+                "meta" : {
+                    "deleted" : false,
+                    "slug" : {
+                        "multiLanguage" : true,
+                        "en" : "news"
+                    },
+                    "activeLanguages" : [
+                        "en"
+                    ],
+                    "createdFromContent" : false,
+                    "lastEditor" : "55b73aa72bf14ab82c54eb83",
+                    "title" : {
+                        "en" : "News",
+                        "multiLanguage" : true
+                    },
+                    "label" : "Nieuws",
+                    "lastModified" : "2015-11-10T13:08:02.631Z"
+                },
+                "views" : [],
+                "uuid" : "0805785f-d7b2-4219-854d-e032efcb2a23",
+                "__v" : 0
+            },
+            {
+                "_id" : {
+                    "$oid": "5641ec28adf833991f6a2862"
+                },
+                "versions" : [],
+                "meta" : {
+                    "description" : "Nieuws overzichtspagina",
+                    "label" : "Nieuws",
+                    "title" : {
+                        "de" : "Nachrichten",
+                        "fr" : "Nouvelles",
+                        "nl" : "Nieuws",
+                        "multiLanguage" : true,
+                        "en" : "News"
+                    },
+                    "lastEditor" : "55b73aa72bf14ab82c54eb83",
+                    "createdFromContent" : false,
+                    "activeLanguages" : [
+                        "en",
+                        "nl",
+                        "fr",
+                        "de"
+                    ],
+                    "slug" : {
+                        "de" : "nachrichten",
+                        "fr" : "nouvelles",
+                        "nl" : "nieuws",
+                        "en" : "news",
+                        "multiLanguage" : true
+                    },
+                    "deleted" : false,
+                    "lastModified" : "2015-11-10T13:08:52.160Z"
+                },
+                "views" : [],
+                "uuid" : "0805785f-d7b2-4219-854d-e032efcb2a23",
+                "__v" : 0
+            },
+            {
+                "_id" : {
+                    "$oid": "5641ec28adf833991f6a2862"
+                },
+                "versions" : [],
+                "meta" : {
+                    "published" : true,
+                    "deleted" : false,
+                    "slug" : {
+                        "multiLanguage" : true,
+                        "en" : "news",
+                        "nl" : "nieuws",
+                        "fr" : "nouvelles",
+                        "de" : "nachrichten"
+                    },
+                    "activeLanguages" : [
+                        "en",
+                        "nl",
+                        "fr",
+                        "de"
+                    ],
+                    "createdFromContent" : false,
+                    "lastEditor" : "55b73aa72bf14ab82c54eb83",
+                    "title" : {
+                        "en" : "News",
+                        "multiLanguage" : true,
+                        "nl" : "Nieuws",
+                        "fr" : "Nouvelles",
+                        "de" : "Nachrichten"
+                    },
+                    "label" : "Nieuws",
+                    "description" : "Nieuws overzichtspagina",
+                    "lastModified" : "2015-11-10T13:19:42.362Z"
+                },
+                "views" : [],
+                "uuid" : "0805785f-d7b2-4219-854d-e032efcb2a23",
+                "__v" : 0
+            }
+        ],
+        "meta" : {
+            "description" : "Nieuws overzichtspagina",
+            "label" : "Nieuws",
+            "title" : {
+                "de" : "Nachrichten",
+                "fr" : "Nouvelles",
+                "nl" : "Nieuws",
+                "multiLanguage" : true,
+                "en" : "News"
+            },
+            "lastEditor" : "55b73aa72bf14ab82c54eb83",
+            "createdFromContent" : false,
+            "activeLanguages" : [
+                "en",
+                "nl",
+                "fr",
+                "de"
+            ],
+            "slug" : {
+                "de" : "nachrichten",
+                "fr" : "nouvelles",
+                "nl" : "nieuws",
+                "en" : "news",
+                "multiLanguage" : true
+            },
+            "deleted" : false,
+            "published" : true,
+            "lastModified" : "2015-11-10T14:13:46.097Z"
+        },
+        "views" : [
+            {
+                "title" : {
+                    "en" : "News",
+                    "nl" : "Nieuws",
+                    "fr" : "Nouvelles",
+                    "de" : "Nachrichten",
+                    "multiLanguage" : true
+                },
+                "reference" : "56387021e642960d0adddf0c"
+            }
+        ],
+        "uuid" : "0805785f-d7b2-4219-854d-e032efcb2a23",
+        "__v" : 0
+    },
+    {
+        "_id" : {
+            "$oid": "5638d53bd6714f982b4833c8"
+        },
+        "versions": [],
+        "meta" : {
+            "label" : "Werkzaamheden",
+            "lastEditor" : "55b73aa72bf14ab82c54eb83",
+            "createdFromContent" : false,
+            "activeLanguages" : [
+                "en",
+                "nl",
+                "fr",
+                "de"
+            ],
+            "slug" : {
+                "en" : "road-works",
+                "undefined" : "strassenarbeiten",
+                "nl" : "werkzaamheden",
+                "fr" : "procedures-du-route",
+                "de" : "strassenarbeiten",
+                "multiLanguage" : true
+            },
+            "deleted" : false,
+            "published" : true,
+            "title" : {
+                "multiLanguage" : true,
+                "en" : "Road Works",
+                "nl" : "Werkzaamheden",
+                "fr" : "Procedures du route",
+                "de" : "Strassenarbeiten"
+            },
+            "lastModified" : "2015-11-06T13:37:56.130Z"
+        },
+        "views" : [
+            {
+                "reference" : "5628b0fc561dc61317147086",
+                "title" : {
+                    "en" : "Road works",
+                    "nl" : "Wegenwerken",
+                    "fr" : "Traveaux de route",
+                    "de" : "Wegenwerken DE",
+                    "multiLanguage" : true
+                }
+            }
+        ],
+        "uuid" : "84b44db3-ead4-413b-8e59-e2a1992d766b",
+        "__v" : 0
+    },
+    {
+        "_id" : {
+            "$oid": "563b69b7a4c95beab1817bbf"
+        },
+        "type" : "detail",
+        "contentReference" : "563b69b7a4c95beab1817bbe",
+        "versions": [],
+        "meta" : {
+            "deleted" : false,
+            "slug" : {
+                "multiLanguage" : true,
+                "de" : "zulassungsvoraussetzungen",
+                "fr" : "conditions-admission",
+                "en" : "low-emission-zone/admission-requirements",
+                "nl" : "toelatingsvoorwaarden"
+            },
+            "activeLanguages" : [
+                "en",
+                "nl",
+                "fr",
+                "de"
+            ],
+            "createdFromContent" : true,
+            "lastEditor" : "55b73aa72bf14ab82c54eb83",
+            "created" : "2015-11-05T14:37:43.388Z",
+            "published" : true,
+            "label" : "Toelatingsvoorwaarden",
+            "title" : {
+                "de" : "Zulassungsvoraussetzungen",
+                "nl" : "Toelatingsvoorwaarden",
+                "fr" : "Conditions d'admission",
+                "multiLanguage" : true,
+                "en" : "Admission requirements"
+            },
+            "lastModified" : "2015-11-10T13:30:37.795Z"
+        },
+        "views" : [
+            {
+                "reference" : "5632348301d4a7b8811984ed",
+                "title" : {
+                    "en" : "Vragen",
+                    "multiLanguage" : true
+                }
+            },
+            {
+                "title" : {
+                    "en" : "Call to Action",
+                    "multiLanguage" : true
+                },
+                "reference" : "563b72b1849be52db528aff2"
+            }
+        ],
+        "uuid" : "511ba162-9d3d-47a4-8ea4-24b73f9bbbb6",
+        "__v" : 0
+    },
+    {
+        "_id" : {
+            "$oid": "563b5cb49c0b0657b0b436e3"
+        },
+        "type" : "detail",
+        "contentReference" : "563b5cb49c0b0657b0b436e2",
+        "versions": [],
+        "meta" : {
+            "label" : "Lage Emissie Zone",
+            "published" : true,
+            "created" : "2015-11-05T13:42:12.418Z",
+            "lastEditor" : "55b73aa72bf14ab82c54eb83",
+            "title" : {
+                "en" : "Low Emission Zone",
+                "multiLanguage" : true,
+                "nl" : "Lage Emissie Zone",
+                "de" : "Umweltzone",
+                "fr" : "Zone à faible émission"
+            },
+            "createdFromContent" : true,
+            "activeLanguages" : [
+                "en",
+                "nl",
+                "fr",
+                "de"
+            ],
+            "slug" : {
+                "nl" : "lage-emissie-zone",
+                "en" : "low-emission-zone",
+                "fr" : "zone-a-faible-emission",
+                "de" : "umweltzone",
+                "multiLanguage" : true
+            },
+            "deleted" : false,
+            "lastModified" : "2015-11-10T14:41:11.754Z"
+        },
+        "views" : [
+            {
+                "reference" : "563b72b1849be52db528aff2",
+                "title" : {
+                    "en" : "CTA",
+                    "nl" : "CTA",
+                    "fr" : "CTA",
+                    "de" : "CTA",
+                    "multiLanguage" : true
+                }
+            },
+            {
+                "title" : {
+                    "en" : "Frequently Asked questions",
+                    "multiLanguage" : true,
+                    "nl" : "Veel gestelde vragen"
+                },
+                "reference" : "5632348301d4a7b8811984ed"
+            },
+            {
+                "title" : {
+                    "en" : "News",
+                    "multiLanguage" : true,
+                    "nl" : "Nieuws"
+                },
+                "reference" : "563b5d25a4c95beab1817bb4"
+            }
+        ],
+        "uuid" : "20755cd9-1d18-44cc-b775-c466e95f73f8",
+        "__v" : 0
+    }
+]

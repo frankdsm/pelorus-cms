@@ -43,3 +43,22 @@ exports.profile = function(req, res, next) {
         res.status(401).json({});
     }
 };
+
+/**
+ * @api {get} /api/1.0/user/logout Log out the current user
+ * @apiName Log out
+ * @apiGroup User
+ * @apiVersion 1.0.0
+ *
+ * @apiSuccess (200) {Object} / Empty object.
+ * @apiSuccessExample {json} Success-Response:
+ *     HTTP/1.1 200 OK
+ *     { }
+ */
+exports.logout = function(req, res, next) {
+    if(req.session.hasOwnProperty('profile')) {
+        delete req.session.profile;
+        delete req.session.token;
+    }
+    res.status(200).json({});
+};

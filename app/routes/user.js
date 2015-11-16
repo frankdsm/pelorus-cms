@@ -7,4 +7,5 @@ var userController = require('app/controllers/users'),
 
 module.exports = function(app) {
     app.route(baseUrl + '/profile').get(userController.profile);
+    app.route(baseUrl + '/logout').get(userController.logout);
 };

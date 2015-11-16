@@ -11,7 +11,7 @@ var _ = require('lodash'),
 /**
  * @api {get} /api/type Get all content types with populated fields
  * @apiGroup ContentType
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} description Description of content type.
  * @apiSuccess (200) {String} label content type label.
@@ -45,7 +45,7 @@ exports.read = function (req, res) {
 /**
  * @api {get} /api/type/all List all content types labels
  * @apiGroup ContentType
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} label Content type name.
  * @apiSuccess (200) {String} safeLabel Content type safe label for url.
@@ -76,7 +76,7 @@ exports.allTypes = function (req, res) {
  * @api {get} /api/type/:uuid Get a single content type with populated fields based on uuid
  * @apiParam {String} uuid Content Type uuid
  * @apiGroup ContentType
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} description Description of content type.
  * @apiSuccess (200) {String} label content type label.
@@ -100,7 +100,7 @@ exports.allTypes = function (req, res) {
  * @api {get} /api/type/:safeLabel Get a single content type with populated fields based on safe label
  * @apiParam {String} safeLabel Content Type safe label
  * @apiGroup ContentType
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} description Description of content type.
  * @apiSuccess (200) {String} label content type label.
@@ -135,7 +135,7 @@ exports.readOne = function (req, res) {
 /**
  * @api {post} /api/type Create a new content type
  * @apiGroup ContentType
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} description Description of content type.
  * @apiSuccess (200) {String} label content type label.
@@ -170,7 +170,7 @@ exports.create = function (req, res, next) {
  * @api {put} /api/type/:uuid Update a content type
  * @apiParam {String} uuid Content Type uuid
  * @apiGroup ContentType
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} description Description of content type.
  * @apiSuccess (200) {String} label content type label.
@@ -224,7 +224,7 @@ exports.update = function (req, res, next) {
  * @api {delete} /api/type/:uuid Delete a content type
  * @apiParam {String} uuid Content Type uuid
  * @apiGroup ContentType
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 204 OK

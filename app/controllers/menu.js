@@ -15,7 +15,7 @@ exports.readMenu = readMenu;
 /**
  * @api {get} /api/menu Get menu
  * @apiGroup Menu
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -75,7 +75,7 @@ function getJstreeFormatting(menu) {
 /**
  * @api {get} /api/menu/:id/jstree Get menu for jstree library
  * @apiGroup Menu
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -97,7 +97,7 @@ exports.jstreeGet = function (req, res, next) {
 /**
  * @api {put} /api/menu/:id/jstree Update menu from jstree library
  * @apiGroup Menu
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -133,7 +133,7 @@ exports.jstreeUpdate = function (req, res, next) {
 /**
  * @api {get} /api/menu/translated/:lang Get translated menu
  * @apiGroup Menu
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -213,7 +213,7 @@ exports.translated = function (req, res, next) {
 /**
  * @api {put} /api/menu/ Update menu
  * @apiGroup Menu
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK

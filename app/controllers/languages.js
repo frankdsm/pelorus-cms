@@ -8,7 +8,7 @@ var _ = require('lodash'),
 /**
  * @api {get} /api/language Get all languages
  * @apiGroup Language
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} key Language key.
  * @apiSuccess (200) {String} name Language name.
@@ -80,7 +80,7 @@ var combineLanguages = function(languages, defaultLanguage) {
 /**
  * @api {get} /api/language/active Get active language
  * @apiGroup Language
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} key Language key.
  * @apiSuccess (200) {String} name Language name.
@@ -122,7 +122,7 @@ exports.readActive = function (req, res) {
  * @api {get} /api/language/:uuid Get a single language
  * @apiParam {String} uuid Example uuid
  * @apiGroup Language
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} key Language key.
  * @apiSuccess (200) {String} name Language name.
@@ -151,7 +151,7 @@ exports.readOne = function (req, res, next) {
  * @api {put} /api/language/:uuid Update a language
  * @apiParam {String} uuid Example uuid
  * @apiGroup Language
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} key Language key.
  * @apiSuccess (200) {String} name Language name.

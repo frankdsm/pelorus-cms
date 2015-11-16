@@ -8,7 +8,7 @@ var config = require('app/models/config'),
  * @api {get} /api/config/:type Get config file
  * @apiParam {String} type config file type
  * @apiGroup config
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -37,7 +37,7 @@ exports.readOne = readOne;
  * @api {put} /api/config/:type Update config file
  * @apiParam {String} type config file type
  * @apiGroup config
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK

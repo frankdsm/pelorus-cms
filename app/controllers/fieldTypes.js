@@ -6,7 +6,7 @@ var fieldTypeModel = require('app/models/fieldType.js');
 /**
  * @api {get} /api/field/ Get all fields
  * @apiGroup Field
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -26,7 +26,7 @@ exports.read = function (req, res, next) {
  * @api {get} /api/field/:uuid Get a single field
  * @apiParam {String} uuid Field uuid
  * @apiGroup Field
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK

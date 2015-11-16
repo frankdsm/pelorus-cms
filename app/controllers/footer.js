@@ -8,7 +8,7 @@ var footerModel = require('app/models/footer'),
 /**
  * @api {get} /api/footer Get footer
  * @apiGroup Footer
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -27,7 +27,7 @@ exports.read = function (req, res, next) {
 /**
  * @api {put} /api/footer Update footer
  * @apiGroup Footer
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -58,7 +58,7 @@ exports.update = function (req, res, next) {
 /**
  * @api {get} /api/footer/translated/:lang Get translated footer
  * @apiGroup Footer
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK

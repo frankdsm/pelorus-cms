@@ -9,7 +9,7 @@ var _ = require('lodash'),
     fields = require('app/helpers/fields');
 
 /**
- * @api {get} /api/type Get all content types with populated fields
+ * @api {get} /api/1.0.0/type Get all content types with populated fields
  * @apiGroup ContentType
  * @apiVersion 1.0.0
  *
@@ -43,7 +43,7 @@ exports.read = function (req, res) {
 };
 
 /**
- * @api {get} /api/type/all List all content types labels
+ * @api {get} /api/1.0.0/type/all List all content types labels
  * @apiGroup ContentType
  * @apiVersion 1.0.0
  *
@@ -73,7 +73,7 @@ exports.allTypes = function (req, res) {
 };
 
 /**
- * @api {get} /api/type/:uuid Get a single content type with populated fields based on uuid
+ * @api {get} /api/1.0.0/type/:uuid Get a single content type with populated fields based on uuid
  * @apiParam {String} uuid Content Type uuid
  * @apiGroup ContentType
  * @apiVersion 1.0.0
@@ -97,7 +97,7 @@ exports.allTypes = function (req, res) {
  *     }
  */
 /**
- * @api {get} /api/type/:safeLabel Get a single content type with populated fields based on safe label
+ * @api {get} /api/1.0.0/type/:safeLabel Get a single content type with populated fields based on safe label
  * @apiParam {String} safeLabel Content Type safe label
  * @apiGroup ContentType
  * @apiVersion 1.0.0
@@ -133,7 +133,7 @@ exports.readOne = function (req, res) {
 };
 
 /**
- * @api {post} /api/type Create a new content type
+ * @api {post} /api/1.0.0/type Create a new content type
  * @apiGroup ContentType
  * @apiVersion 1.0.0
  *
@@ -167,7 +167,7 @@ exports.create = function (req, res, next) {
 };
 
 /**
- * @api {put} /api/type/:uuid Update a content type
+ * @api {put} /api/1.0.0/type/:uuid Update a content type
  * @apiParam {String} uuid Content Type uuid
  * @apiGroup ContentType
  * @apiVersion 1.0.0
@@ -221,7 +221,7 @@ exports.update = function (req, res, next) {
 };
 
 /**
- * @api {delete} /api/type/:uuid Delete a content type
+ * @api {delete} /api/1.0.0/type/:uuid Delete a content type
  * @apiParam {String} uuid Content Type uuid
  * @apiGroup ContentType
  * @apiVersion 1.0.0

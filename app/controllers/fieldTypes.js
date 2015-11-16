@@ -4,7 +4,7 @@ require('rootpath')();
 var fieldTypeModel = require('app/models/fieldType.js');
 
 /**
- * @api {get} /api/field/ Get all fields
+ * @api {get} /api/1.0.0/field/ Get all fields
  * @apiGroup Field
  * @apiVersion 1.0.0
  *
@@ -23,7 +23,7 @@ exports.read = function (req, res, next) {
 };
 
 /**
- * @api {get} /api/field/:uuid Get a single field
+ * @api {get} /api/1.0.0/field/:uuid Get a single field
  * @apiParam {String} uuid Field uuid
  * @apiGroup Field
  * @apiVersion 1.0.0

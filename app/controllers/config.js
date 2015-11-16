@@ -5,7 +5,7 @@ var config = require('app/models/config'),
     versions = require('app/helpers/versions');
 
 /**
- * @api {get} /api/config/:type Get config file
+ * @api {get} /api/1.0.0/config/:type Get config file
  * @apiParam {String} type config file type
  * @apiGroup config
  * @apiVersion 1.0.0
@@ -34,7 +34,7 @@ exports.readOne = readOne;
 
 
 /**
- * @api {put} /api/config/:type Update config file
+ * @api {put} /api/1.0.0/config/:type Update config file
  * @apiParam {String} type config file type
  * @apiGroup config
  * @apiVersion 1.0.0

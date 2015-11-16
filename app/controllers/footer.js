@@ -6,7 +6,7 @@ var footerModel = require('app/models/footer'),
     multiLanguage = require('app/helpers/multiLanguage');
 
 /**
- * @api {get} /api/footer Get footer
+ * @api {get} /api/1.0.0/footer Get footer
  * @apiGroup Footer
  * @apiVersion 1.0.0
  *
@@ -25,7 +25,7 @@ exports.read = function (req, res, next) {
 };
 
 /**
- * @api {put} /api/footer Update footer
+ * @api {put} /api/1.0.0/footer Update footer
  * @apiGroup Footer
  * @apiVersion 1.0.0
  *
@@ -56,7 +56,7 @@ exports.update = function (req, res, next) {
 };
 
 /**
- * @api {get} /api/footer/translated/:lang Get translated footer
+ * @api {get} /api/1.0.0/footer/translated/:lang Get translated footer
  * @apiGroup Footer
  * @apiVersion 1.0.0
  *

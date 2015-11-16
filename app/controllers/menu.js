@@ -13,7 +13,7 @@ var readMenu = function() {
 exports.readMenu = readMenu;
 
 /**
- * @api {get} /api/menu Get menu
+ * @api {get} /api/1.0.0/menu Get menu
  * @apiGroup Menu
  * @apiVersion 1.0.0
  *
@@ -73,7 +73,7 @@ function getJstreeFormatting(menu) {
 }
 
 /**
- * @api {get} /api/menu/:id/jstree Get menu for jstree library
+ * @api {get} /api/1.0.0/menu/:id/jstree Get menu for jstree library
  * @apiGroup Menu
  * @apiVersion 1.0.0
  *
@@ -95,7 +95,7 @@ exports.jstreeGet = function (req, res, next) {
 };
 
 /**
- * @api {put} /api/menu/:id/jstree Update menu from jstree library
+ * @api {put} /api/1.0.0/menu/:id/jstree Update menu from jstree library
  * @apiGroup Menu
  * @apiVersion 1.0.0
  *
@@ -131,7 +131,7 @@ exports.jstreeUpdate = function (req, res, next) {
 };
 
 /**
- * @api {get} /api/menu/translated/:lang Get translated menu
+ * @api {get} /api/1.0.0/menu/translated/:lang Get translated menu
  * @apiGroup Menu
  * @apiVersion 1.0.0
  *
@@ -211,7 +211,7 @@ exports.translated = function (req, res, next) {
 };
 
 /**
- * @api {put} /api/menu/ Update menu
+ * @api {put} /api/1.0.0/menu/ Update menu
  * @apiGroup Menu
  * @apiVersion 1.0.0
  *

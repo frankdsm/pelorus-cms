@@ -6,7 +6,7 @@ var _ = require('lodash'),
     languageModel = require('app/models/language');
 
 /**
- * @api {get} /api/language Get all languages
+ * @api {get} /api/1.0.0/language Get all languages
  * @apiGroup Language
  * @apiVersion 1.0.0
  *
@@ -78,7 +78,7 @@ var combineLanguages = function(languages, defaultLanguage) {
 };
 
 /**
- * @api {get} /api/language/active Get active language
+ * @api {get} /api/1.0.0/language/active Get active language
  * @apiGroup Language
  * @apiVersion 1.0.0
  *
@@ -119,7 +119,7 @@ exports.readActive = function (req, res) {
 };
 
 /**
- * @api {get} /api/language/:uuid Get a single language
+ * @api {get} /api/1.0.0/language/:uuid Get a single language
  * @apiParam {String} uuid Example uuid
  * @apiGroup Language
  * @apiVersion 1.0.0
@@ -148,7 +148,7 @@ exports.readOne = function (req, res, next) {
 };
 
 /**
- * @api {put} /api/language/:uuid Update a language
+ * @api {put} /api/1.0.0/language/:uuid Update a language
  * @apiParam {String} uuid Example uuid
  * @apiGroup Language
  * @apiVersion 1.0.0

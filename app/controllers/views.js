@@ -7,7 +7,7 @@ var viewModel = require('app/models/view'),
     versions = require('app/helpers/versions');
 
 /**
- * @api {get} /api/view/ Get all views
+ * @api {get} /api/1.0.0/view/ Get all views
  * @apiGroup View
  * @apiVersion 1.0.0
  *
@@ -32,7 +32,7 @@ exports.read = function (req, res) {
 };
 
 /**
- * @api {get} /api/view/:uuid Get a single content document
+ * @api {get} /api/1.0.0/view/:uuid Get a single content document
  * @apiParam {String} uuid View uuid
  * @apiGroup View
  * @apiVersion 1.0.0
@@ -53,7 +53,7 @@ exports.readOne = function (req, res) {
 };
 
 /**
- * @api {post} /api/view Create a new view
+ * @api {post} /api/1.0.0/view Create a new view
  * @apiGroup View
  * @apiVersion 1.0.0
  *
@@ -71,7 +71,7 @@ exports.create = function (req, res) {
 };
 
 /**
- * @api {put} /api/view/:uuid Update a content document
+ * @api {put} /api/1.0.0/view/:uuid Update a content document
  * @apiParam {String} uuid View uuid
  * @apiGroup View
  * @apiVersion 1.0.0
@@ -109,7 +109,7 @@ exports.update = function (req, res) {
 };
 
 /**
- * @api {delete} /api/view/:uuid Delete a content document
+ * @api {delete} /api/1.0.0/view/:uuid Delete a content document
  * @apiParam {String} uuid View uuid
  * @apiGroup View
  * @apiVersion 1.0.0
@@ -130,7 +130,7 @@ exports.delete = function (req, res) {
 };
 
 /**
- * @api {get} /api/view/preview/:type Preview the result of a view of an content type
+ * @api {get} /api/1.0.0/view/preview/:type Preview the result of a view of an content type
  * @apiParam {String} type content Type safeLabel
  * @apiGroup View
  * @apiVersion 1.0.0
@@ -169,7 +169,7 @@ exports.previewContentType = function (req, res) {
 };
 
 /**
- * @api {post} /api/view/preview Preview the result of a view
+ * @api {post} /api/1.0.0/view/preview Preview the result of a view
  * @apiGroup View
  * @apiVersion 1.0.0
  *

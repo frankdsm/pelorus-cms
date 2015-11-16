@@ -12,7 +12,7 @@ var fieldTypeModel = require('app/models/fieldType.js');
  *     HTTP/1.1 200 OK
  */
 exports.read = function (req, res, next) {
-    Field.find({})
+    fieldTypeModel.find({})
         .exec(function(err, items) {
             if(!err && items) {
                 res.status(200).json(items);
@@ -32,7 +32,7 @@ exports.read = function (req, res, next) {
  *     HTTP/1.1 200 OK
  */
 exports.readOne = function (req, res, next) {
-    Field.findOne({uuid: req.params.id})
+    fieldTypeModel.findOne({uuid: req.params.id})
         .exec(function(err, item) {
             if(!err && item) {
                 res.status(200).json(item);

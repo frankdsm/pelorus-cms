@@ -106,11 +106,37 @@ gulp.task('inject', function () {
     return target.pipe(plugins.inject(sources, {relative: true})).pipe(gulp.dest(publicRoot));
 });
 
+
+gulp.task('watch', function(){
+
+    // Watch styles
+    gulp.watch(publicRoot + '/assets/scss/**/*.scss', function(){
+        gulp.run('sass');
+    });
+
+    // Watch scripts
+    gulp.watch(publicRoot + '/app/**/*.js', function(){
+       gulp.run('lint');
+    });
+
+});
+
+gulp.task('watchNewFiles', function(){
+
+    // Watch new files, and inject them afterwards
+    plugins.watch(publicRoot + '/app/**/*.js', {read:false, events:['add', 'delete']},function(){
+        gulp.run('inject');
+    });
+
+});
+
 gulp.task('frontend', function() {
     runSequence(
         'wiredep',
         'inject',
-        'webserver'
+        'webserver',
+        'watch',
+        'watchNewFiles'
     );
 });
 

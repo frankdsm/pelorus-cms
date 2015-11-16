@@ -62,7 +62,8 @@ exports.update = function (req, res, next) {
                     }
 
                     if (oldObject.data.siteHome !== req.body.data.siteHome._id) {
-                        // To do: set the new homepage
+                        // The homepage has been updated
+                        MenuController.setHomepage(req.body.data.siteHome);
                         return;
                     }
                 },

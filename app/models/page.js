@@ -29,7 +29,7 @@ var PageSchema = new Schema({
         },
         reference: {
             type: String,
-            //to do: add reference to view
+            ref: 'View'
         }
     }],
     meta: {
@@ -76,13 +76,15 @@ var PageSchema = new Schema({
             type: String,
             ref: 'User'
         },
-        lastModified: {
+        lastModified:  {
             type: Date,
             default: new Date()
         }
     },
     versions: []
-}, {strict: false});
+}, {
+    strict: false
+});
 
 PageSchema.set('toJSON');
 
@@ -98,7 +100,7 @@ if (!PageSchema.options.toObject) {
 // Register deepPopulate plugin
 PageSchema.plugin(deepPopulate, {});
 
-PageSchema.options.toObject.transform = function (doc, ret) {
+PageSchema.options.toObject.transform = function(doc, ret) {
     delete ret.__v;
 };
 
@@ -106,7 +108,7 @@ if (!PageSchema.options.toJSON) {
     PageSchema.options.toJSON = {};
 }
 
-PageSchema.options.toJSON.transform = function (doc, ret) {
+PageSchema.options.toJSON.transform = function(doc, ret) {
     delete ret.__v;
 };
 
@@ -118,7 +120,7 @@ PageSchema.pre('update', function(next) {
         _metaObject = {};
 
     if (_delete) {
-            // On a delete, set the property using "paths"
+        // On a delete, set the property using "paths"
         _metaObject = {
             $set: {
                 'meta.lastModified': new Date(),

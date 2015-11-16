@@ -4,10 +4,10 @@ require('rootpath')();
 var exampleModel = require('app/models/example');
 
 /**
- * @api {get} /api/example Get all example documents
+ * @api {get} /api/1.0.0/example Get all example documents
  * @apiName Get all examples
  * @apiGroup Example Docs
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} property Property (random field for example).
  * @apiSuccess (200) {String} uuid Unique uuid.
@@ -32,11 +32,11 @@ exports.read = function (req, res, next) {
 };
 
 /**
- * @api {get} /api/example/:uuid Get a single example document
+ * @api {get} /api/1.0.0/example/:uuid Get a single example document
  * @apiParam {String} uuid Example uuid
  * @apiName Get one example
  * @apiGroup Example Docs
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} property Property (random field for example).
  * @apiSuccess (200) {String} uuid Unique uuid.
@@ -61,10 +61,10 @@ exports.readOne = function (req, res, next) {
 };
 
 /**
- * @api {post} /api/example Create a new example
+ * @api {post} /api/1.0.0/example Create a new example
  * @apiName Create a nex example
  * @apiGroup Example Docs
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} property Property (random field for example).
  * @apiSuccess (200) {String} uuid Unique uuid.
@@ -88,11 +88,11 @@ exports.create = function (req, res, next) {
 };
 
 /**
- * @api {put} /api/example/:uuid Update an example document
+ * @api {put} /api/1.0.0/example/:uuid Update an example document
  * @apiParam {String} uuid Example uuid
  * @apiName Update document
  * @apiGroup Example Docs
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} property Property (random field for example).
  * @apiSuccess (200) {String} uuid Unique uuid.
@@ -124,11 +124,11 @@ exports.update = function (req, res, next) {
 };
 
 /**
- * @api {delete} /api/example/:uuid Delete an example document
+ * @api {delete} /api/1.0.0/example/:uuid Delete an example document
  * @apiParam {String} uuid Example uuid
  * @apiName Delete example document
  * @apiGroup Example Docs
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 204 OK

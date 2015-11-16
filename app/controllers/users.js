@@ -4,7 +4,7 @@ require('rootpath')();
 var userModel = require('app/models/user');
 
 /**
- * @api {get} /api/1.0/user/profile Get logged in user
+ * @api {get} /api/1.0.0/user/profile Get logged in user
  * @apiName Logged in user
  * @apiGroup User
  * @apiVersion 1.0.0
@@ -45,7 +45,7 @@ exports.profile = function(req, res, next) {
 };
 
 /**
- * @api {get} /api/1.0/user/logout Log out the current user
+ * @api {get} /api/1.0.0/user/logout Log out the current user
  * @apiName Log out
  * @apiGroup User
  * @apiVersion 1.0.0

@@ -6,9 +6,9 @@ var _ = require('lodash'),
     security = require('app/helpers/security/roles');
 
 /**
- * @api {get} /api/role Get all roles
+ * @api {get} /api/1.0.0/role Get all roles
  * @apiGroup Role
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -31,9 +31,9 @@ exports.read = function (req, res, next) {
 };
 
 /**
- * @api {get} /api/role/all Get all roles for overview
+ * @api {get} /api/1.0.0/role/all Get all roles for overview
  * @apiGroup Role
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -165,10 +165,10 @@ exports.all = function (req, res, next) {
 };
 
 /**
- * @api {get} /api/role/:uuid Get a single role
+ * @api {get} /api/1.0.0/role/:uuid Get a single role
  * @apiParam {String} uuid Role uuid.
  * @apiGroup Role
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -191,9 +191,9 @@ exports.readOne = function (req, res, next) {
 };
 
 /**
- * @api {post} /api/role Create a new role
+ * @api {post} /api/1.0.0/role Create a new role
  * @apiGroup role
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} name Name.
  * @apiSuccess (200) {String} description Description of the role.
@@ -223,10 +223,10 @@ exports.create = function (req, res, next) {
 };
 
 /**
- * @api {put} /api/role/:uuid Update a role
+ * @api {put} /api/1.0.0/role/:uuid Update a role
  * @apiParam {String} uuid Role uuid.
  * @apiGroup Role
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -257,9 +257,9 @@ exports.update = function (req, res, next) {
 };
 
 /**
- * @api {put} /api/role/one Update a single role
+ * @api {put} /api/1.0.0/role/one Update a single role
  * @apiGroup Role
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -330,10 +330,10 @@ exports.updateOne = function (req, res, next) {
 };
 
 /**
- * @api {delete} /api/role/:uuid Delete a role
+ * @api {delete} /api/1.0.0/role/:uuid Delete a role
  * @apiParam {String} uuid Role uuid
  * @apiGroup role
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 204 OK

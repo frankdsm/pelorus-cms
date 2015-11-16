@@ -84,9 +84,9 @@ exports.getTagsById = function (termRef) {
 };
 
 /**
- * @api {get} /api/taxonomy Get taxonomy lists with tags
+ * @api {get} /api/1.0.0/taxonomy Get taxonomy lists with tags
  * @apiGroup Taxonomy
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -103,9 +103,9 @@ exports.read = function (req, res, next) {
 };
 
 /**
- * @api {get} /api/taxonomy/:id Get one taxonomy list with tags
+ * @api {get} /api/1.0.0/taxonomy/:id Get one taxonomy list with tags
  * @apiGroup Taxonomy
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -137,9 +137,9 @@ function updateSafeLabels(item) {
 }
 
 /**
- * @api {put} /api/taxonomy/:id Update taxonomy list
+ * @api {put} /api/1.0.0/taxonomy/:id Update taxonomy list
  * @apiGroup Taxonomy
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -162,9 +162,9 @@ exports.update = function (req, res, next) {
 };
 
 /**
- * @api {delete} /api/taxonomy/:id Delete taxonomy list
+ * @api {delete} /api/1.0.0/taxonomy/:id Delete taxonomy list
  * @apiGroup Taxonomy
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -185,9 +185,9 @@ exports.delete = function (req, res, next) {
 };
 
 /**
- * @api {post} /api/taxonomy Create new taxonomy list
+ * @api {post} /api/1.0.0/taxonomy Create new taxonomy list
  * @apiGroup Taxonomy
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -206,9 +206,9 @@ exports.create = function (req, res, next) {
 
 
 /**
- * @api {get} /:language/api/taxonomy/term/:uuid Get term info
+ * @api {get} /:language/api/1.0.0/taxonomy/term/:uuid Get term info
  * @apiGroup Taxonomy
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK

@@ -1,0 +1,1563 @@
+[
+    {
+        "_id" : {
+            "$oid": "56388ec5893915681de9d1e1"
+        },
+        "fields" : {
+            "answer" : {
+                "en" : "Answer 3!",
+                "multiLanguage" : true
+            },
+            "question" : {
+                "en" : "Question 3",
+                "multiLanguage" : true
+            }
+        },
+        "versions": [],
+        "meta" : {
+            "taxonomy" : {
+                "dataType" : "taxonomy",
+                "tags" : []
+            },
+            "created" : "2015-11-03T10:39:01.614Z",
+            "published" : false,
+            "activeLanguages" : [
+                "en"
+            ],
+            "hasDetail" : false,
+            "deleted" : false,
+            "lastEditor" : "55b73aa72bf14ab82c54eb83",
+            "label" : "Question 3",
+            "contentType" : "5632346c01d4a7b8811984ec",
+            "lastModified" : "2015-11-06T16:05:34.445Z"
+        },
+        "uuid" : "a128a6e8-6994-4285-bc05-9dc0148816d6",
+        "__v" : 0
+    },
+  {
+    "_id" : {
+        "$oid": "563234aa01d4a7b8811984ee"
+    },
+    "fields" : {
+        "answer" : {
+            "en" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Quid loquor de nobis, qui ad laudem et ad decus nati, suscepti, instituti sumus? Dici enim nihil potest verius. Si longus, levis dictata sunt. Sed tempus est, si videtur, et recta quidem ad me. Item de contrariis, a quibus ad genera formasque generum venerunt. Duo Reges: constructio interrete.",
+            "multiLanguage" : true
+        },
+        "question" : {
+            "en" : "Waar kan ik mijn LEZ-pas ophalen?",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : []
+        },
+        "created" : "2015-10-29T15:00:58.989Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en"
+        ],
+        "hasDetail" : false,
+        "deleted" : false,
+        "contentType" : "5632346c01d4a7b8811984ec",
+        "label" : "Question 1",
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "lastModified" : "2015-11-06T16:05:38.258Z"
+    },
+    "uuid" : "b432781a-0c4f-4946-8648-86ce8d4b1175",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "56262eaa3db82a99c9689ff7"
+    },
+    "fields" : {
+        "partnerImage" : [
+            {
+                "value" : {
+                    "thumb" : {
+                        "asset" : {
+                            "id" : "56262e85c1318c6192a0aaec",
+                            "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/e4aaf3e2-5a58-4b6f-8b21-880798177c07/logo1-thumb.png",
+                            "type" : "image/png",
+                            "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                            "filename" : "logo1-thumb.png"
+                        }
+                    },
+                    "cropped" : {
+                        "minimageheight" : 50,
+                        "minimagewidth" : 50,
+                        "y" : null,
+                        "x" : null,
+                        "height" : null,
+                        "width" : null,
+                        "asset" : null
+                    },
+                    "original" : {
+                        "height" : 57,
+                        "width" : 144,
+                        "asset" : {
+                            "id" : "56262e84c1318c6192a0aae9",
+                            "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/bc3017a1-c42a-4d9b-9c68-534006350fb3/logo1.png",
+                            "type" : "image/png",
+                            "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                            "filename" : "logo1.png"
+                        }
+                    }
+                }
+            },
+            {
+                "value" : {
+                    "thumb" : {
+                        "asset" : {
+                            "id" : "56262e8dc1318c6192a0aaf2",
+                            "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/38996097-c5e7-4ddd-9fad-79c0a2a618d8/logo2-thumb.png",
+                            "type" : "image/png",
+                            "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                            "filename" : "logo2-thumb.png"
+                        }
+                    },
+                    "cropped" : {
+                        "minimageheight" : 50,
+                        "minimagewidth" : 50,
+                        "y" : null,
+                        "x" : null,
+                        "height" : null,
+                        "width" : null,
+                        "asset" : null
+                    },
+                    "original" : {
+                        "height" : 55,
+                        "width" : 139,
+                        "asset" : {
+                            "id" : "56262e8dc1318c6192a0aaef",
+                            "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/2fce323f-808d-49d2-9655-e48ee4955614/logo2.png",
+                            "type" : "image/png",
+                            "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                            "filename" : "logo2.png"
+                        }
+                    }
+                }
+            },
+            {
+                "value" : {
+                    "thumb" : {
+                        "asset" : {
+                            "id" : "56262e96c1318c6192a0aaf8",
+                            "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/2511d6c2-cc74-41d1-b428-b8e20a83efc6/logo3-thumb.png",
+                            "type" : "image/png",
+                            "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                            "filename" : "logo3-thumb.png"
+                        }
+                    },
+                    "cropped" : {
+                        "minimageheight" : 50,
+                        "minimagewidth" : 50,
+                        "y" : null,
+                        "x" : null,
+                        "height" : null,
+                        "width" : null,
+                        "asset" : null
+                    },
+                    "original" : {
+                        "height" : 61,
+                        "width" : 153,
+                        "asset" : {
+                            "id" : "56262e96c1318c6192a0aaf5",
+                            "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/92332ac2-1e92-4acb-bd9e-574e9946a50f/logo3.png",
+                            "type" : "image/png",
+                            "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                            "filename" : "logo3.png"
+                        }
+                    }
+                }
+            },
+            {
+                "value" : {
+                    "thumb" : {
+                        "asset" : {
+                            "id" : "56262e9dc1318c6192a0aafe",
+                            "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/8704fabe-4e45-46f5-a010-4e0000d128fc/logo4-thumb.png",
+                            "type" : "image/png",
+                            "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                            "filename" : "logo4-thumb.png"
+                        }
+                    },
+                    "cropped" : {
+                        "minimageheight" : 50,
+                        "minimagewidth" : 50,
+                        "y" : null,
+                        "x" : null,
+                        "height" : null,
+                        "width" : null,
+                        "asset" : null
+                    },
+                    "original" : {
+                        "height" : 60,
+                        "width" : 220,
+                        "asset" : {
+                            "id" : "56262e9dc1318c6192a0aafb",
+                            "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/036801bc-207d-4557-a111-d8d4b5eb7906/logo4.png",
+                            "type" : "image/png",
+                            "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                            "filename" : "logo4.png"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "versions" : [],
+    "meta" : {
+        "title" : {
+            "en" : "title"
+        },
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "contentType" : "56262e3d3db82a99c9689fec",
+        "label" : "Partners",
+        "deleted" : false,
+        "hasDetail" : false,
+        "taxonomy" : {
+            "tags" : [],
+            "dataType" : "taxonomy"
+        },
+        "activeLanguages" : [
+            "en"
+        ],
+        "lastModified" : "2015-10-20T13:59:53.167Z",
+        "created" : "2015-10-20T12:08:10.773Z"
+    },
+    "uuid" : "50d8db06-45bb-408c-9219-992046ec33f0",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "55fc0f20ce6e6c473caf7d06"
+    },
+    "language" : "en",
+    "versions": [],
+    "meta" : {
+        "deleted" : true,
+        "lastModified" : "2015-11-10T12:55:34.183Z",
+        "lastEditor" : ""
+    },
+    "uuid" : "4cc2edbc-e99f-4c8f-ab14-29a7d8cfaedd",
+    "__v" : 0,
+    "fields" : {
+        "teaserImage" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "56386d9dfebd53e65a7831e1",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/8a73577c-5988-4658-af86-999e33b16aaf/unsplash_52a795f546637_1-thumb.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "unsplash_52a795f546637_1-thumb.JPG"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 420,
+                "minimagewidth" : 730,
+                "y" : 340,
+                "x" : 18,
+                "height" : 420,
+                "width" : 730,
+                "asset" : {
+                    "id" : "56386da9febd53e65a7831e4",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/49127e2d-339b-49d6-9af7-217bb41b21e6/unsplash_52a795f546637_1.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "unsplash_52a795f546637_1.JPG"
+                }
+            },
+            "original" : {
+                "height" : 1024,
+                "width" : 768,
+                "asset" : {
+                    "id" : "56386d9d27858d99076de74d",
+                    "url" : "http://localhost:3010/api/service/assets/download/ce5d956a-f902-46db-b051-5f4ae9ceafb3/unsplash_52a795f546637_1.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "unsplash_52a795f546637_1.JPG"
+                }
+            }
+        },
+        "partner" : [
+            "56377ae966d3dc6a14be94cc"
+        ],
+        "highlightImageSmall" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "563744988bdd40f815cbd211",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/ab9cb5ef-df84-4f4f-b520-ecda2dfedd03/10-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "10-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 418,
+                "minimagewidth" : 730,
+                "y" : 300.0600000000000023,
+                "x" : 0,
+                "height" : 1128.0033333333333303,
+                "width" : 1700,
+                "asset" : {
+                    "id" : "56375069febd53e65a782e36",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/26c10a53-a075-4dd4-bfa0-9062b15be758/10.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "10.jpg"
+                }
+            },
+            "original" : {
+                "height" : 1667,
+                "width" : 2500,
+                "asset" : {
+                    "id" : "56374498e4b21a639d556dbe",
+                    "url" : "http://localhost:3010/api/service/assets/download/771e924a-d756-4077-b2e7-6ce50a86c229/10.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "10.jpg"
+                }
+            }
+        },
+        "highlightImageBig" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "563744858bdd40f815cbd204",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/2ad78611-e818-48c4-914d-def132eb93aa/06-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "06-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 708,
+                "minimagewidth" : 1060,
+                "y" : 530.6616666666666333,
+                "x" : 0,
+                "height" : 1136.3383333333333667,
+                "width" : 1700,
+                "asset" : {
+                    "id" : "5637448c8bdd40f815cbd20b",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/4a95d755-0833-4478-9b4b-c86d414c6fc3/06.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "06.jpg"
+                }
+            },
+            "original" : {
+                "height" : 1667,
+                "width" : 2500,
+                "asset" : {
+                    "id" : "56374483e4b21a639d556daa",
+                    "url" : "http://localhost:3010/api/service/assets/download/248e75f8-86be-4d66-83ea-c3fd16c831d1/06.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "06.jpg"
+                }
+            }
+        },
+        "title" : "Major refunding for Oosterweel finally acquired!",
+        "body" : {
+            "multiLanguage" : true
+        },
+        "intro" : {
+            "multiLanguage" : true
+        }
+    }
+  },
+  {
+    "_id" : {
+        "$oid": "56374ff04c64b5d9a0682553"
+    },
+    "fields" : {
+        "teaserImage" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "56377b46febd53e65a7830cb",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/cc6bf8f0-400c-43ae-9848-7304a2900603/DQZMdflSRPiOR25XlkYo_sky-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "DQZMdflSRPiOR25XlkYo_sky-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 420,
+                "minimagewidth" : 730,
+                "y" : 325.0938628158844494,
+                "x" : 0,
+                "height" : 1567.1191335740070372,
+                "width" : 2727.1799999999998363,
+                "asset" : {
+                    "id" : "56377b51febd53e65a7830ce",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/26d83d4f-d2c5-46e2-9d69-5ebe5689d636/DQZMdflSRPiOR25XlkYo_sky.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "DQZMdflSRPiOR25XlkYo_sky.jpg"
+                }
+            },
+            "original" : {
+                "height" : 2309,
+                "width" : 3753,
+                "asset" : {
+                    "id" : "56377b4666d3dc6a14be94de",
+                    "url" : "http://localhost:3010/api/service/assets/download/85af87de-7bd1-4e9f-9824-b7e2165fa2e2/DQZMdflSRPiOR25XlkYo_sky.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "DQZMdflSRPiOR25XlkYo_sky.jpg"
+                }
+            }
+        },
+        "partner" : [
+            "56377ae966d3dc6a14be94cd"
+        ],
+        "title" : "Omleidingen door werken aan IJzerlaan",
+        "highlightImageSmall" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "56374fd9febd53e65a782e2a",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/82f5c678-db3e-4c91-93af-24bce7f91dc4/unsplash_528a8fb8a276d_1-thumb.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "unsplash_528a8fb8a276d_1-thumb.JPG"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 418,
+                "minimagewidth" : 730,
+                "y" : 303.8625678119349232,
+                "x" : 277.3333333333333144,
+                "height" : 418.4773960216998603,
+                "width" : 630.6666666666666288,
+                "asset" : {
+                    "id" : "56375080febd53e65a782e3c",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/801bdfe6-c51f-4292-9eef-71857f7bc9f2/unsplash_528a8fb8a276d_1.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "unsplash_528a8fb8a276d_1.JPG"
+                }
+            },
+            "original" : {
+                "height" : 737,
+                "width" : 1200,
+                "asset" : {
+                    "id" : "56374fda4c64b5d9a068254c",
+                    "url" : "http://localhost:3010/api/service/assets/download/e28ef954-027a-4873-a697-6c2d814075c1/unsplash_528a8fb8a276d_1.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "unsplash_528a8fb8a276d_1.JPG"
+                }
+            }
+        },
+        "highlightImageBig" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "56374fbffebd53e65a782e21",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/7f4f7e13-432e-4bc9-8c1c-57cf6e64a4a4/stones-hi-res-thumb.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "stones-hi-res-thumb.JPG"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 708,
+                "minimagewidth" : 1060,
+                "y" : 453.3333333333333144,
+                "x" : 993.7066666666665924,
+                "height" : 1515.9466666666664878,
+                "width" : 2270.2933333333330665,
+                "asset" : {
+                    "id" : "56374fcffebd53e65a782e24",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/30d0615e-e95a-4190-871f-d6c817b8513f/stones-hi-res.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "stones-hi-res.JPG"
+                }
+            },
+            "original" : {
+                "height" : 2448,
+                "width" : 3264,
+                "asset" : {
+                    "id" : "56374fbf4c64b5d9a0682543",
+                    "url" : "http://localhost:3010/api/service/assets/download/2e4135d9-4134-4053-b2e7-db1f98b2a526/stones-hi-res.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "stones-hi-res.JPG"
+                }
+            }
+        },
+        "body" : {
+            "multiLanguage" : true
+        },
+        "intro" : {
+            "en" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quid ages tandem, si utilitas ab amicitia, ut fit saepe, defecerit? Sed ego in hoc resisto.",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "deleted" : true,
+        "lastModified" : "2015-11-10T13:25:21.187Z",
+        "lastEditor" : ""
+    },
+    "uuid" : "624b5571-6279-4e06-b813-5294f1da2829",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "5638d745c1b1dd6233b5f514"
+    },
+    "fields" : {
+        "impact" : [
+            "563a34d63cbe09637b50e911"
+        ],
+        "title" : {
+            "en" : "Noorderlaan / Ijzerlaan",
+            "multiLanguage" : true
+        },
+        "einddatum" : "2015/11/08",
+        "begindatum" : "2015/11/06",
+        "type" : [
+            "5638d6d4c1b1dd6233b5f513"
+        ],
+        "body" : {
+            "en" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tamen a proposito, inquam, aberramus. Quae cum essent dicta, discessimus. Dat enim intervalla et relaxat. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Nobis aliter videtur, recte secusne, postea; Cuius quidem, quoniam Stoicus fuit, sententia condemnata mihi videtur esse inanitas ista verborum. Duo Reges: constructio interrete. Quod vestri quidem vel optime disputant, nihil opus esse eum, qui philosophus futurus sit, scire litteras.<br/></p>",
+            "multiLanguage" : true
+        },
+        "situatie" : {
+            "en" : "Het kruispunt Noorderlaan / Ijzerlaan is dit weekend afgesloten.",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "deleted" : true,
+        "lastModified" : "2015-11-10T13:25:04.844Z",
+        "lastEditor" : ""
+    },
+    "uuid" : "a800295c-8108-42da-880d-d68654f7fbaf",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "56374f07e4b21a639d556e11"
+    },
+    "fields" : {
+        "partner" : [
+            "56377ae966d3dc6a14be94cb"
+        ],
+        "teaserImage" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "5637736e8bdd40f815cbd43f",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/3dd6f6ff-1a66-4f4b-b002-c2acc3e0d34e/5OctZbi8TOKC4NmbmeOH_Caroline Gutman-4677-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "5OctZbi8TOKC4NmbmeOH_Caroline Gutman-4677-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 420,
+                "minimagewidth" : 730,
+                "y" : 1156.2516666666665515,
+                "x" : 1177.5911111111111040,
+                "height" : 876.8599999999999000,
+                "width" : 1525.7111111111112223,
+                "asset" : {
+                    "id" : "563773798bdd40f815cbd442",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/2c4aa5b3-bc51-4800-a8b8-86d9ac253b1c/5OctZbi8TOKC4NmbmeOH_Caroline Gutman-4677.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "5OctZbi8TOKC4NmbmeOH_Caroline Gutman-4677.jpg"
+                }
+            },
+            "original" : {
+                "height" : 2579,
+                "width" : 3868,
+                "asset" : {
+                    "id" : "5637736eecbf0c000ff47a32",
+                    "url" : "http://localhost:3010/api/service/assets/download/4ebf246f-69e2-4a1e-bd51-b2b5c05d696f/5OctZbi8TOKC4NmbmeOH_Caroline Gutman-4677.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "5OctZbi8TOKC4NmbmeOH_Caroline Gutman-4677.jpg"
+                }
+            }
+        },
+        "title" : "Lorem Piepschuim",
+        "highlightImageSmall" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "56374ed18bdd40f815cbd239",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/005c22f3-19dc-442c-8b30-8b0bafe8534c/camera-man-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "camera-man-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 418,
+                "minimagewidth" : 730,
+                "y" : 474.9866666666666788,
+                "x" : 926.6133333333333439,
+                "height" : 1132.9600000000000364,
+                "width" : 1709.1733333333334031,
+                "asset" : {
+                    "id" : "5637508cfebd53e65a782e42",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/8fc96cde-1fed-4654-bfce-d771f27ba07b/camera-man.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "camera-man.jpg"
+                }
+            },
+            "original" : {
+                "height" : 2336,
+                "width" : 3504,
+                "asset" : {
+                    "id" : "56374ed1e4b21a639d556ddc",
+                    "url" : "http://localhost:3010/api/service/assets/download/c0e12564-1089-402a-a673-3a24ad03c8ff/camera-man.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "camera-man.jpg"
+                }
+            }
+        },
+        "highlightImageBig" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "56374ef58bdd40f815cbd242",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/c5255cb4-0dd6-42fa-b65d-6a1dd9778729/6YrsyY9SqyuX0eAJaZGQ_pixel-debris-01-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "6YrsyY9SqyuX0eAJaZGQ_pixel-debris-01-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 708,
+                "minimagewidth" : 1060,
+                "y" : 405.5117056856187219,
+                "x" : 0,
+                "height" : 2421.8060200668896869,
+                "width" : 3629.2977777777778101,
+                "asset" : {
+                    "id" : "56374f018bdd40f815cbd245",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/da80f915-409a-4621-a8ad-9f55a68bdc43/6YrsyY9SqyuX0eAJaZGQ_pixel-debris-01.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "6YrsyY9SqyuX0eAJaZGQ_pixel-debris-01.jpg"
+                }
+            },
+            "original" : {
+                "height" : 3368,
+                "width" : 5072,
+                "asset" : {
+                    "id" : "56374ef5e4b21a639d556e0a",
+                    "url" : "http://localhost:3010/api/service/assets/download/272af10f-2e3f-476c-bffb-cb73ac4ef18e/6YrsyY9SqyuX0eAJaZGQ_pixel-debris-01.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "6YrsyY9SqyuX0eAJaZGQ_pixel-debris-01.jpg"
+                }
+            }
+        },
+        "body" : {
+            "en" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Sed plane dicit quod intellegit. Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Aut, Pylades cum sis, dices te esse Orestem, ut moriare pro amico? Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt. Qua ex cognitione facilior facta est investigatio rerum occultissimarum.",
+            "multiLanguage" : true
+        },
+        "intro" : {
+            "en" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete. Sed plane dicit quod intellegit. Fortasse id optimum, sed ubi illud?",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "deleted" : true,
+        "lastModified" : "2015-11-10T13:25:13.400Z",
+        "lastEditor" : ""
+    },
+    "uuid" : "398c91fe-eb9a-453a-bc09-0f3040fb90d0",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563b4ae64ac764e9a9cc29e3"
+    },
+    "fields" : {
+        "einddatum" : "2015/11/06",
+        "begindatum" : "2015/11/05",
+        "impact" : [
+            "563a34d63cbe09637b50e912"
+        ],
+        "type" : [
+            "5638d6d4c1b1dd6233b5f513"
+        ],
+        "body" : {
+            "en" : "<p>Door een hevig ongeval is het wegdek van de E17 beschadigd.</p>",
+            "multiLanguage" : true
+        },
+        "situatie" : {
+            "en" : "Beschadigd wegdek op de E17 richting Gent in Waasmunster",
+            "multiLanguage" : true
+        },
+        "title" : {
+            "en" : "Ernstig ongeval E17",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "deleted" : true,
+        "lastModified" : "2015-11-10T13:24:42.167Z",
+        "lastEditor" : ""
+    },
+    "uuid" : "d387240c-f6bd-4c3a-8496-ff0e4c67bf3b",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563b725c849be52db528aff0"
+    },
+    "fields" : {
+        "image" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "563b723e6102fcb053a8d6f3",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/bd094239-2e15-4d94-a1e6-561adb8081f4/CFHakpPkTE2zdJUp9AlO_IMG_0906-thumb.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "CFHakpPkTE2zdJUp9AlO_IMG_0906-thumb.JPG"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 450,
+                "minimagewidth" : 790,
+                "y" : 250.2399999999999807,
+                "x" : 0,
+                "height" : 1316.4800000000000182,
+                "width" : 2310.1866666666664969,
+                "asset" : {
+                    "id" : "563b72486102fcb053a8d6f6",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/e771aac4-983d-47c3-81a4-5faba42034af/CFHakpPkTE2zdJUp9AlO_IMG_0906.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "CFHakpPkTE2zdJUp9AlO_IMG_0906.JPG"
+                }
+            },
+            "original" : {
+                "height" : 2448,
+                "width" : 3264,
+                "asset" : {
+                    "id" : "563b723d849be52db528afe9",
+                    "url" : "http://localhost:3010/api/service/assets/download/26677520-28f1-4314-ab4f-91e6861eab2d/CFHakpPkTE2zdJUp9AlO_IMG_0906.JPG",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "CFHakpPkTE2zdJUp9AlO_IMG_0906.JPG"
+                }
+            }
+        },
+        "link" : {
+            "en" : {
+                "description" : "Ontdek meer",
+                "url" : "http://www.google.be"
+            },
+            "multiLanguage" : true
+        },
+        "linkTitle" : {
+            "en" : "Ontdek meer",
+            "multiLanguage" : true
+        },
+        "title" : {
+            "en" : "Lage Emissie Checker",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : [
+                "563b5d39a4c95beab1817bb6"
+            ]
+        },
+        "created" : "2015-11-05T15:14:36.091Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en"
+        ],
+        "hasDetail" : false,
+        "deleted" : false,
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "label" : "Lage Emissie Checker",
+        "contentType" : "563b5b089c0b0657b0b436e1",
+        "lastModified" : "2015-11-06T16:05:18.398Z"
+    },
+    "uuid" : "da1715f5-c36b-450e-aff0-1343504a1708",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563234d201d4a7b8811984f0"
+    },
+    "fields" : {
+        "answer" : {
+            "en" : "Answer 2",
+            "multiLanguage" : true
+        },
+        "question" : {
+            "en" : "Question 2",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : []
+        },
+        "created" : "2015-10-29T15:01:38.744Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en"
+        ],
+        "hasDetail" : false,
+        "deleted" : false,
+        "label" : "Question 2",
+        "contentType" : "5632346c01d4a7b8811984ec",
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "lastModified" : "2015-11-06T16:05:41.679Z"
+    },
+    "uuid" : "667fb7d3-31d5-4734-b648-41b629c56124",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "56408cc246ae671c3a21bbff"
+    },
+    "fields" : {
+        "title" : {
+            "de" : "Gehen Sie mit dem Fahrrad",
+            "fr" : "Aller à vélo",
+            "nl" : "Neem de fiets",
+            "en" : "Take the bike",
+            "multiLanguage" : true
+        },
+        "image" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "56408cbc6102fcb053a8dda8",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/9df414ea-e272-4e8b-8017-499aa4e08f4a/H15_20B_LadyLuck_BLK_3Q-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "H15_20B_LadyLuck_BLK_3Q-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 700,
+                "minimagewidth" : 1000,
+                "y" : 85.5555555555555571,
+                "x" : 0,
+                "height" : 700,
+                "width" : 1000,
+                "asset" : {
+                    "id" : "56408ccb6102fcb053a8ddab",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/15902a53-0f37-47fe-9a1b-55ce32cf31ea/H15_20B_LadyLuck_BLK_3Q.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "H15_20B_LadyLuck_BLK_3Q.jpg"
+                }
+            },
+            "original" : {
+                "height" : 1000,
+                "width" : 1000,
+                "asset" : {
+                    "id" : "56408cbc46ae671c3a21bbfb",
+                    "url" : "http://localhost:3010/api/service/assets/download/000961f8-bc4f-4191-aaf5-a278f8069264/H15_20B_LadyLuck_BLK_3Q.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "H15_20B_LadyLuck_BLK_3Q.jpg"
+                }
+            }
+        },
+        "intro" : {
+            "de" : "Oft ist das Fahrrad das schnellste Verkehrsmittel.",
+            "fr" : "Souvent, le vélo est le moyen le plus rapide de transport.",
+            "nl" : "Voor korte afstanden is de fiets vaak het snelste vervoersmiddel.",
+            "en" : "For short distances, it's better to take the bike most of the time.",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : []
+        },
+        "created" : "2015-11-09T12:08:34.147Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en",
+            "nl",
+            "fr",
+            "de"
+        ],
+        "hasDetail" : false,
+        "deleted" : false,
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "contentType" : "564068e717337412260904f7",
+        "label" : "Take the bike",
+        "lastModified" : "2015-11-09T12:59:49.427Z"
+    },
+    "uuid" : "5e2a220c-68ce-4ca2-8e40-7eecadceb83e",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "56386fbd27858d99076de754"
+    },
+    "fields" : {
+        "lezPage" : {
+            "lezPage" : false
+        },
+        "body" : {
+            "de" : "<p>News overview DE</p>",
+            "fr" : "<p>News overview FR</p>",
+            "nl" : "<p>News overview</p>",
+            "en" : "<p>Body text for the overview page.</p>",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "deleted" : true,
+        "lastModified" : "2015-11-10T13:17:40.971Z",
+        "lastEditor" : ""
+    },
+    "uuid" : "6dff2243-001c-4829-960c-68b6d2642edc",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563b8008849be52db528b00d"
+    },
+    "fields" : {
+        "image" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "563b7ffe6102fcb053a8d7f6",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/55b5995a-b1aa-4e88-9052-4ddb404b8d3a/unsplash_522cb8dbbe680_1-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "unsplash_522cb8dbbe680_1-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 450,
+                "minimagewidth" : 790,
+                "y" : 506.1333333333333826,
+                "x" : 650.1866666666667243,
+                "height" : 1183.5733333333334940,
+                "width" : 2079.0399999999999636,
+                "asset" : {
+                    "id" : "563b80066102fcb053a8d7f9",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/be6e0acd-066f-4b71-9b43-6c05255117b8/unsplash_522cb8dbbe680_1.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "unsplash_522cb8dbbe680_1.jpg"
+                }
+            },
+            "original" : {
+                "height" : 2336,
+                "width" : 3504,
+                "asset" : {
+                    "id" : "563b7ffd849be52db528b006",
+                    "url" : "http://localhost:3010/api/service/assets/download/a6deb996-3ca7-42c5-ac68-144cd5b850ab/unsplash_522cb8dbbe680_1.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "unsplash_522cb8dbbe680_1.jpg"
+                }
+            }
+        },
+        "link" : {
+            "en" : {
+                "description" : "Ontdek meer",
+                "url" : "http://www.google.be"
+            },
+            "multiLanguage" : true
+        },
+        "linkTitle" : {
+            "en" : "Ontdek meer",
+            "multiLanguage" : true
+        },
+        "title" : {
+            "en" : "Tijdelijke toelating",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : [
+                "563b5d39a4c95beab1817bb6"
+            ]
+        },
+        "created" : "2015-11-05T16:12:56.725Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en"
+        ],
+        "hasDetail" : false,
+        "deleted" : false,
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "contentType" : "563b5b089c0b0657b0b436e1",
+        "label" : "Tijdelijke toelating",
+        "lastModified" : "2015-11-10T13:20:51.555Z"
+    },
+    "uuid" : "677cebe3-fc18-484e-8945-a4c849a32424",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563b5cb49c0b0657b0b436e2"
+    },
+    "fields" : {
+        "lezPage" : {
+            "lezPage" : true
+        },
+        "body" : {
+            "de" : "<p>Lage emissiezone DE</p>",
+            "fr" : "<p>Lage emissiezone FR</p>",
+            "nl" : "<p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Antwerpen is de eerste Vlaamse stad die een lage-emissiezone (LEZ) invoert. De invoering van deze maatregel draagt bij aan de gezondheid van de bewoners en bezoekers van de stad. In de loop van 2016 zal de LEZ in werking treden.</p><h2 style=\"color: rgb(77, 77, 77);background-color: rgb(255, 255, 255);\">Wat is een lage-emissiezone?</h2><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Een lage-emissiezone is een gebied waar enkel voertuigen mogen rondrijden die aan bepaalde milieucriteria voldoen. Oudere voertuigen die de lucht meer vervuilen, mogen daar niet meer binnen. Zo wordt de luchtkwaliteit beter. Dat is goed voor de gezondheid van inwoners en bezoekers, vooral kinderen en ouderen. Daarnaast is het een hele verbetering voor het milieu..</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><h2 style=\"color: rgb(77, 77, 77);background-color: rgb(255, 255, 255);\">Vanaf wanneer?</h2><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">De lage-emissiezone wordt in de zomer of in de herfst van 2016 ingevoerd. De precieze datum staat nog niet vast. Aan de invoering gaat een ruime communicatiecampagne vooraf, zodat u tijdig kan nagaan of uw wagen voldoet.</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><h2 style=\"color: rgb(77, 77, 77);background-color: rgb(255, 255, 255);\">Waarom?</h2><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Een lage-emissiezone zorgt voor:</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"> • minder roet in de lucht. Roet is kankerverwekkend.</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"> • minder ultrafijn stof in de lucht. Inademing van fijn stof kan leiden tot ademhalingsproblemen, hart-en vaatziekten en andere aandoeningen</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"> • betere luchtkwaliteit in de stad.</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><h2 style=\"color: rgb(77, 77, 77);background-color: rgb(255, 255, 255);\">Wanneer heeft een voertuig toegang?</h2><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">De euronorm van uw voertuig zal bepalen of het voertuig in de lage-emissiezone mag rijden. U vindt de euronorm op het inschrijvingsbewijs van uw wagen onder de rubriek ‘milieuklasse’. De voorwaarden zullen strenger worden vanaf 1 januari 2020 en vanaf 1 januari 2025. Zo blijft de maatregel effectief bijdragen aan een gezondere lucht in de binnenstad.</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Als er geen euronorm op het inschrijvingsbewijs vermeld staat, geldt de datum van eerste inschrijving. Hier leest u meer over de toegangsvoorwaarden.</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"><br style=\"color: inherit;background-color: inherit;\"/></p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Kijk na of uw wagen voldoet via deze eenvoudige test.</p>",
+            "en" : "<p>Lage emissiezone EN</p><p></p>",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : [
+                "563b5d39a4c95beab1817bb6"
+            ]
+        },
+        "created" : "2015-11-05T13:42:12.414Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en",
+            "nl",
+            "fr",
+            "de"
+        ],
+        "hasDetail" : true,
+        "deleted" : false,
+        "label" : "Lage Emissie Zone",
+        "contentType" : "563342bc3a157ac91f6994f3",
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "lastModified" : "2015-11-10T13:21:57.638Z"
+    },
+    "uuid" : "77e9b399-38f1-4836-aaf3-b9c8cc187ee4",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "56376fe75957481c050e6e95"
+    },
+    "fields" : {
+        "image" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "56376fd88bdd40f815cbd414",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/6f7c0b2f-14af-45db-9b7d-e17e59cea90d/LhwHxUyR8GKXgDuvf4Bw_Rocky-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "LhwHxUyR8GKXgDuvf4Bw_Rocky-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 500,
+                "minimagewidth" : 1920,
+                "y" : 630.8227424749163674,
+                "x" : 3.6266666666666665,
+                "height" : 848.3478260869565020,
+                "width" : 3260.3733333333329938,
+                "asset" : {
+                    "id" : "56376fe38bdd40f815cbd417",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/4edc771a-480f-47d2-8f8e-4207de77e512/LhwHxUyR8GKXgDuvf4Bw_Rocky.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "LhwHxUyR8GKXgDuvf4Bw_Rocky.jpg"
+                }
+            },
+            "original" : {
+                "height" : 2168,
+                "width" : 3264,
+                "asset" : {
+                    "id" : "56376fd75957481c050e6e8e",
+                    "url" : "http://localhost:3010/api/service/assets/download/d3be2886-c80e-477a-9d63-f2dba5e13b5c/LhwHxUyR8GKXgDuvf4Bw_Rocky.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "LhwHxUyR8GKXgDuvf4Bw_Rocky.jpg"
+                }
+            }
+        },
+        "title" : {
+            "de" : "Bewegen Sie schnell mit den zusätzlichen Zügen der SNCB.",
+            "fr" : "Déplacez-vous rapidement avec les trains supplémentaires de la SNCB.",
+            "nl" : "Verplaats je snel met de extra treinen van de NMBS.",
+            "en" : "Get around quickly with the extra trains from NMBS.",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : []
+        },
+        "created" : "2015-11-02T14:15:03.046Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en",
+            "nl",
+            "fr",
+            "de"
+        ],
+        "hasDetail" : false,
+        "deleted" : false,
+        "label" : "Homepage banner",
+        "contentType" : "56376f3b5957481c050e6e88",
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "lastModified" : "2015-11-09T13:52:34.213Z"
+    },
+    "uuid" : "09bb736a-7c09-4238-9e0d-655ae8600c85",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "56407a82d9f6342c330f5974"
+    },
+    "fields" : {
+        "title" : {
+            "de" : "Waze",
+            "fr" : "Waze",
+            "nl" : "Waze",
+            "en" : "Waze",
+            "multiLanguage" : true
+        },
+        "image" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "56407a6da0aa9fe3dc054327",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/735660d2-552d-42f6-84db-543bea486ae9/share-image-thumb.png",
+                    "type" : "image/png",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "share-image-thumb.png"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 700,
+                "minimagewidth" : 1000,
+                "y" : 133.3333333333333428,
+                "x" : 0,
+                "height" : 700,
+                "width" : 1000,
+                "asset" : {
+                    "id" : "56407a7ca0aa9fe3dc05432a",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/9bfd5e79-fc54-45cd-9b9a-9d0807d21d44/share-image.png",
+                    "type" : "image/png",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "share-image.png"
+                }
+            },
+            "original" : {
+                "height" : 1000,
+                "width" : 1000,
+                "asset" : {
+                    "id" : "56407a6cd9f6342c330f596d",
+                    "url" : "http://localhost:3010/api/service/assets/download/68af099c-c5b5-41d0-902b-4a167a353316/share-image.png",
+                    "type" : "image/png",
+                    "uploadedBy" : "uploader",
+                    "filename" : "share-image.png"
+                }
+            }
+        },
+        "intro" : {
+            "de" : "Verwenden Sie ein gutes GPS mit Live-Verkehr wie Waze.",
+            "fr" : "Utilisez un bon GPS avec trafic en temps réel comme Waze.",
+            "nl" : "Gebruik een goede GPS met live verkeersinformatie zoals Waze.",
+            "en" : "Use a decent GPS with live traffic information like Waze.",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : []
+        },
+        "created" : "2015-11-09T10:50:42.886Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en",
+            "nl",
+            "fr",
+            "de"
+        ],
+        "hasDetail" : false,
+        "deleted" : false,
+        "label" : "Waze",
+        "contentType" : "564068e717337412260904f7",
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "lastModified" : "2015-11-10T09:59:09.907Z"
+    },
+    "uuid" : "e72de0c5-4afb-4e6c-becb-347d2eca3e22",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "5641c5b080798c4e148876cf"
+    },
+    "fields" : {
+        "intro" : {
+            "de" : "Van oktober tot december vernieuwt het Agentschap Wegen en Verkeer (AWV) de voegen op de Antwerpse Ring (R1) tussen de Kennedytunnel en de afrit Deurne in de richting van Nederland. De werken worden enkel ’s nachts uitgevoerd, maar het verkeer houdt desondanks best rekening met ernstige hinder. Om de werken te kunnen uitvoeren is het noodzakelijk om tijdelijk rijstroken en op- en afritten af te sluiten.",
+            "fr" : "Van oktober tot december vernieuwt het Agentschap Wegen en Verkeer (AWV) de voegen op de Antwerpse Ring (R1) tussen de Kennedytunnel en de afrit Deurne in de richting van Nederland. De werken worden enkel ’s nachts uitgevoerd, maar het verkeer houdt desondanks best rekening met ernstige hinder. Om de werken te kunnen uitvoeren is het noodzakelijk om tijdelijk rijstroken en op- en afritten af te sluiten.",
+            "nl" : "Van oktober tot december vernieuwt het Agentschap Wegen en Verkeer (AWV) de voegen op de Antwerpse Ring (R1) tussen de Kennedytunnel en de afrit Deurne in de richting van Nederland. De werken worden enkel ’s nachts uitgevoerd, maar het verkeer houdt desondanks best rekening met ernstige hinder. Om de werken te kunnen uitvoeren is het noodzakelijk om tijdelijk rijstroken en op- en afritten af te sluiten.",
+            "en" : "Van oktober tot december vernieuwt het Agentschap Wegen en Verkeer (AWV) de voegen op de Antwerpse Ring (R1) tussen de Kennedytunnel en de afrit Deurne in de richting van Nederland. De werken worden enkel ’s nachts uitgevoerd, maar het verkeer houdt desondanks best rekening met ernstige hinder. Om de werken te kunnen uitvoeren is het noodzakelijk om tijdelijk rijstroken en op- en afritten af te sluiten.",
+            "multiLanguage" : true
+        },
+        "einddatum" : "2015/12/23",
+        "begindatum" : "2015/10/01",
+        "impact" : [
+            "563a34d63cbe09637b50e913"
+        ],
+        "type" : [
+            "5638d6d4c1b1dd6233b5f513"
+        ],
+        "body" : {
+            "de" : "<p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Van oktober tot december vernieuwt het Agentschap Wegen en Verkeer (AWV) de voegen op de Antwerpse Ring (R1) tussen de Kennedytunnel en de afrit Deurne in de richting van Nederland. De werken worden enkel ’s nachts uitgevoerd, maar het verkeer houdt desondanks best rekening met ernstige hinder. Om de werken te kunnen uitvoeren is het noodzakelijk om tijdelijk rijstroken en op- en afritten af te sluiten.</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Een tiental jaar geleden werd de Antwerpse Ring grondig gerenoveerd en werd er een wegdek aangelegd in doorlopend gewapend beton. Tussen de rijvakken zitten er verticale voegen als buffer tussen twee betonstroken. De voegen, die ook waterinsijpeling moeten vermijden, zijn nu aan vernieuwing toe.</p><h2 style=\"color: rgb(77, 77, 77);background-color: rgb(255, 255, 255);\">Nachtelijke Hinder</h2><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Er zal uitsluitend ’s nachts gewerkt worden. Overdag blijft de snelweg inclusief alle op- en afritten steeds open. Tijdens de werken worden er steeds minstens twee rijstroken ingenomen en worden er verschillende op- en afritten ter hoogte van de werfzone afgesloten. Daarnaast zullen ook de Craeybeckxtunnel en de Bevrijdingstunnel soms afgesloten moeten worden. Het verkeer wordt dan omgeleid via de Singel.</p><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Meer gedetailleerde info over de tijdelijke hinder en omleidingen volgt spoedig.</p><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Belangrijk: de werken zijn sterk afhankelijk van de weersomstandigheden. Bij regen en/of vriesweer kunnen de werken niet uitgevoerd worden. In dat geval kan de planning nog gewijzigd worden.</p>",
+            "fr" : "<p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Van oktober tot december vernieuwt het Agentschap Wegen en Verkeer (AWV) de voegen op de Antwerpse Ring (R1) tussen de Kennedytunnel en de afrit Deurne in de richting van Nederland. De werken worden enkel ’s nachts uitgevoerd, maar het verkeer houdt desondanks best rekening met ernstige hinder. Om de werken te kunnen uitvoeren is het noodzakelijk om tijdelijk rijstroken en op- en afritten af te sluiten.</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Een tiental jaar geleden werd de Antwerpse Ring grondig gerenoveerd en werd er een wegdek aangelegd in doorlopend gewapend beton. Tussen de rijvakken zitten er verticale voegen als buffer tussen twee betonstroken. De voegen, die ook waterinsijpeling moeten vermijden, zijn nu aan vernieuwing toe.</p><h2 style=\"color: rgb(77, 77, 77);background-color: rgb(255, 255, 255);\">Nachtelijke Hinder</h2><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Er zal uitsluitend ’s nachts gewerkt worden. Overdag blijft de snelweg inclusief alle op- en afritten steeds open. Tijdens de werken worden er steeds minstens twee rijstroken ingenomen en worden er verschillende op- en afritten ter hoogte van de werfzone afgesloten. Daarnaast zullen ook de Craeybeckxtunnel en de Bevrijdingstunnel soms afgesloten moeten worden. Het verkeer wordt dan omgeleid via de Singel.</p><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Meer gedetailleerde info over de tijdelijke hinder en omleidingen volgt spoedig.</p><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Belangrijk: de werken zijn sterk afhankelijk van de weersomstandigheden. Bij regen en/of vriesweer kunnen de werken niet uitgevoerd worden. In dat geval kan de planning nog gewijzigd worden.</p>",
+            "nl" : "<p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Van oktober tot december vernieuwt het Agentschap Wegen en Verkeer (AWV) de voegen op de Antwerpse Ring (R1) tussen de Kennedytunnel en de afrit Deurne in de richting van Nederland. De werken worden enkel ’s nachts uitgevoerd, maar het verkeer houdt desondanks best rekening met ernstige hinder. Om de werken te kunnen uitvoeren is het noodzakelijk om tijdelijk rijstroken en op- en afritten af te sluiten.</p><p style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\">Een tiental jaar geleden werd de Antwerpse Ring grondig gerenoveerd en werd er een wegdek aangelegd in doorlopend gewapend beton. Tussen de rijvakken zitten er verticale voegen als buffer tussen twee betonstroken. De voegen, die ook waterinsijpeling moeten vermijden, zijn nu aan vernieuwing toe.</p><h2 style=\"color: rgb(77, 77, 77);background-color: rgb(255, 255, 255);\">Nachtelijke Hinder</h2><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Er zal uitsluitend ’s nachts gewerkt worden. Overdag blijft de snelweg inclusief alle op- en afritten steeds open. Tijdens de werken worden er steeds minstens twee rijstroken ingenomen en worden er verschillende op- en afritten ter hoogte van de werfzone afgesloten. Daarnaast zullen ook de Craeybeckxtunnel en de Bevrijdingstunnel soms afgesloten moeten worden. Het verkeer wordt dan omgeleid via de Singel.</p><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Meer gedetailleerde info over de tijdelijke hinder en omleidingen volgt spoedig.</p><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Belangrijk: de werken zijn sterk afhankelijk van de weersomstandigheden. Bij regen en/of vriesweer kunnen de werken niet uitgevoerd worden. In dat geval kan de planning nog gewijzigd worden.</p>",
+            "en" : "<p>Van oktober tot december vernieuwt het Agentschap Wegen en Verkeer (AWV) de voegen op de Antwerpse Ring (R1) tussen de Kennedytunnel en de afrit Deurne in de richting van Nederland. De werken worden enkel ’s nachts uitgevoerd, maar het verkeer houdt desondanks best rekening met ernstige hinder. Om de werken te kunnen uitvoeren is het noodzakelijk om tijdelijk rijstroken en op- en afritten af te sluiten.</p><p>Een tiental jaar geleden werd de Antwerpse Ring grondig gerenoveerd en werd er een wegdek aangelegd in doorlopend gewapend beton. Tussen de rijvakken zitten er verticale voegen als buffer tussen twee betonstroken. De voegen, die ook waterinsijpeling moeten vermijden, zijn nu aan vernieuwing toe.</p><h2>Nachtelijke Hinder</h2><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Er zal uitsluitend ’s nachts gewerkt worden. Overdag blijft de snelweg inclusief alle op- en afritten steeds open. Tijdens de werken worden er steeds minstens twee rijstroken ingenomen en worden er verschillende op- en afritten ter hoogte van de werfzone afgesloten. Daarnaast zullen ook de Craeybeckxtunnel en de Bevrijdingstunnel soms afgesloten moeten worden. Het verkeer wordt dan omgeleid via de Singel.</p><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Meer gedetailleerde info over de tijdelijke hinder en omleidingen volgt spoedig.</p><p style=\"color: rgb(63, 55, 49);background-color: rgb(255, 255, 255);\">Belangrijk: de werken zijn sterk afhankelijk van de weersomstandigheden. Bij regen en/of vriesweer kunnen de werken niet uitgevoerd worden. In dat geval kan de planning nog gewijzigd worden.</p>",
+            "multiLanguage" : true
+        },
+        "situatie" : {
+            "fr" : "Renouveler joints en ring d'Anvers (R1).",
+            "nl" : "De voegen op de Antwerpse Ring (R1) krijgen een onderhoudsbeurt.",
+            "de" : "Erneuerung Gelenke in Antwerpen Ring (R1).",
+            "en" : "De voegen op de Antwerpse Ring (R1) krijgen een onderhoudsbeurt.",
+            "multiLanguage" : true
+        },
+        "title" : {
+            "fr" : "Renouveler joints en ring d'Anvers (R1)",
+            "nl" : "Vernieuwen van voegen op Antwerpse Ring (R1)",
+            "de" : "Erneuerung Gelenke in Antwerpen Ring (R1)",
+            "en" : "Vernieuwen van voegen op Antwerpse Ring (R1)",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : []
+        },
+        "created" : "2015-11-10T10:23:44.571Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en",
+            "nl",
+            "fr",
+            "de"
+        ],
+        "hasDetail" : false,
+        "deleted" : false,
+        "label" : "Vernieuwen van voegen op Antwerpse Ring (R1)",
+        "contentType" : "5638d5a0c1b1dd6233b5f50f",
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "lastModified" : "2015-11-10T12:31:41.912Z"
+    },
+    "uuid" : "04d98a5d-3161-4131-84e7-cad9f76b77de",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563b69b7a4c95beab1817bbe"
+    },
+    "fields" : {
+        "lezPage" : {
+            "lezPage" : true
+        },
+        "body" : {
+            "de" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>Voor welke voertuigen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>De lage-emissiezone geldt voor voertuigen uit de categorie M, N en T. Hieronder vallen:<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Auto’s<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Bussen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Kampeerwagens<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    <a href=\"http://google.be/\" target=\"\" style=\"color: rgb(35, 167, 136);background-color: rgb(255, 255, 255);\">Bestelwagens</a><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Vrachtwagens<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Landbouwvoertuigen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>De lage-emissiezone geldt niet voor:<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Bromfietsen en motorfietsen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>Heeft uw voertuig de juiste euronorm<br/></p>",
+            "fr" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>Voor welke voertuigen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>De lage-emissiezone geldt voor voertuigen uit de categorie M, N en T. Hieronder vallen:<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Auto’s<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Bussen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Kampeerwagens<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    <a href=\"http://google.be/\" target=\"\" style=\"color: rgb(35, 167, 136);background-color: rgb(255, 255, 255);\">Bestelwagens</a><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Vrachtwagens<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Landbouwvoertuigen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>De lage-emissiezone geldt niet voor:<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Bromfietsen en motorfietsen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>Heeft uw voertuig de juiste euronorm<br/></p>",
+            "nl" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>Voor welke voertuigen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>De lage-emissiezone geldt voor voertuigen uit de categorie M, N en T. Hieronder vallen:<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Auto’s<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Bussen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Kampeerwagens<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    <a href=\"http://google.be/\" target=\"\" style=\"color: rgb(35, 167, 136);background-color: rgb(255, 255, 255);\">Bestelwagens</a><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Vrachtwagens<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Landbouwvoertuigen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>De lage-emissiezone geldt niet voor:<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>  •    Bromfietsen en motorfietsen<br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/><br style=\"color: rgb(97, 101, 102);background-color: rgb(255, 255, 255);\"/>Heeft uw voertuig de juiste euronorm<br/></p>",
+            "en" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.<br/><br/>Voor welke voertuigen<br/>De lage-emissiezone geldt voor voertuigen uit de categorie M, N en T. Hieronder vallen:<br/>  •    Auto’s<br/>  •    Bussen<br/>  •    Kampeerwagens<br/>  •    <a href=\"http://google.be\" target=\"\">Bestelwagens</a><br/>  •    Vrachtwagens<br/>  •    Landbouwvoertuigen<br/><br/>De lage-emissiezone geldt niet voor:<br/>  •    Bromfietsen en motorfietsen<br/><br/><br/>Heeft uw voertuig de juiste euronorm<br/></p>",
+            "multiLanguage" : true
+        },
+        "link" : {
+            "multiLanguage" : true
+        },
+        "linkTitle" : {
+            "multiLanguage" : true
+        },
+        "title" : {
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : []
+        },
+        "created" : "2015-11-05T14:37:43.371Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en",
+            "nl",
+            "fr",
+            "de"
+        ],
+        "hasDetail" : true,
+        "deleted" : false,
+        "label" : "Toelatingsvoorwaarden",
+        "contentType" : "563342bc3a157ac91f6994f3",
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "lastModified" : "2015-11-10T13:28:45.876Z"
+    },
+    "uuid" : "97196522-d8b1-4281-8780-326b31d7fede",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "5641fd54abadd41a2df42325"
+    },
+    "fields" : {
+        "title" : "Slim naar Antwerpen (deel 1): “Mijn werkdag begint ontspannend”",
+        "highlightImageSmall" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "5641fd3c6102fcb053a8e335",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/7cc2f894-ba9e-431f-ab06-248191b66c3e/Antwerpen%20autovrij-12-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "Antwerpen%20autovrij-12-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 418,
+                "minimagewidth" : 630,
+                "y" : 1155.8931750741840006,
+                "x" : 504.2311111111111472,
+                "height" : 2329.6379821958457796,
+                "width" : 3511.7688888888892507,
+                "asset" : {
+                    "id" : "5641fd4c6102fcb053a8e338",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/0c111aad-2f09-42ca-be5d-2f528e50a95a/Antwerpen%20autovrij-12.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "Antwerpen%20autovrij-12.jpg"
+                }
+            },
+            "original" : {
+                "height" : 6016,
+                "width" : 4016,
+                "asset" : {
+                    "id" : "5641fd3babadd41a2df4231e",
+                    "url" : "http://localhost:3010/api/service/assets/download/f1211420-5ced-48da-a107-5ec0d78b2750/Antwerpen%20autovrij-12.jpg",
+                    "type" : "image/jpg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "Antwerpen%20autovrij-12.jpg"
+                }
+            }
+        },
+        "highlightImageBig" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "5641fcec6102fcb053a8e32a",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/6273b94d-21e1-4573-a5f2-7366521f0c38/Antwerpen%20autovrij-12-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "Antwerpen%20autovrij-12-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 708,
+                "minimagewidth" : 1060,
+                "y" : 1178.2077151335313374,
+                "x" : 455.1466666666667038,
+                "height" : 2378.7299703264097843,
+                "width" : 3560.8533333333334667,
+                "asset" : {
+                    "id" : "5641fd0b6102fcb053a8e32d",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/d84979ec-700d-4f81-ae2d-eb376bc638ac/Antwerpen%20autovrij-12.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "Antwerpen%20autovrij-12.jpg"
+                }
+            },
+            "original" : {
+                "height" : 6016,
+                "width" : 4016,
+                "asset" : {
+                    "id" : "5641fceaabadd41a2df422d5",
+                    "url" : "http://localhost:3010/api/service/assets/download/2f69c978-8de4-4deb-b0e0-3c2e76bb82ee/Antwerpen%20autovrij-12.jpg",
+                    "type" : "image/jpg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "Antwerpen%20autovrij-12.jpg"
+                }
+            }
+        },
+        "teaserImage" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "5641fc34a0aa9fe3dc0549b7",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/6ca81be5-6e21-474a-aa06-2321e656d0e8/Antwerpen%20autovrij-7-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "Antwerpen%20autovrij-7-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 420,
+                "minimagewidth" : 730,
+                "y" : 1401.3531157270031144,
+                "x" : 245.4222222222222456,
+                "height" : 2168.9732937685462275,
+                "width" : 3770.5777777777780102,
+                "asset" : {
+                    "id" : "5641fc5fa0aa9fe3dc0549bd",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/4cabced9-a30f-4aab-b2bd-d8a4639adec4/Antwerpen%20autovrij-7.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "Antwerpen%20autovrij-7.jpg"
+                }
+            },
+            "original" : {
+                "height" : 6016,
+                "width" : 4016,
+                "asset" : {
+                    "id" : "5641fc2dabadd41a2df4228c",
+                    "url" : "http://localhost:3010/api/service/assets/download/267e4f5d-006c-4a3e-bdb2-a4d4e80bb4fe/Antwerpen%20autovrij-7.jpg",
+                    "type" : "image/jpg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "Antwerpen%20autovrij-7.jpg"
+                }
+            }
+        },
+        "partner" : [],
+        "body" : {
+            "nl" : "“In de zomer neem ik steeds de fiets. Sinds kort kocht ik een fiets over van een vriendin. Het is echt een prachtexemplaar en ik vlieg ermee naar het werk. En zeker over de fietsostrade langs de spoorweg Brussel-Antwerpen. Die passeert vlakbij mijn woonplaats op de grens tussen Hove en Antwerpen. Vanaf dan is het alleen maar rechtdoor. Voor de veiligheid draag ik een helm. Ik ben nog nooit gevallen maar ik geef graag het goede voorbeeld aan mijn kinderen. Zij gaan ook vaak met de fiets naar school.”\nRecht op fietsvergoeding\n“Mijn werkgever de Universiteit Antwerpen, stimuleert het fietsgebruik. Zo is er jaarlijks het fietsontbijt. Iedereen die met de fiets komt, ontbijt dan gratis. Ik heb ook recht op een fietsvergoeding. Maar die vraag ik niet aan want ik heb al een gratis tramabonnement.\"\nEchte luxe\n\"De tram neem ik bij slecht weer. Vanuit Mortsel is de tram echte luxe. Er stopt er één om de vijf minuten en er is altijd plaats. Ideaal om rustig aan mijn werkdag te beginnen. Dan stuur ik wat sms'jes, bereid een vergadering voor of beantwoord mailtjes. En de terugweg vind ik ook heerlijk ontspannend. Zo kom ik met een leeg hoofd weer thuis aan.”",
+            "en" : "“In de zomer neem ik steeds de fiets. Sinds kort kocht ik een fiets over van een vriendin. Het is echt een prachtexemplaar en ik vlieg ermee naar het werk. En zeker over de fietsostrade langs de spoorweg Brussel-Antwerpen. Die passeert vlakbij mijn woonplaats op de grens tussen Hove en Antwerpen. Vanaf dan is het alleen maar rechtdoor. Voor de veiligheid draag ik een helm. Ik ben nog nooit gevallen maar ik geef graag het goede voorbeeld aan mijn kinderen. Zij gaan ook vaak met de fiets naar school.”\nRecht op fietsvergoeding\n“Mijn werkgever de Universiteit Antwerpen, stimuleert het fietsgebruik. Zo is er jaarlijks het fietsontbijt. Iedereen die met de fiets komt, ontbijt dan gratis. Ik heb ook recht op een fietsvergoeding. Maar die vraag ik niet aan want ik heb al een gratis tramabonnement.\"\nEchte luxe\n\"De tram neem ik bij slecht weer. Vanuit Mortsel is de tram echte luxe. Er stopt er één om de vijf minuten en er is altijd plaats. Ideaal om rustig aan mijn werkdag te beginnen. Dan stuur ik wat sms'jes, bereid een vergadering voor of beantwoord mailtjes. En de terugweg vind ik ook heerlijk ontspannend. Zo kom ik met een leeg hoofd weer thuis aan.”",
+            "multiLanguage" : true
+        },
+        "intro" : {
+            "nl" : "Fiets of tram: Inge Caenen (40) ziet er allebei de voordelen van. Als het koud is, neemt ze de tram. Daarop bereidt ze rustig haar werkdag voor aan de Universiteit Antwerpen. En bij mooi weer? Dan is er haar nieuwe fiets. “Daarmee vlieg ik naar het werk langs de fietsostrade.”",
+            "en" : "Fiets of tram: Inge Caenen (40) ziet er allebei de voordelen van. Als het koud is, neemt ze de tram. Daarop bereidt ze rustig haar werkdag voor aan de Universiteit Antwerpen. En bij mooi weer? Dan is er haar nieuwe fiets. “Daarmee vlieg ik naar het werk langs de fietsostrade.”",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : []
+        },
+        "created" : "2015-11-10T14:21:08.740Z",
+        "published" : false,
+        "activeLanguages" : [
+            "nl"
+        ],
+        "hasDetail" : true,
+        "deleted" : false,
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "contentType" : "55d1d7e791e146cf53748495",
+        "label" : "SNA - Deel 1",
+        "lastModified" : "2015-11-10T14:22:11.375Z"
+    },
+    "uuid" : "db6fd49f-cc75-49cd-854f-76f040ca29cf",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "56408ac246ae671c3a21bbed"
+    },
+    "fields" : {
+        "title" : {
+            "de" : "Lassen Sie auf Zeit",
+            "fr" : "Partez à temps",
+            "nl" : "Vertrek tijdig",
+            "en" : "Leave early",
+            "multiLanguage" : true
+        },
+        "image" : {
+            "thumb" : {
+                "asset" : {
+                    "id" : "56408ab2a0aa9fe3dc0543eb",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/abcb1b35-daf3-403e-808e-72843d5bd71b/coffee-07-thumb.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "coffee-07-thumb.jpg"
+                }
+            },
+            "cropped" : {
+                "minimageheight" : 700,
+                "minimagewidth" : 1000,
+                "y" : 1.7079934747145187,
+                "x" : 213.3333333333333428,
+                "height" : 925.7324632952690990,
+                "width" : 1320.9600000000000364,
+                "asset" : {
+                    "id" : "56408abea0aa9fe3dc0543ef",
+                    "url" : "https://assets.acc.dcs.antwerpen.be/srv/assets/api/download/0319d2d5-13fa-4e89-84ae-e1a69bd096d4/coffee-07.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "slimnaarantwerpen@carbon.super",
+                    "filename" : "coffee-07.jpg"
+                }
+            },
+            "original" : {
+                "height" : 1047,
+                "width" : 1536,
+                "asset" : {
+                    "id" : "56408ab146ae671c3a21bbe6",
+                    "url" : "http://localhost:3010/api/service/assets/download/a2c68bac-f0ac-472a-a1d2-e1f9e90beb0c/coffee-07.jpg",
+                    "type" : "image/jpeg",
+                    "uploadedBy" : "uploader",
+                    "filename" : "coffee-07.jpg"
+                }
+            }
+        },
+        "intro" : {
+            "de" : "How do you feel when there is no coffee? Depresso.",
+            "fr" : "How do you feel when there is no coffee? Depresso.",
+            "nl" : "How do you feel when there is no coffee? Depresso.",
+            "en" : "How do you feel when there is no coffee? Depresso.",
+            "multiLanguage" : true
+        }
+    },
+    "versions": [],
+    "meta" : {
+        "taxonomy" : {
+            "dataType" : "taxonomy",
+            "tags" : []
+        },
+        "created" : "2015-11-09T12:00:02.432Z",
+        "published" : false,
+        "activeLanguages" : [
+            "en",
+            "nl",
+            "fr",
+            "de"
+        ],
+        "hasDetail" : false,
+        "deleted" : false,
+        "label" : "Leave early",
+        "contentType" : "564068e717337412260904f7",
+        "lastEditor" : "55b73aa72bf14ab82c54eb83",
+        "lastModified" : "2015-11-10T15:37:02.067Z"
+    },
+    "uuid" : "4284bb31-c2ca-4ea5-ad94-d29dd588c369",
+    "__v" : 0
+  }
+]

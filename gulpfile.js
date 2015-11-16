@@ -46,7 +46,7 @@ gulp.task('webserver', function() {
                 enable: true,
                 port: 1337
             },
-            port: 8010,
+            port: 4001,
             directoryListing: false,
             open: true,
             host: 'localhost',

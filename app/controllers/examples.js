@@ -1,13 +1,13 @@
 'use strict';
 
 require('rootpath')();
-var Example = require('app/models/example');
+var exampleModel = require('app/models/example');
 
 /**
- * @api {get} /api/example Get all example documents
+ * @api {get} /api/1.0.0/example Get all example documents
  * @apiName Get all examples
  * @apiGroup Example Docs
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} property Property (random field for example).
  * @apiSuccess (200) {String} uuid Unique uuid.
@@ -21,7 +21,7 @@ var Example = require('app/models/example');
  *     }]
  */
 exports.read = function (req, res, next) {
-    Example.find({deleted: false})
+    exampleModel.find({deleted: false})
         .exec(function(err, items) {
             if(!err && items) {
                 res.status(200).json(items);
@@ -32,11 +32,11 @@ exports.read = function (req, res, next) {
 };
 
 /**
- * @api {get} /api/example/:uuid Get a single example document
+ * @api {get} /api/1.0.0/example/:uuid Get a single example document
  * @apiParam {String} uuid Example uuid
  * @apiName Get one example
  * @apiGroup Example Docs
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} property Property (random field for example).
  * @apiSuccess (200) {String} uuid Unique uuid.
@@ -50,7 +50,7 @@ exports.read = function (req, res, next) {
  *     }
  */
 exports.readOne = function (req, res, next) {
-    Example.findOne({uuid: req.params.id, deleted: false})
+    exampleModel.findOne({uuid: req.params.id, deleted: false})
         .exec(function(err, item) {
             if(!err && item) {
                 res.status(200).json(item);
@@ -61,10 +61,10 @@ exports.readOne = function (req, res, next) {
 };
 
 /**
- * @api {post} /api/example Create a new example
+ * @api {post} /api/1.0.0/example Create a new example
  * @apiName Create a nex example
  * @apiGroup Example Docs
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} property Property (random field for example).
  * @apiSuccess (200) {String} uuid Unique uuid.
@@ -78,7 +78,7 @@ exports.readOne = function (req, res, next) {
  *     }
  */
 exports.create = function (req, res, next) {
-    Example.create(req.body, function(err, create) {
+    exampleModel.create(req.body, function(err, create) {
         if(!err && create) {
             res.status(201).json(create);
         } else {
@@ -88,11 +88,11 @@ exports.create = function (req, res, next) {
 };
 
 /**
- * @api {put} /api/example/:uuid Update an example document
+ * @api {put} /api/1.0.0/example/:uuid Update an example document
  * @apiParam {String} uuid Example uuid
  * @apiName Update document
  * @apiGroup Example Docs
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} property Property (random field for example).
  * @apiSuccess (200) {String} uuid Unique uuid.
@@ -106,10 +106,10 @@ exports.create = function (req, res, next) {
  *     }
  */
 exports.update = function (req, res, next) {
-    Example.update({uuid: req.params.id}, req.body)
+    exampleModel.update({uuid: req.params.id}, req.body)
         .exec(function(err, update) {
             if(!err && update) {
-                Example.findOne({uuid: req.params.id})
+                exampleModel.findOne({uuid: req.params.id})
                     .exec(function(err, example) {
                         if(!err && example) {
                             res.status(200).json(example);
@@ -124,17 +124,17 @@ exports.update = function (req, res, next) {
 };
 
 /**
- * @api {delete} /api/example/:uuid Delete an example document
+ * @api {delete} /api/1.0.0/example/:uuid Delete an example document
  * @apiParam {String} uuid Example uuid
  * @apiName Delete example document
  * @apiGroup Example Docs
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 204 OK
  */
 exports.delete = function (req, res, next) {
-    Example.update({uuid: req.params.id},
+    exampleModel.update({uuid: req.params.id},
                     {$set: {deleted: true}})
         .exec(function(err, update) {
             if(update) {

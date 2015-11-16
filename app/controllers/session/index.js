@@ -5,10 +5,10 @@ var _ = require('lodash'),
     languageController = require('app/controllers/languages');
 
 /**
- * @api {get} /api/session/language/ Get current language
+ * @api {get} /api/1.0.0/session/language/ Get current language
  * @apiName Get language
  * @apiGroup Session
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} language Short language String.
  * @apiSuccessExample {json} Success-Response:
@@ -31,10 +31,10 @@ exports.getLanguage = function(req, res, next) {
 };
 
 /**
- * @api {put} /api/session/language/ Set current language
+ * @api {put} /api/1.0.0/session/language/ Set current language
  * @apiName Set language
  * @apiGroup Session
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiParam {String} language New language.
  *

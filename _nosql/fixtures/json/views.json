@@ -1,0 +1,493 @@
+[
+    {
+      "_id" : {
+          "$oid": "562694acfefce80d1513f488"
+      },
+      "label" : "Partners",
+      "description" : "Partners list in the footer",
+      "versions": [],
+      "meta" : {
+          "created" : "2015-10-20T19:23:24.442Z",
+          "lastModified" : "2015-10-20T19:23:24.442Z",
+          "deleted" : false
+      },
+      "query" : {
+          "conditions" : [],
+          "page" : "",
+          "options" : {
+              "offset" : 0,
+              "limit" : 0
+          },
+          "contentType" : "56262e3d3db82a99c9689fec"
+      },
+      "uuid" : "9406fcab-1503-4ede-9317-546dc8422f2f",
+      "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "564079d1d9f6342c330f596a"
+    },
+    "label" : "Homepage: Mobiliteit",
+    "description" : "Mobiliteitstips op de homepage",
+    "versions": [],
+    "meta" : {
+        "label" : "homepage_mobility",
+        "created" : "2015-11-09T10:47:45.349Z",
+        "lastModified" : "2015-11-09T10:47:45.349Z",
+        "deleted" : false
+    },
+    "query" : {
+        "conditions" : [],
+        "contentType" : "564068e717337412260904f7",
+        "options" : {
+            "order" : "-",
+            "orderby" : {
+                "operators" : [
+                    {
+                        "value" : "greater than",
+                        "label" : "After"
+                    },
+                    {
+                        "value" : "greater than or equals",
+                        "label" : "After or on"
+                    },
+                    {
+                        "value" : "lower than",
+                        "label" : "Before"
+                    },
+                    {
+                        "value" : "lower than or equals",
+                        "label" : "Before or on"
+                    },
+                    {
+                        "value" : "equals",
+                        "label" : "on"
+                    }
+                ],
+                "group" : "Meta",
+                "label" : "Created",
+                "type" : "datetime",
+                "_id" : "created",
+                "dataType" : "datetime"
+            },
+            "offset" : 0,
+            "limit" : 0
+        },
+        "page" : ""
+    },
+    "uuid" : "7f4da686-7e8d-4e7c-a514-af7b3e7d6021",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "5637700d5957481c050e6e97"
+    },
+    "label" : "Homepage: Banner",
+    "description" : "De banner voor op de homepage",
+    "versions": [],
+    "meta" : {
+        "created" : "2015-11-02T14:15:41.641Z",
+        "lastModified" : "2015-11-02T14:15:41.641Z",
+        "deleted" : false,
+        "label" : "homepage_banner"
+    },
+    "query" : {
+        "conditions" : [],
+        "contentType" : "56376f3b5957481c050e6e88",
+        "options" : {
+            "offset" : 0,
+            "limit" : 1
+        },
+        "page" : ""
+    },
+    "uuid" : "2ab271c4-1e0c-4d6b-8f3c-412fbd679231",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "5632348301d4a7b8811984ed"
+    },
+    "label" : "Overview: FAQ",
+    "description" : "Alle veel gestelde vragen",
+    "versions": [],
+    "meta" : {
+        "label" : "faq_overview",
+        "created" : "2015-10-29T15:00:19.779Z",
+        "lastModified" : "2015-10-29T15:00:19.779Z",
+        "deleted" : false
+    },
+    "query" : {
+        "conditions" : [],
+        "page" : "",
+        "options" : {
+            "order" : "-",
+            "orderby" : {
+                "operators" : [
+                    {
+                        "label" : "After",
+                        "value" : "greater than"
+                    },
+                    {
+                        "label" : "After or on",
+                        "value" : "greater than or equals"
+                    },
+                    {
+                        "label" : "Before",
+                        "value" : "lower than"
+                    },
+                    {
+                        "label" : "Before or on",
+                        "value" : "lower than or equals"
+                    },
+                    {
+                        "label" : "on",
+                        "value" : "equals"
+                    }
+                ],
+                "group" : "Meta",
+                "label" : "LastModified",
+                "type" : "datetime",
+                "_id" : "lastModified",
+                "dataType" : "datetime"
+            },
+            "offset" : 0,
+            "limit" : 0
+        },
+        "contentType" : "5632346c01d4a7b8811984ec"
+    },
+    "uuid" : "73afe6a7-eb21-4a1d-9c7c-9d34ded49291",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563b72b1849be52db528aff2"
+    },
+    "label" : "Call to Actions LEZ",
+    "description" : "Call to Actions on the LEZ page",
+    "versions": [],
+    "meta" : {
+        "label" : "lez_cta",
+        "created" : "2015-11-05T15:16:01.514Z",
+        "lastModified" : "2015-11-05T15:16:01.514Z",
+        "deleted" : false
+    },
+    "query" : {
+        "conditions" : [
+            {
+                "uuid" : "d9aba01e-1960-4718-a416-348dbb8dccb1",
+                "field" : {
+                    "dataType" : "array",
+                    "_id" : "taxonomy",
+                    "type" : "taxonomy",
+                    "label" : "Taxonomy",
+                    "group" : "Meta",
+                    "operators" : [
+                        {
+                            "label" : "Contains all",
+                            "value" : "contains all"
+                        },
+                        {
+                            "label" : "Contains none",
+                            "value" : "contains none"
+                        }
+                    ]
+                },
+                "value" : [
+                    "563b5d39a4c95beab1817bb6"
+                ],
+                "operator" : {
+                    "label" : "Contains all",
+                    "value" : "contains all"
+                }
+            }
+        ],
+        "page" : "",
+        "options" : {
+            "offset" : 0,
+            "limit" : 0
+        },
+        "contentType" : "563b5b089c0b0657b0b436e1"
+    },
+    "uuid" : "b72f82c7-f9c1-4359-8bba-8d4aeeeb29af",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563b5d25a4c95beab1817bb4"
+    },
+    "label" : "News LEZ",
+    "description" : "Latest news for the LEZ page",
+    "versions": [],
+    "meta" : {
+        "created" : "2015-11-05T13:44:05.825Z",
+        "lastModified" : "2015-11-05T13:44:05.825Z",
+        "deleted" : false,
+        "label" : "lez_news"
+    },
+    "query" : {
+        "conditions" : [
+            {
+                "operator" : {
+                    "value" : "contains all",
+                    "label" : "Contains all"
+                },
+                "value" : [
+                    "563b5d39a4c95beab1817bb6"
+                ],
+                "field" : {
+                    "operators" : [
+                        {
+                            "value" : "contains all",
+                            "label" : "Contains all"
+                        },
+                        {
+                            "value" : "contains none",
+                            "label" : "Contains none"
+                        }
+                    ],
+                    "group" : "Meta",
+                    "label" : "Taxonomy",
+                    "type" : "taxonomy",
+                    "_id" : "taxonomy",
+                    "dataType" : "array"
+                },
+                "uuid" : "dfca5603-1c73-4dcf-8284-b382dd1311b5"
+            }
+        ],
+        "contentType" : "55d1d7e791e146cf53748495",
+        "options" : {
+            "offset" : 0,
+            "limit" : 3
+        },
+        "page" : "56386fbd27858d99076de755"
+    },
+    "uuid" : "dabf2c9e-fb96-4134-ac89-129a3758292e",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "5628b0fc561dc61317147086"
+    },
+    "label" : "Overzicht: Wegenwerken",
+    "description" : "Een overzicht van alle hinder van het type \"wegenwerken\".",
+    "versions": [],
+    "meta" : {
+        "created" : "2015-10-22T09:48:44.165Z",
+        "lastModified" : "2015-10-22T09:48:44.165Z",
+        "deleted" : false,
+        "label" : "nuisance_overview"
+    },
+    "query" : {
+        "conditions" : [
+            {
+                "uuid" : "3e771f1b-6fe4-47d2-a38b-9f8f035a5418",
+                "field" : {
+                    "_id" : "type",
+                    "validation" : {
+                        "required" : true
+                    },
+                    "type" : "taxonomy",
+                    "label" : "Type",
+                    "operators" : [
+                        {
+                            "value" : "contains all",
+                            "label" : "Contains all"
+                        },
+                        {
+                            "value" : "contains none",
+                            "label" : "Contains none"
+                        }
+                    ],
+                    "dataType" : "array",
+                    "multiLanguage" : false,
+                    "options" : [],
+                    "max" : 1,
+                    "min" : 1,
+                    "uuid" : "df544d44-1eea-481f-8493-13287e08b72d",
+                    "group" : "Fields"
+                },
+                "value" : [
+                    "5638d6d4c1b1dd6233b5f513"
+                ],
+                "operator" : {
+                    "value" : "contains all",
+                    "label" : "Contains all"
+                }
+            }
+        ],
+        "page" : "5638d53bd6714f982b4833c8",
+        "options" : {
+            "offset" : 0,
+            "limit" : 0
+        },
+        "contentType" : "5638d5a0c1b1dd6233b5f50f"
+    },
+    "uuid" : "db229090-14da-4497-9dc5-fdf5a9f2760a",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "56387021e642960d0adddf0c"
+    },
+    "label" : "Overzicht: Nieuws",
+    "description" : "Een oplijsting van alle nieuwsberichten",
+    "versions": [],
+    "meta" : {
+        "created" : "2015-11-03T08:28:17.177Z",
+        "lastModified" : "2015-11-03T08:28:17.177Z",
+        "deleted" : false,
+        "label" : "news_overview"
+    },
+    "query" : {
+        "conditions" : [],
+        "contentType" : "55d1d7e791e146cf53748495",
+        "options" : {
+            "order" : "",
+            "orderby" : {
+                "operators" : [
+                    {
+                        "value" : "greater than",
+                        "label" : "After"
+                    },
+                    {
+                        "value" : "greater than or equals",
+                        "label" : "After or on"
+                    },
+                    {
+                        "value" : "lower than",
+                        "label" : "Before"
+                    },
+                    {
+                        "value" : "lower than or equals",
+                        "label" : "Before or on"
+                    },
+                    {
+                        "value" : "equals",
+                        "label" : "on"
+                    }
+                ],
+                "group" : "Meta",
+                "label" : "Created",
+                "type" : "datetime",
+                "_id" : "created",
+                "dataType" : "datetime"
+            },
+            "offset" : 0,
+            "limit" : 0
+        },
+        "page" : ""
+    },
+    "uuid" : "132ceffd-ec36-47a7-a95f-7e294c6b2576",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563744d9e4b21a639d556dc5"
+    },
+    "label" : "Homepage: Highlights",
+    "description" : "Een oplijsting van 3 nieuwsberichten op de homepage.",
+    "versions": [],
+    "meta" : {
+        "created" : "2015-11-02T11:11:21.528Z",
+        "lastModified" : "2015-11-02T11:11:21.528Z",
+        "deleted" : false,
+        "label" : "homepage_news_highlights"
+    },
+    "query" : {
+        "conditions" : [],
+        "page" : "",
+        "options" : {
+            "order" : "",
+            "orderby" : {
+                "operators" : [
+                    {
+                        "label" : "After",
+                        "value" : "greater than"
+                    },
+                    {
+                        "label" : "After or on",
+                        "value" : "greater than or equals"
+                    },
+                    {
+                        "label" : "Before",
+                        "value" : "lower than"
+                    },
+                    {
+                        "label" : "Before or on",
+                        "value" : "lower than or equals"
+                    },
+                    {
+                        "label" : "on",
+                        "value" : "equals"
+                    }
+                ],
+                "group" : "Meta",
+                "label" : "Created",
+                "type" : "datetime",
+                "_id" : "created",
+                "dataType" : "datetime"
+            },
+            "offset" : 0,
+            "limit" : 0
+        },
+        "contentType" : "55d1d7e791e146cf53748495"
+    },
+    "uuid" : "e7751efa-0459-4dd5-a605-2563cdaeaff2",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "5627470cb687c54e26d4ef0a"
+    },
+    "label" : "Latest News",
+    "description" : "Laatste nieuws",
+    "versions": [],
+    "meta" : {
+        "label" : "latest_news",
+        "created" : "2015-10-21T08:04:28.803Z",
+        "lastModified" : "2015-10-21T08:04:28.803Z",
+        "deleted" : false
+    },
+    "query" : {
+        "conditions" : [],
+        "page" : "56374f07e4b21a639d556e12",
+        "options" : {
+            "orderby" : {
+                "operators" : [
+                    {
+                        "value" : "greater than",
+                        "label" : "After"
+                    },
+                    {
+                        "value" : "greater than or equals",
+                        "label" : "After or on"
+                    },
+                    {
+                        "value" : "lower than",
+                        "label" : "Before"
+                    },
+                    {
+                        "value" : "lower than or equals",
+                        "label" : "Before or on"
+                    },
+                    {
+                        "value" : "equals",
+                        "label" : "on"
+                    }
+                ],
+                "group" : "Meta",
+                "label" : "LastModified",
+                "type" : "datetime",
+                "_id" : "lastModified",
+                "dataType" : "datetime"
+            },
+            "order" : "-",
+            "offset" : 0,
+            "limit" : 3
+        },
+        "contentType" : "55d1d7e791e146cf53748495"
+    },
+    "uuid" : "34625ae2-b5e1-40fc-a29a-8526c40bb830",
+    "__v" : 0
+  }
+]

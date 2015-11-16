@@ -1,0 +1,565 @@
+[{
+    "_id": {
+        "$oid": "55cb1eca1d5609399d6a87c1"
+    },
+    "name": "Admin",
+    "description": "Lorem ipsum",
+    "deleted": false,
+    "operations": [{
+        "type": "user",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "contentType",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "taxonomy",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "pages",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "content",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "navigation",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "views",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "homepage",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }],
+    "contentTypes": [{
+        "type": "56262e3d3db82a99c9689fec",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "5632346c01d4a7b8811984ec",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "56376f3b5957481c050e6e88",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "563342bc3a157ac91f6994f3",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "564068e717337412260904f7",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "563b5b089c0b0657b0b436e1",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "55d1d7e791e146cf53748495",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "5638d5a0c1b1dd6233b5f50f",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }],
+    "isAdmin": true,
+    "created": "2015-10-29T15:39:23.330+01:00",
+    "uuid": "8b7addc2-86ab-4343-96ff-863ec7603494",
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "55cb1eca1d5609399d6a87c2"
+    },
+    "name": "editor",
+    "description": "Lorem ipsum",
+    "deleted": false,
+    "operations": [{
+        "type": "user",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "contentType",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "taxonomy",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "pages",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "content",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "navigation",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "views",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "homepage",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }],
+    "contentTypes": [{
+        "type": "56262e3d3db82a99c9689fec",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "5632346c01d4a7b8811984ec",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "56376f3b5957481c050e6e88",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "563342bc3a157ac91f6994f3",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "564068e717337412260904f7",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "563b5b089c0b0657b0b436e1",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "55d1d7e791e146cf53748495",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "5638d5a0c1b1dd6233b5f50f",
+        "permissions": {
+            "delete": false,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }],
+    "isAdmin": false,
+    "created": "2015-10-29T15:39:23.333+01:00",
+    "uuid": "84318bf7-bcc5-4f88-8af6-aca4a4f975ef",
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "55cb1eca1d5609399d6a87c3"
+    },
+    "name": "author",
+    "description": "Lorem ipsum",
+    "deleted": false,
+    "operations": [{
+        "type": "user",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "contentType",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "taxonomy",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "pages",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "content",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "navigation",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "views",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "homepage",
+        "permissions": {
+            "create": false,
+            "read": false,
+            "update": false,
+            "delete": false
+        }
+    }],
+    "contentTypes": [{
+        "type": "56262e3d3db82a99c9689fec",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "5632346c01d4a7b8811984ec",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "56376f3b5957481c050e6e88",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "563342bc3a157ac91f6994f3",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "564068e717337412260904f7",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "563b5b089c0b0657b0b436e1",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "55d1d7e791e146cf53748495",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }, {
+        "type": "5638d5a0c1b1dd6233b5f50f",
+        "permissions": {
+            "delete": true,
+            "update": true,
+            "read": true,
+            "create": true
+        }
+    }],
+    "isAdmin": false,
+    "created": "2015-10-29T15:39:23.335+01:00",
+    "uuid": "0e2f930f-91b9-4b25-84c7-03f151497a6b",
+    "__v": 0
+}, {
+    "_id": {
+        "$oid": "55cb1eca1d5609399d6a87c4"
+    },
+    "name": "reader",
+    "description": "Lorem ipsum",
+    "deleted": false,
+    "operations": [{
+        "type": "user",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "contentType",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "taxonomy",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "pages",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "content",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "navigation",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "views",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "homepage",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }],
+    "contentTypes": [{
+        "type": "56262e3d3db82a99c9689fec",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "5632346c01d4a7b8811984ec",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "56376f3b5957481c050e6e88",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "563342bc3a157ac91f6994f3",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "564068e717337412260904f7",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "563b5b089c0b0657b0b436e1",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "55d1d7e791e146cf53748495",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }, {
+        "type": "5638d5a0c1b1dd6233b5f50f",
+        "permissions": {
+            "delete": false,
+            "update": false,
+            "read": true,
+            "create": false
+        }
+    }],
+    "isAdmin": false,
+    "created": "2015-10-29T15:39:23.337+01:00",
+    "uuid": "7d12bacc-a10e-4df1-b79a-082a0f53e081",
+    "__v": 0
+}]

@@ -1,14 +1,14 @@
 'use strict';
 
 require('rootpath')();
-var Config = require('app/models/config'),
+var config = require('app/models/config'),
     versions = require('app/helpers/versions');
 
 /**
- * @api {get} /api/config/:type Get config file
- * @apiParam {String} type Config file type
- * @apiGroup Config
- * @apiVersion 0.0.1
+ * @api {get} /api/1.0.0/config/:type Get config file
+ * @apiParam {String} type config file type
+ * @apiGroup config
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -20,7 +20,7 @@ var Config = require('app/models/config'),
  *     }
  */
 var readOne = function (req, res, next) {
-    Config.findOne({type: req.params.stype}, {versions: 0})
+    config.findOne({type: req.params.type}, {versions: 0})
         .populate('data.siteHome')
         .exec(function(err, item) {
             if(!err && item) {
@@ -34,10 +34,10 @@ exports.readOne = readOne;
 
 
 /**
- * @api {put} /api/config/:type Update config file
- * @apiParam {String} type Config file type
- * @apiGroup Config
- * @apiVersion 0.0.1
+ * @api {put} /api/1.0.0/config/:type Update config file
+ * @apiParam {String} type config file type
+ * @apiGroup config
+ * @apiVersion 1.0.0
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
@@ -52,8 +52,8 @@ exports.update = function (req, res, next) {
     // Compatibility fix for old MongoDB versions
     delete req.body._id;
     // Update version before save
-    versions.add(Config, req.body, function(data) {
-        Config.findOneAndUpdate({type: req.params.stype}, data)
+    versions.add(config, req.body, function(data) {
+        config.findOneAndUpdate({type: req.params.type}, data)
             .then(
                 function onSuccess(oldObject) {
                     // Check if siteHome exists in the req object
@@ -62,7 +62,8 @@ exports.update = function (req, res, next) {
                     }
 
                     if (oldObject.data.siteHome !== req.body.data.siteHome._id) {
-                        // To do: set the new homepage
+                        // The homepage has been updated
+                        MenuController.setHomepage(req.body.data.siteHome);
                         return;
                     }
                 },

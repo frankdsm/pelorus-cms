@@ -1,0 +1,23 @@
+[
+  {
+    "_id": {
+      "$oid": "562f51655b05e93371af9291"
+    },
+    "type": "settings",
+    "versions": [],
+    "data": {
+      "siteRoot": "https://github.com/hvperdrive/pelorus-cms",
+      "siteName": "Pelorus",
+      "defaultLanguage": "en"
+    },
+    "uuid": "a6fb9fef-63c4-4ba2-8fca-46506ff3d9ce"
+  },
+  {
+    "_id": {
+      "$oid": "562f51655b05e93371af9292"
+    },
+    "type": "variables",
+    "versions": [],
+    "uuid": "caba534d-2cc6-4224-aa71-02b84494eba6"
+  }
+]

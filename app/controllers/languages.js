@@ -2,13 +2,13 @@
 
 require('rootpath')();
 var _ = require('lodash'),
-    Config = require('app/models/config'),
-    Language = require('app/models/language');
+    configModel = require('app/models/config'),
+    languageModel = require('app/models/language');
 
 /**
- * @api {get} /api/language Get all languages
+ * @api {get} /api/1.0.0/language Get all languages
  * @apiGroup Language
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} key Language key.
  * @apiSuccess (200) {String} name Language name.
@@ -23,7 +23,7 @@ var _ = require('lodash'),
  *     }]
  */
 exports.read = function (req, res, next) {
-    Language.find()
+    languageModel.find()
         .exec(function(err, items) {
             if(!err && items) {
                 res.status(200).json(items);
@@ -35,13 +35,13 @@ exports.read = function (req, res, next) {
 
 // Get active languages
 var activeLanguages = function activeLanguages() {
-    return Language.find({active: true})
+    return languageModel.find({active: true})
         .lean()
         .exec();
 };
 exports.activeLanguages = activeLanguages;
 var activeLanguagesCallback = function activeLanguagesCallback(callback) {
-    Language.find({active: true})
+    languageModel.find({active: true})
         .lean()
         .exec(function(err, languages) {
             callback(err, languages);
@@ -51,7 +51,7 @@ exports.activeLanguagesCallback = activeLanguagesCallback;
 
 // Get default language
 var defaultLanguage = function(callback) {
-    Config.findOne({type: 'settings'}, {versions: 0})
+    configModel.findOne({type: 'settings'}, {versions: 0})
         .lean()
         .exec(function(err, settings) {
             if(!err && settings) {
@@ -78,9 +78,9 @@ var combineLanguages = function(languages, defaultLanguage) {
 };
 
 /**
- * @api {get} /api/language/active Get active language
+ * @api {get} /api/1.0.0/language/active Get active language
  * @apiGroup Language
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} key Language key.
  * @apiSuccess (200) {String} name Language name.
@@ -119,10 +119,10 @@ exports.readActive = function (req, res) {
 };
 
 /**
- * @api {get} /api/language/:uuid Get a single language
+ * @api {get} /api/1.0.0/language/:uuid Get a single language
  * @apiParam {String} uuid Example uuid
  * @apiGroup Language
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} key Language key.
  * @apiSuccess (200) {String} name Language name.
@@ -137,7 +137,7 @@ exports.readActive = function (req, res) {
  *     }
  */
 exports.readOne = function (req, res, next) {
-    Language.findOne({uuid: req.params.id})
+    languageModel.findOne({uuid: req.params.id})
         .exec(function(err, item) {
             if(!err && item) {
                 res.status(200).json(item);
@@ -148,10 +148,10 @@ exports.readOne = function (req, res, next) {
 };
 
 /**
- * @api {put} /api/language/:uuid Update a language
+ * @api {put} /api/1.0.0/language/:uuid Update a language
  * @apiParam {String} uuid Example uuid
  * @apiGroup Language
- * @apiVersion 0.0.1
+ * @apiVersion 1.0.0
  *
  * @apiSuccess (200) {String} key Language key.
  * @apiSuccess (200) {String} name Language name.
@@ -168,10 +168,10 @@ exports.readOne = function (req, res, next) {
 exports.update = function (req, res, next) {
     // Compatibility fix for old MongoDB versions
     delete req.body._id;
-    Language.update({uuid: req.params.id}, req.body)
+    languageModel.update({uuid: req.params.id}, req.body)
         .exec(function(err, update) {
             if(!err && update) {
-                Language.findOne({uuid: req.params.id})
+                languageModel.findOne({uuid: req.params.id})
                     .exec(function(err, language) {
                         if(!err && language) {
                             res.status(200).json(language);

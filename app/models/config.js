@@ -24,8 +24,8 @@ var ConfigSchema = new Schema({
             type: String
         },
         siteHome: {
-            type: String
-            //To do: add reference to page
+            type: String,
+            ref: "Page"
         }
     },
     versions: [],

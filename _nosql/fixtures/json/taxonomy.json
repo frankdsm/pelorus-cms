@@ -1,0 +1,186 @@
+[
+  {
+    "_id": {
+      "$oid": "56377ae966d3dc6a14be94ca"
+    },
+    "label": "Partners",
+    "safeLabel": "partners",
+    "tags": [
+      {
+        "label": {
+          "multiLanguage": true,
+          "de": "De Lijn",
+          "fr": "De Lijn",
+          "nl": "De Lijn",
+          "en": "De Lijn"
+        },
+        "safeLabel": "de_lijn",
+        "_id": {
+          "$oid": "56377ae966d3dc6a14be94cd"
+        },
+        "uuid": "591010a8-bdae-42d4-8f74-5f013ee96a76"
+      },
+      {
+        "label": {
+          "multiLanguage": true,
+          "de": "NMBS",
+          "fr": "NMBS",
+          "nl": "NMBS",
+          "en": "NMBS"
+        },
+        "safeLabel": "nmbs",
+        "_id": {
+          "$oid": "56377ae966d3dc6a14be94cc"
+        },
+        "uuid": "5da9584c-8ec1-436b-9418-c31100eed74d"
+      },
+      {
+        "label": {
+          "multiLanguage": true,
+          "de": "Port of Antwerp",
+          "fr": "Port of Antwerp",
+          "nl": "Port of Antwerp",
+          "en": "Port of Antwerp"
+        },
+        "safeLabel": "port_of_antwerp",
+        "_id": {
+          "$oid": "56377ae966d3dc6a14be94cb"
+        },
+        "uuid": "7854759a-e1c2-42e7-9ed6-6553059b00e1"
+      }
+    ],
+    "uuid": "f0334f26-4eb8-4b4f-8a95-443a51431ab7",
+    "__v": 0
+  },
+  {
+    "_id" : {
+        "$oid": "5638d6d4c1b1dd6233b5f510"
+    },
+    "label" : "Hindertypes",
+    "safeLabel" : "hindertypes",
+    "tags" : [
+        {
+            "label" : {
+                "multiLanguage" : true,
+                "de" : "Straßenarbeiten",
+                "fr" : "Travaux de voirie",
+                "nl" : "Wegenwerken",
+                "en" : "Road works"
+            },
+            "safeLabel" : "road_works",
+            "_id" : {
+                "$oid": "5638d6d4c1b1dd6233b5f513"
+            },
+            "uuid" : "6bd076f1-44e7-4e2e-b53e-0b5de43a53a2"
+        },
+        {
+            "label" : {
+                "multiLanguage" : true,
+                "de" : "Unfall",
+                "fr" : "Accident",
+                "nl" : "Ongeval",
+                "en" : "Accident"
+            },
+            "safeLabel" : "accident",
+            "_id" : {
+                "$oid": "5638d6d4c1b1dd6233b5f512"
+            },
+            "uuid" : "77d4de7f-7838-4190-b375-87f6947561b1"
+        },
+        {
+            "label" : {
+                "multiLanguage" : true,
+                "fr" : "Catastrophe naturelle",
+                "de" : "Naturkatastrophe",
+                "nl" : "Natuurramp",
+                "en" : "Natural disaster"
+            },
+            "safeLabel" : "natural_disaster",
+            "_id" : {
+                "$oid": "5638d6d4c1b1dd6233b5f511"
+            },
+            "uuid" : "c6375b0f-5b09-4ca6-bd69-496a261793e5"
+        }
+    ],
+    "uuid" : "532174ce-f8ce-488e-8476-bc42e450103c",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563a34d63cbe09637b50e910"
+    },
+    "label" : "Hinder Impact",
+    "safeLabel" : "hinder_impact",
+    "tags" : [
+        {
+            "_id" : {
+                "$oid": "563a34d63cbe09637b50e913"
+            },
+            "safeLabel" : "low",
+            "label" : {
+                "en" : "Low",
+                "nl" : "Laag",
+                "fr" : "Petit",
+                "de" : "KLein",
+                "multiLanguage" : true
+            },
+            "uuid" : "976ae166-6933-4212-812b-c089b932e949"
+        },
+        {
+            "_id" : {
+                "$oid": "563a34d63cbe09637b50e912"
+            },
+            "safeLabel" : "medium",
+            "label" : {
+                "en" : "Medium",
+                "nl" : "Matig",
+                "fr" : "medium",
+                "de" : "medium",
+                "multiLanguage" : true
+            },
+            "uuid" : "de3483dc-75b4-4e87-bd18-9a6381694d96"
+        },
+        {
+            "_id" : {
+                "$oid": "563a34d63cbe09637b50e911"
+            },
+            "safeLabel" : "high",
+            "label" : {
+                "en" : "High",
+                "nl" : "Hoog",
+                "fr" : "haute",
+                "de" : "hogh",
+                "multiLanguage" : true
+            },
+            "uuid" : "b61c5086-60e6-44ce-94bc-254008c0c59c"
+        }
+    ],
+    "uuid" : "c6a69414-72e2-4b8f-955e-c3801a353acd",
+    "__v" : 0
+  },
+  {
+    "_id" : {
+        "$oid": "563b5d39a4c95beab1817bb5"
+    },
+    "label" : "Tags",
+    "safeLabel" : "tags",
+    "tags" : [
+        {
+            "label" : {
+                "multiLanguage" : true,
+                "de" : "LEZ",
+                "fr" : "LEZ",
+                "nl" : "LEZ",
+                "en" : "LEZ"
+            },
+            "safeLabel" : "lez",
+            "_id" : {
+                "$oid": "563b5d39a4c95beab1817bb6"
+            },
+            "uuid" : "557eb363-00da-43d3-9e59-cdda18904d78"
+        }
+    ],
+    "uuid" : "b2fd040a-379c-469d-ab91-35bd424720f6",
+    "__v" : 0
+  }
+]

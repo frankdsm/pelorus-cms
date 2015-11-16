@@ -1,0 +1,87 @@
+[
+    {
+    "_id" : {
+        "$oid": "55d46e054d6f6347a2000000"
+    },
+        "__v" : 0,
+        "active" : true,
+        "menu" : [
+            {
+                "parent" : "#",
+                "text" : "Home",
+                "id" : "j1_1",
+                "_id" : {
+                    "$oid": "5641eefbadf833991f6a286b"
+                },
+                "data" : {
+                    "content" : "560509c432f7b8c5262100bb"
+                },
+                "state" : {
+                    "opened" : true
+                },
+                "uuid" : "630527ab-4168-4473-b355-ae193a116dbc"
+            },
+            {
+                "parent" : "j1_1",
+                "text" : "Nieuws",
+                "id" : "j2_1",
+                "_id" : {
+                    "$oid": "5641eefbadf833991f6a286a"
+                },
+                "data" : {
+                    "content" : "5641ec28adf833991f6a2862"
+                },
+                "state" : {
+                    "opened" : false
+                },
+                "uuid" : "0cfe8d21-57f4-42fd-bdb6-76859ae788e2"
+            },
+            {
+                "parent" : "j1_1",
+                "text" : "Werkzaamheden",
+                "id" : "j1_2",
+                "_id" : {
+                    "$oid": "5641eefbadf833991f6a2869"
+                },
+                "data" : {
+                    "content" : "5638d53bd6714f982b4833c8"
+                },
+                "state" : {
+                    "opened" : false
+                },
+                "uuid" : "92860db3-3770-48ad-b842-522685020713"
+            },
+            {
+                "parent" : "j1_1",
+                "text" : "Low Emission Zone",
+                "id" : "j1_3",
+                "_id" : {
+                    "$oid": "5641eefbadf833991f6a2868"
+                },
+                "data" : {
+                    "content" : "563b5cb49c0b0657b0b436e3"
+                },
+                "state" : {
+                    "opened" : true
+                },
+                "uuid" : "87b6c246-781b-4f91-af2b-89edc635f6ae"
+            },
+            {
+                "parent" : "j1_3",
+                "text" : "Toelatingsvoorwaarden",
+                "id" : "j1_4",
+                "_id" : {
+                    "$oid": "5641eefbadf833991f6a2867"
+                },
+                "data" : {
+                    "content" : "563b69b7a4c95beab1817bbf"
+                },
+                "state" : {
+                    "opened" : false
+                },
+                "uuid" : "364c83d7-61fa-4584-866c-905a738a746e"
+            }
+        ],
+        "uuid" : "d4f6c51d-bfc0-48ea-9309-60cc060ace51"
+    }
+]

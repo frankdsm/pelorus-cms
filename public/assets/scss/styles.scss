@@ -83,10 +83,11 @@
  * Design-free objects, abstractions and patterns.
  */
 
-/*
-    TODO: fix this
-*/
-//@import "objects/**/*.*";
+@import "objects/_objects.check-input.scss";
+@import "objects/_objects.layout.scss";
+@import "objects/_objects.overview-page.scss";
+@import "objects/_objects.resource-page.scss";
+@import "objects/_objects.text-input.scss";
 
 /* ==========================================================================
    Plugins
@@ -96,7 +97,11 @@
  * Third party components.
  */
 
-//@import "plugins/**/*.*";
+@import "plugins/_plugins.angular-loading-bar.scss";
+@import "plugins/_plugins.dir-pagination.scss";
+@import "plugins/_plugins.ng-notify.scss";
+@import "plugins/_plugins.text-angular.scss";
+@import "plugins/_plugins.ui-select.scss";
 
 /* ==========================================================================
    Components
@@ -106,7 +111,31 @@
   * Components and widgets.
   */
 
-//@import "components/**/*.*";
+@import "components/_components.action-bar.scss";
+@import "components/_components.authentication.scss";
+@import "components/_components.brand.scss";
+@import "components/_components.breadcrumb.scss";
+@import "components/_components.buttons.scss";
+@import "components/_components.bynder-browser.scss";
+@import "components/_components.container.scss";
+@import "components/_components.draggable-list.scss";
+@import "components/_components.field.scss";
+@import "components/_components.form.scss";
+@import "components/_components.header.scss";
+@import "components/_components.image-cropper.scss";
+@import "components/_components.image-field.scss";
+@import "components/_components.input.scss";
+@import "components/_components.label.scss";
+@import "components/_components.loader.scss";
+@import "components/_components.navigation.scss";
+@import "components/_components.popup.scss";
+@import "components/_components.settings.scss";
+@import "components/_components.switch-language.scss";
+@import "components/_components.table.scss";
+@import "components/_components.text-input.scss";
+@import "components/_components.title.scss";
+@import "components/_components.typography.scss";
+@import "components/_components.user.scss";
 
 /* ==========================================================================
    Utilities

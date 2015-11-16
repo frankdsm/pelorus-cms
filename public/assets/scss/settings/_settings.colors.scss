@@ -12,6 +12,7 @@
 
 // Default
 $white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
 
 
 // Primary
@@ -33,7 +34,7 @@ $grayDark: #161C1D;
 
 
 // Secondary
-$grayLight: rgb(235, 236, 239);
+$grayLight: rgb(255,255,255);
 
 
 $primary: $green;
@@ -42,7 +43,7 @@ $primary: $green;
 // Base colors
 $color-neutral              : #aaa !default;
 
-$color-alpha                : #23A788 !default;
+$color-alpha                : #c09640 !default;
 $color-beta                 : #0074D9 !default;
 
 $color-error                : #FF4136 !default;

@@ -9,7 +9,7 @@ module.exports = function(app) {
     app.get('/auth/twitter/callback',
         passport.authenticate('twitter', {failureRedirect: '/error'}),
         function(req, res) {
-            loginController.user(req.user, 'twitter', function(update) {
+            loginController.authorize(req.user, 'twitter', function(update) {
                 if(update) {
                     res.redirect('/success');
                 } else {

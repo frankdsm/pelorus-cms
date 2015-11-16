@@ -4,7 +4,7 @@ require('rootpath')();
 var uuid = require('node-uuid'),
     userModel = require('app/models/user');
 
-exports.user = function(user, type, callback) {
+exports.authorize = function(user, type, callback) {
     userModel.update({
             type: type,
             userId: user._json.id

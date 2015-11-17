@@ -24,10 +24,10 @@
     "lodash": "~3.10.1",
     "font-awesome": "~4.4.0",
     "normalize-css": "normalize.css#~3.0.3",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
+    "jquery": "~2.1.4"
   },
-  "overrides": {
-  },
+  "overrides": {},
   "devDependencies": {
     "susy": "~2.2.6"
   }

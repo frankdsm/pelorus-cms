@@ -10,6 +10,7 @@ angular.element(document).ready(function () {
     console.info('Loading configuration...');
 
     $.get('app/config/config.json', function (data) {
+
         console.info('Loaded configuration succesfully!');
         console.info('Verifying setup...');
 
@@ -22,6 +23,8 @@ angular.element(document).ready(function () {
 
         angular.bootstrap(document, ['pelorus']);
     }).fail(function(error){
-        console.log('error', error);
+
+        console.warn('Unable to load the configuration. Please make sure a proper config file is present (public/app/config/config.js)');
+
     });
 });

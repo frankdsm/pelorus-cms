@@ -1,0 +1,4 @@
+{
+    "serverPath": "*server path goes here*",
+    "clientAuthentication": "* client authentication goes here *"
+}

@@ -34,3 +34,6 @@ docs/*
 
 # Coverage report
 coverage/*
+
+# Pelorus specific files
+public/app/config/config.json

@@ -23,7 +23,7 @@ angular.module('pelorus', [
 ])
 
 .run(
-    [function() {
-
+    ['$log', function($log) {
+        $log.info('Pelorus cms is booting');
     }]
 );

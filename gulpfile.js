@@ -79,7 +79,7 @@ gulp.task('server', function() {
 
 // Bower integration
 gulp.task('wiredep', function () {
-    gulp.src(publicRoot+'/index.html')
+    return gulp.src(publicRoot+'/index.html')
         .pipe(wiredep({
             directory: publicRoot+'/app/bower_components',
             fileTypes: {
@@ -100,9 +100,16 @@ gulp.task('wiredep', function () {
 });
 
 // Script injection
-gulp.task('inject', function () {
+gulp.task('injectJS', function () {
     var target = gulp.src(publicRoot+'/index.html'),
-        sources = gulp.src([publicRoot+'/app/**/*.js', publicRoot+'/assets/css/**/*.css', '!'+publicRoot+'/app/bower_components/**/*']);
+        sources = gulp.src([publicRoot+'/app/**/*.js', '!'+publicRoot+'/app/bower_components/**/*']).pipe(plugins.angularFilesort());
+    return target.pipe(plugins.inject(sources, {relative: true})).pipe(gulp.dest(publicRoot));
+});
+
+// CSS injection
+gulp.task('injectCSS', function () {
+    var target = gulp.src(publicRoot+'/index.html'),
+        sources = gulp.src([publicRoot+'/assets/css/**/*.css', '!'+publicRoot+'/app/bower_components/**/*']);
     return target.pipe(plugins.inject(sources, {relative: true})).pipe(gulp.dest(publicRoot));
 });
 
@@ -125,7 +132,7 @@ gulp.task('watchNewFiles', function(){
 
     // Watch new files, and inject them afterwards
     plugins.watch(publicRoot + '/app/**/*.js', {read:false, events:['add', 'delete']},function(){
-        gulp.run('inject');
+        runSequence('injectJS', 'injectCSS');
     });
 
 });
@@ -133,7 +140,8 @@ gulp.task('watchNewFiles', function(){
 gulp.task('frontend', function() {
     runSequence(
         'wiredep',
-        'inject',
+        'injectJS',
+        'injectCSS',
         'webserver',
         'watch',
         'watchNewFiles'

@@ -16,6 +16,7 @@ angular.module('pelorus')
 
                 if (keyRegex.test(conf.clientAuthentication)) {
                     angular.extend(configuration, conf);
+                    console.info('Configuration loaded succesfully)');
                 } else {
                     console.warn('Invalid client key. Make sure a valid client key is supplied in the configuration-file (public/app/config/config.js)');
                 }

@@ -25,6 +25,13 @@ To do this automatically, run:
 $ npm start
 ```
 
+### Configuring the client
+
+Before starting the app, an api-key must be generated. (TODO)
+Please provide a valid api-key in the config-file `public/app/config/config.js`. If no config file is present, please create one based upon `config.template.json`.
+
+For testing purposes use this key: `4C4C4544-0054-4C10-8038-C6C04F334831`.
+
 ### Start the node server
 
 Starting the node server using default settings goes like this:

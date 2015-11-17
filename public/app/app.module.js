@@ -15,6 +15,7 @@ angular.module('pelorus.controllers', ['pelorus.services']);
 
 //Define your app module. This is where it all starts.
 angular.module('pelorus', [
+    'ui.router',
 
     'pelorus.filters',
     'pelorus.directives',

@@ -3,6 +3,7 @@ angular.module('pelorus')
         function configurationProvider () {
 
             var configuration = {
+                loaded: false,
                 serverPath: null,
                 clientAuthentication: null,
                 language: 'en-EN'
@@ -10,13 +11,19 @@ angular.module('pelorus')
 
             this.setConfiguration = function setConfiguration (conf) {
                 /*
-                    TODO: move these regexes
+                    TODO: move this regex
                 */
                 var keyRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
                 if (keyRegex.test(conf.clientAuthentication)) {
+
+                    // Merge user-suplied config with default config
                     angular.extend(configuration, conf);
-                    console.info('Configuration loaded succesfully)');
+
+                    // Mark config 'loaded'
+                    configuration.loaded = true;
+
+                    console.info('Setup ok!');
                 } else {
                     console.warn('Invalid client key. Make sure a valid client key is supplied in the configuration-file (public/app/config/config.js)');
                 }

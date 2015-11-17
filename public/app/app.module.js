@@ -17,14 +17,37 @@ angular.module('pelorus.controllers', ['pelorus.services']);
 angular.module('pelorus', [
     'ui.router',
 
+    'district01.services.auth',
+
     'pelorus.filters',
     'pelorus.directives',
     'pelorus.controllers',
     'pelorus.services'
 ])
 
-.run(
-    ['$log', function($log) {
+.run([
+    '$rootScope',
+    '$log',
+    'configuration',
+    'RouteAuthenticationService',
+    function($rootScope, $log, configuration, RouteAuthenticationService) {
+
+        // Check both app setup and user authentication on each state change
+        $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+
+            // Halt app if configuration is not properly loaded. Descriptive information will be logged in the console
+            if(!configuration.loaded) {
+                event.preventDefault();
+                console.warn('The configuration could not be loaded. Make sure a valid config file is present. (public/app/config/config.js)')
+                return;
+            }
+
+            RouteAuthenticationService.authorizeUserForRoute(event, toState, toParams, fromState, fromParams);
+
+
+        });
+
         $log.info('Pelorus cms is booting');
-    }]
-);
+
+    }
+]);

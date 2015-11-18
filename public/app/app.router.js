@@ -39,6 +39,11 @@ angular.module('pelorus')
                 }
             })
 
+
+            //
+            // AUTHENTICATION
+            //
+
             .state('authentication', {
                 url: '/authentication',
                 data: {
@@ -50,6 +55,15 @@ angular.module('pelorus')
                         controller: 'AuthenticationController'
                     }
                 }
-            });
+            })
+
+            .state('loggedin', {
+                url: '/logged-in',
+                data: {
+                },
+                template: 'logged in!'
+            })
+
+            ;
         }
     ]);

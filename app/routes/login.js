@@ -11,8 +11,11 @@ module.exports = function(app) {
         function(req, res) {
             loginController.authorize(req.user, 'twitter', function(update) {
                 if(update) {
-                    res.redirect('/success');
+                    res.redirect('http://localhost:4001/logged-in');
                 } else {
+                    /*
+                        TODO: Redirect to frontend, show proper feedback
+                    */
                     res.redirect('/error');
                 }
             });

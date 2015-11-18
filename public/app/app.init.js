@@ -15,10 +15,7 @@ angular.element(document).ready(function () {
         console.info('Verifying setup...');
 
         angular.module('pelorus').config(['configurationProvider', function (configurationProvider) {
-            configurationProvider.setConfiguration({
-                serverPath: data.serverPath,
-                clientAuthentication: data.clientAuthentication
-            });
+            configurationProvider.setConfiguration(data);
         }]);
 
         angular.bootstrap(document, ['pelorus']);

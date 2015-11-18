@@ -22,9 +22,13 @@ angular.module('pelorus.services')
                     } else {
 
                         // The user now either was previously logged in, so we can recover his session, or he doesn't have a previous session in which case we need him to log in again.
+                        // call to service / profile, gets the profile, after the profile is retreived, continue navigation to route
 
                         // Stop the normal propagation of the routing event
                         event.preventDefault();
+
+                        $state.go('authentication');
+                        // Let's assume we still need to log in
 
                     }
 

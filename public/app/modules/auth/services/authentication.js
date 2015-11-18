@@ -3,11 +3,15 @@ angular.module('district01.services.auth')
     .factory('Authentication', [
         '$http',
         'configuration',
-        function ($http, configuration) {
+        '$window',
+        function ($http, configuration, $window) {
             var API = {};
 
-            var _authenticated = true,
-                _userData = {};
+            var _authenticated = false,
+                _userData = {}
+                oAuthProviders = {
+                    'twitter': '/auth/twitter'
+                };
 
             /* GETTERS AND SETTERS */
 
@@ -25,6 +29,13 @@ angular.module('district01.services.auth')
              */
             API.getCurrentLoginUser = function getCurrentLoginUser() {
                 return _userData;
+            };
+
+            /**
+             * Asks the authentication service to start the oauth procedure.
+             */
+            API.goToOauth = function goToOauth() {
+                $window.open(configuration.serverPath+oAuthProviders[configuration.oAuth.provider], '_self');
             };
 
 

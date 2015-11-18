@@ -2,6 +2,7 @@
 
 module.exports = {
     domain: 'http://localhost:4000/',
+    frontend: 'http://localhost:4001/',
     environment: 'development',
     port: 4000,
     mongo: {

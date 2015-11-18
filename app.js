@@ -12,9 +12,6 @@ require('app/middleware/db');
 // Setup extra stuff for express
 require('app/middleware/express')(app);
 
-// Load all models
-require('app/models')();
-
 // Load all routes
 require('app/routes')(app);
 

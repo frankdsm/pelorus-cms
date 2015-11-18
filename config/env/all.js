@@ -6,7 +6,7 @@ module.exports = {
         version: '1.0.0/'
     },
     authentication: {
-        success: "profile",
+        success: "logged-in",
         error: "error"
     },
     twitter: {

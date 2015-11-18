@@ -7,6 +7,7 @@ var passport = require('passport'),
     config = require('config/config');
 
 (function() {
+    //Configure twitter authentication
     passport.use(
         new twitterStrategy({
             consumerKey: config.twitter.key,
@@ -19,6 +20,7 @@ var passport = require('passport'),
             });
         }));
 
+    //Configure google authentication
     passport.use(
         new googleStrategy({
             clientID: config.google.key,

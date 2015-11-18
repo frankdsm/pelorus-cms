@@ -16,6 +16,7 @@ module.exports = function(app) {
         }),
         function(req, res) {
             loginController.authorize(req.user, 'twitter', function(update) {
+                //Redirect to appropriate URL's
                 if (update) {
                     res.redirect(successUrl);
                 } else {
@@ -35,6 +36,7 @@ module.exports = function(app) {
         }),
         function(req, res) {
             loginController.authorize(req.user, 'google', function(update) {
+                //Redirect to appropriate URL's
                 if (update) {
                     res.redirect(successUrl);
                 } else {

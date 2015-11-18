@@ -6,7 +6,8 @@ angular.module('pelorus')
                 loaded: false,
                 serverPath: null,
                 clientAuthentication: null,
-                language: 'en-EN'
+                language: 'en-EN',
+                oAuth: {}
             };
 
             this.setConfiguration = function setConfiguration (conf) {
@@ -16,6 +17,8 @@ angular.module('pelorus')
                 var keyRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
                 if (keyRegex.test(conf.clientAuthentication)) {
+
+                    console.log(conf);
 
                     // Merge user-suplied config with default config
                     angular.extend(configuration, conf);

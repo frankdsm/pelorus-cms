@@ -31,7 +31,6 @@
 
     position: relative;
     top: 20%;
-    transform: translateY(-50%);
 
     @include clearfix;
 
@@ -41,6 +40,10 @@
         padding-right: 20px;
 
         border-right: 1px solid rgb(222, 222, 222);
+
+        img {
+            width: 100px;
+        }
     }
 
     .c-authentication__area {

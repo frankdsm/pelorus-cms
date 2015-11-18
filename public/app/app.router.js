@@ -37,6 +37,19 @@ angular.module('pelorus')
                         template: 'Hello World'
                     }
                 }
+            })
+
+            .state('authentication', {
+                url: '/authentication',
+                data: {
+                },
+                resolve: {},
+                views: {
+                    '': {
+                        templateUrl: 'app/modules/auth/views/authentication-view.html',
+                        controller: 'AuthenticationController'
+                    }
+                }
             });
         }
     ]);

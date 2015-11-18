@@ -33,7 +33,7 @@
                 <navigation></navigation>
                 <header></header>
 
-                <div class="content" ui-view="" ng-cloak>
+                <div class="content no-nav" ui-view="" ng-cloak>
                     <h1>This is Pelorus CMS</h1>
                     <p>If you see this message, something is awefully wrong.<br>Please verify that all .js-files load correctly and try again. <br>Still can't figure out what's wrong? Try getting help on <a href="http://stackoverflow.com/questions/tagged/pelorus">stackoverflow</a> or on our <a href="https://github.com/hvperdrive/pelorus-cms/issues">github</a>.</p>
                 </div>
@@ -59,9 +59,11 @@
 
         <script src="app/app.module.js"></script>
 
-        <script src="app/providers/configuration-provider.js"></script>
+        <script src="app/modules/auth/modules/authentication-controller.js"></script>
 
         <script src="app/services/route-authentication-service.js"></script>
+
+        <script src="app/providers/configuration-provider.js"></script>
 
         <script src="app/core/app-controller.js"></script>
 

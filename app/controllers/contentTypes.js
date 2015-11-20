@@ -2,9 +2,9 @@
 
 require('rootpath')();
 var _ = require('lodash'),
-    Type = require('app/models/contentType'),
-    ContentModel = require('app/models/content'),
-    PageModel = require('app/models/page'),
+    typeModel = require('app/models/contentType'),
+    contentModel = require('app/models/content'),
+    pageModel = require('app/models/page'),
     versions = require('app/helpers/versions'),
     fields = require('app/helpers/fields');
 
@@ -32,7 +32,7 @@ var _ = require('lodash'),
  *     }]
  */
 exports.read = function (req, res) {
-    Type.find({$query: {'meta.deleted': false}, $orderby: {'meta.safeLabel': 1}}, {versions: 0})
+    typeModel.find({$query: {'meta.deleted': false}, $orderby: {'meta.safeLabel': 1}}, {versions: 0})
         .exec(function(err, items) {
             if(!err && items) {
                 res.status(200).json(items);
@@ -61,7 +61,7 @@ exports.read = function (req, res) {
  *     }]
  */
 exports.allTypes = function (req, res) {
-    Type.find({$query: {'meta.deleted': false}, $orderby: {'meta.safeLabel': 1}}, {'meta': 1, uuid: 1})
+    typeModel.find({$query: {'meta.deleted': false}, $orderby: {'meta.safeLabel': 1}}, {'meta': 1, uuid: 1})
         .exec(function(err, items) {
             if(!err && items) {
                 //To do: add logic for roles
@@ -121,7 +121,7 @@ exports.allTypes = function (req, res) {
  *     }
  */
 exports.readOne = function (req, res) {
-    Type.findOne({$or: [{uuid: req.params.id, 'meta.deleted': false}, {'meta.safeLabel': req.params.id}]}, {versions: 0})
+    typeModel.findOne({$or: [{uuid: req.params.id, 'meta.deleted': false}, {'meta.safeLabel': req.params.id}]}, {versions: 0})
         .populate('meta.contentType')
         .exec(function(err, item) {
             if(!err && item) {
@@ -157,7 +157,7 @@ exports.readOne = function (req, res) {
  */
 exports.create = function (req, res, next) {
     req.body.meta.safeLabel = _.snakeCase(req.body.meta.label);
-    Type.create(req.body, function(err, create) {
+    typeModel.create(req.body, function(err, create) {
         if(!err && create) {
             //To do: add logic for roles
         } else {
@@ -201,10 +201,10 @@ exports.update = function (req, res, next) {
             // Clear content that will be automatically updated
             delete data.meta.lastModified;
 
-            Type.update({uuid: req.params.id}, data)
+            typeModel.update({uuid: req.params.id}, data)
                 .exec(function(err, update) {
                     if(!err && update) {
-                        Type.findOne({uuid: req.params.id}, {versions: 0})
+                        typeModel.findOne({uuid: req.params.id}, {versions: 0})
                             .exec(function(err, example) {
                                 if(!err && example) {
                                     res.status(200).json(example);
@@ -232,7 +232,7 @@ exports.update = function (req, res, next) {
 exports.delete = function (req, res, next) {
     var contentTypeId,
         contentIds;
-    Type.findOneAndUpdate({uuid: req.params.id},
+    typeModel.findOneAndUpdate({uuid: req.params.id},
                 {$set: { 'meta.deleted': true}})
         .exec()
         .then(
@@ -248,7 +248,7 @@ exports.delete = function (req, res, next) {
         .then(
             function findContent() {
                 //console.log("findContent");
-                return ContentModel.find({'meta.contentType': contentTypeId})
+                return contentModel.find({'meta.contentType': contentTypeId})
                     .lean()
                     .exec();
             },
@@ -260,7 +260,7 @@ exports.delete = function (req, res, next) {
             function removeContent(response) {
                 //console.log("removeContent");
                 contentIds = _.pluck(response, '_id');
-                return ContentModel.update({contentType: contentTypeId},
+                return contentModel.update({contentType: contentTypeId},
                                             {$set: {'meta.deleted': true}},
                                             {multi: true})
                     .exec();
@@ -272,7 +272,7 @@ exports.delete = function (req, res, next) {
         .then(
             function removePages() {
                 //console.log("removePages");
-                return PageModel.update({contentReference: {$in: contentIds}},
+                return pageModel.update({contentReference: {$in: contentIds}},
                                         {$set: {'meta': { 'deleted': true }}},
                                         {multi: true})
                     .exec();

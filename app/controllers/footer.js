@@ -1,7 +1,7 @@
 'use strict';
 
 require('rootpath')();
-var Footer = require('app/models/footer'),
+var footerModel = require('app/models/footer'),
     versions = require('app/helpers/versions'),
     multiLanguage = require('app/helpers/multiLanguage');
 
@@ -14,7 +14,7 @@ var Footer = require('app/models/footer'),
  *     HTTP/1.1 200 OK
  */
 exports.read = function (req, res, next) {
-    Footer.find({active: true}, {versions: 0})
+    footerModel.find({active: true}, {versions: 0})
         .exec(function(err, footer) {
             if(!err && footer) {
                 res.status(200).json(footer);
@@ -37,10 +37,10 @@ exports.update = function (req, res, next) {
     delete req.body._id;
     // Update version before save
     versions.create(Footer, req.body, function(data) {
-        Footer.update({uuid: req.params.id}, data)
+        footerModel.update({uuid: req.params.id}, data)
             .exec(function(err, update) {
                 if(!err && update) {
-                    Footer.findOne({}, {versions: 0})
+                    footerModel.findOne({}, {versions: 0})
                         .exec(function(err, footer) {
                             if(!err && footer) {
                                 res.status(200).json(footer);
@@ -64,7 +64,7 @@ exports.update = function (req, res, next) {
  *     HTTP/1.1 200 OK
  */
 exports.translated = function (req, res, next) {
-    Footer.findOne({active: true})
+    footerModel.findOne({active: true})
         .populate('')
         .lean()
         .exec(function(err, footer) {

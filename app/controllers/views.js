@@ -1,7 +1,7 @@
 'use strict';
 
 require('rootpath')();
-var View = require('app/models/view'),
+var viewModel = require('app/models/view'),
     contentTypeModel = require('app/models/contentType'),
     contentController = require('app/controllers/contents'),
     versions = require('app/helpers/versions');
@@ -17,7 +17,7 @@ var View = require('app/models/view'),
 exports.read = function (req, res) {
     // Filter which content types may be returned
     if(req.session.hasOwnProperty('profile')) {
-        View.find({'meta.deleted': false}, {versions: 0})
+        viewModel.find({'meta.deleted': false}, {versions: 0})
             .populate('query.contentType')
             .exec(function(err, items) {
                 if(!err && items) {
@@ -41,7 +41,7 @@ exports.read = function (req, res) {
  *     HTTP/1.1 200 OK
  */
 exports.readOne = function (req, res) {
-    View.findOne({uuid: req.params.id, 'meta.deleted': false}, {versions: 0})
+    viewModel.findOne({uuid: req.params.id, 'meta.deleted': false}, {versions: 0})
         .populate('query.contentType')
         .exec(function(err, item) {
             if(!err && item) {
@@ -61,7 +61,7 @@ exports.readOne = function (req, res) {
  *     HTTP/1.1 200 OK
  */
 exports.create = function (req, res) {
-    View.create(req.body, function(err, create) {
+    viewModel.create(req.body, function(err, create) {
         if(!err && create) {
             res.status(201).json(create);
         } else {
@@ -87,10 +87,10 @@ exports.update = function (req, res) {
     versions.create(View, req.body, function(data) {
         //data.meta.lastEditor = req.session.profile._id.toString();
         //data.meta.publishDate = setPublishDate(data.meta.published, data.meta.publishDate);
-        View.update({uuid: req.params.id}, data)
+        viewModel.update({uuid: req.params.id}, data)
             .exec(function(err, update) {
                 if(!err && update) {
-                    View.findOne({uuid: req.params.id}, {versions: 0})
+                    viewModel.findOne({uuid: req.params.id}, {versions: 0})
                         .populate('query.contentType')
                         .lean()
                         .exec(function(err, content) {
@@ -118,7 +118,7 @@ exports.update = function (req, res) {
  *     HTTP/1.1 204 OK
  */
 exports.delete = function (req, res) {
-    View.update({uuid: req.params.id},
+    viewModel.update({uuid: req.params.id},
                 {$set: {'meta.deleted': true}})
         .exec(function(err, update) {
             if(update) {

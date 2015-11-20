@@ -1,10 +1,10 @@
 'use strict';
 
 require('rootpath')();
-var Cache = require('app/models/cache');
+var cacheModel = require('app/models/cache');
 
 exports.set = function (key, value, callback) {
-    Cache.update({key: key}, { key: key, value: value, created: new Date() }, {upsert:true})
+    cacheModel.update({key: key}, { key: key, value: value, created: new Date() }, {upsert:true})
         .exec(function(err, update) {
             if(!err && update) {
                 if(callback) {
@@ -19,7 +19,7 @@ exports.set = function (key, value, callback) {
 };
 
 exports.get = function (key, expiresTime, callback) {
-    Cache.findOne({key: key})
+    cacheModel.findOne({key: key})
         .exec(function(err, item) {
             if(!err && item) {
                 if(!expiresTime) {
@@ -46,7 +46,7 @@ exports.get = function (key, expiresTime, callback) {
 };
 
 exports.remove = function (key, callback) {
-    Cache.findOne({key: key})
+    cacheModel.findOne({key: key})
         .remove()
         .exec(function(err, result) {
             if(!err && result) {

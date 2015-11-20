@@ -3,12 +3,12 @@
 require('rootpath')();
 var _ = require('lodash'),
     ObjectId = require('mongoose').Types.ObjectId,
-    Config = require('app/models/config'),
-    Taxonomy = require('app/models/taxonomy'),
+    configModel = require('app/models/config'),
+    taxonomyModel = require('app/models/taxonomy'),
     multiLanguage = require('app/helpers/multiLanguage');
 
 exports.allTaxonomy = function (req, res, next) {
-    Taxonomy.find({$query: {}, $orderby: {safeLabel: 1}}, {label: 1, safeLabel: 1, uuid: 1})
+    taxonomyModel.find({$query: {}, $orderby: {safeLabel: 1}}, {label: 1, safeLabel: 1, uuid: 1})
         .exec(function(err, items) {
             if(!err && items) {
                 res.status(200).json(items);
@@ -20,11 +20,11 @@ exports.allTaxonomy = function (req, res, next) {
 
 exports.allTags = function (req, res, next) {
 
-    Config.findOne({type: "settings"}, {versions: 0})
+    configModel.findOne({type: "settings"}, {versions: 0})
     .exec(function(err, settings) {
         if(!err && settings) {
             // var labelparam = 'tags.label.' + defaultLanguage;
-            Taxonomy.find({$query: {}}, { labelparam : 1, 'tags' : 1, 'label' : 1})
+            taxonomyModel.find({$query: {}}, { labelparam : 1, 'tags' : 1, 'label' : 1})
                 .exec(function(err, items) {
 
                     if(!err && items) {
@@ -65,7 +65,7 @@ exports.getTagsById = function (termRef) {
 
     termRef = _.map(termRef, convertToObjectId);
 
-    return Taxonomy.aggregate([{
+    return taxonomyModel.aggregate([{
         $unwind: '$tags'
     }, {
         $match: {
@@ -92,7 +92,7 @@ exports.getTagsById = function (termRef) {
  *     HTTP/1.1 200 OK
  */
 exports.read = function (req, res, next) {
-    Taxonomy.find({})
+    taxonomyModel.find({})
         .exec(function(err, read) {
             if(!err && read) {
                 res.status(200).json(read);
@@ -114,7 +114,7 @@ exports.readOne = function (req, res, next) {
 
     var listid = req.params.id;
 
-    Taxonomy.findOne({'uuid': listid})
+    taxonomyModel.findOne({'uuid': listid})
         .exec(function(err, read) {
             if(!err && read) {
                 res.status(200).json(read);
@@ -151,7 +151,7 @@ exports.update = function (req, res, next) {
     var listid = req.params.id;
 
     updateSafeLabels(req.body);
-    Taxonomy.findOneAndUpdate({'uuid': listid}, req.body, { new : true })
+    taxonomyModel.findOneAndUpdate({'uuid': listid}, req.body, { new : true })
         .exec(function(err, update) {
             if(!err && update) {
                 res.status(200).json(update);
@@ -173,7 +173,7 @@ exports.delete = function (req, res, next) {
 
     var listid = req.params.id;
 
-    Taxonomy.findOne({'uuid': listid})
+    taxonomyModel.findOne({'uuid': listid})
         .remove()
         .exec(function(err, result) {
             if(!err && result) {
@@ -195,7 +195,7 @@ exports.delete = function (req, res, next) {
 exports.create = function (req, res, next) {
 
     updateSafeLabels(req.body);
-    Taxonomy.create(req.body, function(err, create) {
+    taxonomyModel.create(req.body, function(err, create) {
         if(!err && create) {
             res.status(201).json(create);
         } else {
@@ -215,7 +215,7 @@ exports.create = function (req, res, next) {
  */
  exports.getTerm = function (req, res, next) {
      var _termUuid = req.params.uuid;
-     Taxonomy.find({'tags.uuid': _termUuid})
+     taxonomyModel.find({'tags.uuid': _termUuid})
         .then(
             function onSuccess(response) {
                 // Modify the object

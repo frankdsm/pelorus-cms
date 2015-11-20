@@ -1,14 +1,14 @@
 'use strict';
 
 require('rootpath')();
-var ExampleController = require('app/controllers/examples'),
+var exampleController = require('app/controllers/examples'),
     config = require('config/config'),
     baseUrl = config.api.prefix + config.api.version + 'example';
 
 module.exports = function(app){
-    app.route(baseUrl).get(ExampleController.read);
-    app.route(baseUrl + '/:id').get(ExampleController.readOne);
-    app.route(baseUrl).post(ExampleController.create);
-    app.route(baseUrl + '/:id').put(ExampleController.update);
-    app.route(baseUrl + '/:id').delete(ExampleController.delete);
+    app.route(baseUrl).get(exampleController.read);
+    app.route(baseUrl + '/:id').get(exampleController.readOne);
+    app.route(baseUrl).post(exampleController.create);
+    app.route(baseUrl + '/:id').put(exampleController.update);
+    app.route(baseUrl + '/:id').delete(exampleController.delete);
 };

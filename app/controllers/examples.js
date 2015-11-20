@@ -1,7 +1,7 @@
 'use strict';
 
 require('rootpath')();
-var Example = require('app/models/example');
+var exampleModel = require('app/models/example');
 
 /**
  * @api {get} /api/example Get all example documents
@@ -21,7 +21,7 @@ var Example = require('app/models/example');
  *     }]
  */
 exports.read = function (req, res, next) {
-    Example.find({deleted: false})
+    exampleModel.find({deleted: false})
         .exec(function(err, items) {
             if(!err && items) {
                 res.status(200).json(items);
@@ -50,7 +50,7 @@ exports.read = function (req, res, next) {
  *     }
  */
 exports.readOne = function (req, res, next) {
-    Example.findOne({uuid: req.params.id, deleted: false})
+    exampleModel.findOne({uuid: req.params.id, deleted: false})
         .exec(function(err, item) {
             if(!err && item) {
                 res.status(200).json(item);
@@ -78,7 +78,7 @@ exports.readOne = function (req, res, next) {
  *     }
  */
 exports.create = function (req, res, next) {
-    Example.create(req.body, function(err, create) {
+    exampleModel.create(req.body, function(err, create) {
         if(!err && create) {
             res.status(201).json(create);
         } else {
@@ -106,10 +106,10 @@ exports.create = function (req, res, next) {
  *     }
  */
 exports.update = function (req, res, next) {
-    Example.update({uuid: req.params.id}, req.body)
+    exampleModel.update({uuid: req.params.id}, req.body)
         .exec(function(err, update) {
             if(!err && update) {
-                Example.findOne({uuid: req.params.id})
+                exampleModel.findOne({uuid: req.params.id})
                     .exec(function(err, example) {
                         if(!err && example) {
                             res.status(200).json(example);
@@ -134,7 +134,7 @@ exports.update = function (req, res, next) {
  *     HTTP/1.1 204 OK
  */
 exports.delete = function (req, res, next) {
-    Example.update({uuid: req.params.id},
+    exampleModel.update({uuid: req.params.id},
                     {$set: {deleted: true}})
         .exec(function(err, update) {
             if(update) {

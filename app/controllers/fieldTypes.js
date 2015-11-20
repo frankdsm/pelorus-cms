@@ -1,7 +1,7 @@
 'use strict';
 
 require('rootpath')();
-var Field = require('app/models/fieldType.js');
+var fieldTypeModel = require('app/models/fieldType.js');
 
 /**
  * @api {get} /api/field/ Get all fields

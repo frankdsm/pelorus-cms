@@ -1,13 +1,13 @@
 'use strict';
 
 require('rootpath')();
-var Config = require('app/models/config'),
+var config = require('app/models/config'),
     versions = require('app/helpers/versions');
 
 /**
  * @api {get} /api/config/:type Get config file
- * @apiParam {String} type Config file type
- * @apiGroup Config
+ * @apiParam {String} type config file type
+ * @apiGroup config
  * @apiVersion 0.0.1
  *
  * @apiSuccessExample {json} Success-Response:
@@ -20,7 +20,7 @@ var Config = require('app/models/config'),
  *     }
  */
 var readOne = function (req, res, next) {
-    Config.findOne({type: req.params.type}, {versions: 0})
+    config.findOne({type: req.params.type}, {versions: 0})
         .populate('data.siteHome')
         .exec(function(err, item) {
             if(!err && item) {
@@ -35,8 +35,8 @@ exports.readOne = readOne;
 
 /**
  * @api {put} /api/config/:type Update config file
- * @apiParam {String} type Config file type
- * @apiGroup Config
+ * @apiParam {String} type config file type
+ * @apiGroup config
  * @apiVersion 0.0.1
  *
  * @apiSuccessExample {json} Success-Response:
@@ -52,8 +52,8 @@ exports.update = function (req, res, next) {
     // Compatibility fix for old MongoDB versions
     delete req.body._id;
     // Update version before save
-    versions.add(Config, req.body, function(data) {
-        Config.findOneAndUpdate({type: req.params.type}, data)
+    versions.add(config, req.body, function(data) {
+        config.findOneAndUpdate({type: req.params.type}, data)
             .then(
                 function onSuccess(oldObject) {
                     // Check if siteHome exists in the req object

@@ -2,14 +2,14 @@
 
 require('rootpath')();
 var passport = require('passport'),
-    LoginController = require('app/controllers/login');
+    loginController = require('app/controllers/login');
 
 module.exports = function(app) {
     app.get('/auth/twitter', passport.authenticate('twitter'));
     app.get('/auth/twitter/callback',
         passport.authenticate('twitter', {failureRedirect: '/error'}),
         function(req, res) {
-            LoginController.user(req.user, 'twitter', function(update) {
+            loginController.user(req.user, 'twitter', function(update) {
                 if(update) {
                     res.redirect('/success');
                 } else {
